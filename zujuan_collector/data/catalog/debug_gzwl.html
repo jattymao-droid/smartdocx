@@ -1,0 +1,960 @@
+<!DOCTYPE html><html lang="zh-cn"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>禁止访问</title>
+    <link rel="shortcut icon" href="https://static.zxxk.com/zujuan/zjms/static/assets/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script charset="utf-8" src="https://hmcdn.baidu.com/static/tongji/plugins/UrlChangeTracker.js"></script><script src="https://hm.baidu.com/hm.js?68fb48a14b4fce9d823df8a437386f93"></script><script src="/zujuan-api/base"></script>
+      <link href="https://cdn5.xkw.com/zujuan/zjms/static/assets/font/iconfont.css?v=1783070285212" rel="stylesheet" type="text/css">
+  <link href="https://cdn5.xkw.com/zujuan/libs/libs.css?v=1783070285212" rel="stylesheet" type="text/css">
+  <link href="https://cdn6.xkw.com/zujuan/zjms/static/common/common.css?v=1783070285213" rel="stylesheet" type="text/css">
+  
+<!--[if lte IE 9]>
+    <script>
+      (function() {
+          var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, main, nav, output, progress, section, time, video".split(', ');
+          var i= e.length;
+          while (i > 0){
+            document.createElement(e[i]);
+            i = i - 1;
+          }
+      })();
+    </script>
+<![endif]-->
+
+
+  
+<script>
+  (function () {
+      function isIE11() { if ((/Trident\/7\./).test(navigator.userAgent)) return true; else return false; }
+      function isIE10() { if ((/Trident\/6\./).test(navigator.userAgent)) return true; else return false; }
+      if (isIE10() || isIE11()) {
+          loadIEStyle();
+      }
+      function loadIEStyle() {
+          var links = document.querySelectorAll('link[data-ie-href]');
+          if (!links || links.length <= 0) {
+              return;
+          }
+          links = Array.prototype.slice.call(links, 0);
+          var link;
+          for (var i = 0, len = links.length; i < len; i++) {
+              link = links[i];
+              link.setAttribute('href', link.getAttribute('data-ie-href'));
+          }
+      }
+  })();
+</script>
+
+
+  
+<script>
+    // tools
+    (function (window) {
+        'use strict';
+        // pic onerror
+        function tk_picErr(el) {
+            el.onerror = null;
+            el.src = (window.site_cdn_path || '') + '/static/assets/touxiang.png';
+        }
+
+        function tk_onload(el) {
+            el.onload = null;
+            el.onerror = null;
+        }
+
+        window.tk_picErr = tk_picErr;
+        return {
+            tk_picErr: tk_picErr,
+            tk_onload: tk_onload
+        };
+    })(window);
+
+</script>
+
+
+
+    
+    
+    <style>
+        .footer {
+            margin-top: 0;
+        }
+
+        .disabled-page {
+            background: white;
+            min-height: 500px;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        .disabled-page .wrapper {
+            display: block;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .disabled-page .msg {
+            margin-top: 12px;
+            font-size: 20px;
+            line-height: 2;
+            text-align: left;
+            color: #333333;
+        }
+
+        .disabled-page .msg>b {
+            font-size: 24px;
+        }
+
+        .disabled-page .msg>i {
+            color: #de5050;
+            font-style: normal;
+        }
+
+        .disabled-page .msg,
+        .disabled-page .msg-line {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .disabled-page .msg-line>span>a {
+            color: #2877ff;
+            font-style: normal;
+        }
+    </style>
+
+<style id="tk-dialog-body-style">body {  position: fixed!important;  overflow: hidden!important;  top: 0px!important;}</style><meta name="referrer" content="unsafe-url"><script type="text/javascript" async="true" src="https://static.zxxk.com/zujuan/zjms/zjxt/static/messagePop/messagePop.js?v=1783571558623"></script><link rel="stylesheet" type="text/css" href="https://p.xkw.com/xep/css/xep.css?1783571559482" id="xep-style"></head>
+
+<body data-winy="0">
+
+    <header class="page-header header">
+    <!--上层学科网服务及用户信息-->
+    
+<div class="top-bar">
+    <div class="wrapper">
+        <a href="https://www.zxxk.com" target="_blank" class="master-site" title="学科网-让教与学更高效">
+            <span data-theme="" class="site-name">学科网</span>
+            <span> - 让教与学更高效</span>
+        </a>
+        <!--地区选择-->
+        <div class="area-panel ctrl-hide">
+                <div class="area-panel__title">
+                    <i class="icon icon-dingwei"></i>
+                    <span id="select_cur_area_name">云南</span>
+                    <b class="icon icon-arrow"></b>
+                </div>
+                <div class="area-panel__list">
+                            <div class="item clearfix">
+                                <span class="item-kind">#：</span>
+                                <div class="area-list clearfix">
+                                            <a href="javascript:tkBusiness.area.onSelectArea(-1)" id="select_area_-1" name="全部" class="area-item " title="全部地区">
+                                                全部地区
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(1)" id="select_area_1" name="全国" class="area-item " title="全国">
+                                                全国
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <span class="item-kind">A-G：</span>
+                                <div class="area-list clearfix">
+                                            <a href="javascript:tkBusiness.area.onSelectArea(340000)" id="select_area_340000" name="安徽" class="area-item " title="安徽">
+                                                安徽
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(110000)" id="select_area_110000" name="北京" class="area-item " title="北京">
+                                                北京
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(500000)" id="select_area_500000" name="重庆" class="area-item " title="重庆">
+                                                重庆
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(350000)" id="select_area_350000" name="福建" class="area-item " title="福建">
+                                                福建
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(620000)" id="select_area_620000" name="甘肃" class="area-item " title="甘肃">
+                                                甘肃
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(440000)" id="select_area_440000" name="广东" class="area-item " title="广东">
+                                                广东
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(450000)" id="select_area_450000" name="广西" class="area-item " title="广西">
+                                                广西
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(520000)" id="select_area_520000" name="贵州" class="area-item " title="贵州">
+                                                贵州
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <span class="item-kind">H-J：</span>
+                                <div class="area-list clearfix">
+                                            <a href="javascript:tkBusiness.area.onSelectArea(460000)" id="select_area_460000" name="海南" class="area-item " title="海南">
+                                                海南
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(230000)" id="select_area_230000" name="黑龙江" class="area-item " title="黑龙江">
+                                                黑龙江
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(130000)" id="select_area_130000" name="河北" class="area-item " title="河北">
+                                                河北
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(410000)" id="select_area_410000" name="河南" class="area-item " title="河南">
+                                                河南
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(420000)" id="select_area_420000" name="湖北" class="area-item " title="湖北">
+                                                湖北
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(430000)" id="select_area_430000" name="湖南" class="area-item " title="湖南">
+                                                湖南
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(220000)" id="select_area_220000" name="吉林" class="area-item " title="吉林">
+                                                吉林
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(320000)" id="select_area_320000" name="江苏" class="area-item " title="江苏">
+                                                江苏
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(360000)" id="select_area_360000" name="江西" class="area-item " title="江西">
+                                                江西
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <span class="item-kind">K-S：</span>
+                                <div class="area-list clearfix">
+                                            <a href="javascript:tkBusiness.area.onSelectArea(210000)" id="select_area_210000" name="辽宁" class="area-item " title="辽宁">
+                                                辽宁
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(150000)" id="select_area_150000" name="内蒙古" class="area-item " title="内蒙古">
+                                                内蒙古
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(640000)" id="select_area_640000" name="宁夏" class="area-item " title="宁夏">
+                                                宁夏
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(630000)" id="select_area_630000" name="青海" class="area-item " title="青海">
+                                                青海
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(370000)" id="select_area_370000" name="山东" class="area-item " title="山东">
+                                                山东
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(140000)" id="select_area_140000" name="山西" class="area-item " title="山西">
+                                                山西
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(610000)" id="select_area_610000" name="陕西" class="area-item " title="陕西">
+                                                陕西
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(310000)" id="select_area_310000" name="上海" class="area-item " title="上海">
+                                                上海
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(510000)" id="select_area_510000" name="四川" class="area-item " title="四川">
+                                                四川
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="item clearfix">
+                                <span class="item-kind">T-Z：</span>
+                                <div class="area-list clearfix">
+                                            <a href="javascript:tkBusiness.area.onSelectArea(120000)" id="select_area_120000" name="天津" class="area-item " title="天津">
+                                                天津
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(540000)" id="select_area_540000" name="西藏" class="area-item " title="西藏">
+                                                西藏
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(650000)" id="select_area_650000" name="新疆" class="area-item " title="新疆">
+                                                新疆
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(530000)" id="select_area_530000" name="云南" class="area-item  selected" title="云南">
+                                                云南
+                                            </a>
+                                            <a href="javascript:tkBusiness.area.onSelectArea(330000)" id="select_area_330000" name="浙江" class="area-item " title="浙江">
+                                                浙江
+                                            </a>
+                                </div>
+                            </div>
+                </div>
+        </div>
+        <nav class="top-nav">
+            <ul class="list">
+                    <!-- 帮助与支持 -->
+                    <li class="item help-service ctrl-hide">
+                        <a class="dropdown-item" href="javascript:void 0">帮助与支持</a>
+                        <i class="icon icon-arrow"></i>
+                        <div class="help-menu dropdown-menu">
+                            <div class="list help-center">
+                                <span class="title-txt">帮助中心</span>
+                                <a target="_blank" href="http://kf.zujuan.xkw.com/helper" rel="nofollow" class="item menu-item">使用帮助</a>
+                                <a target="_blank" href="http://kf.zujuan.xkw.com/helper/12" rel="nofollow" class="item menu-item">个人会员</a>
+                                <a target="_blank" href="http://kf.zujuan.xkw.com/membership" rel="nofollow" class="item menu-item">e卷通权限</a>
+                            </div>
+                            <div class="list support-list">
+                                <span class="title-txt">服务支持</span>
+                                <a target="_blank" href="http://kf.zujuan.xkw.com/announce" class="item menu-item" rel="nofollow">新闻公告</a>
+                                <a href="javascript:void 0;" data-type="protectEye" rel="nofollow" class="item menu-item">护眼模式</a>
+                                <a target="_blank" href="/atc/product" class="item menu-item" rel="nofollow">组卷网介绍</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 网站导航 -->
+                    <li class="item pro-service ctrl-hide">
+                        <a class="dropdown-item" id="qixia_b" href="javascript:void 0">网站导航</a>
+                        <i class="icon icon-arrow"></i>
+                        <div class="pro-service-menu dropdown-menu">
+                            <div class="list teach-sync">
+                                <span class="title-txt">教材同步</span>
+                                <a href="https://zujuan.xkw.com/gzwl/zj136248/" class="item menu-item" target="_blank" rel="nofollow">教材选题</a>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/tbjx/zj136248/t31/" class="item menu-item" target="_blank" rel="nofollow">课前预习</a>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/tbjx/zj136248/t1/" class="item menu-item" target="_blank" rel="nofollow">课后练习</a>
+                                        <a href="https://zujuan.xkw.com/gzwl/thematiclist/zhuanti/t16/" class="item menu-item" target="_blank" rel="nofollow">同步专辑</a>
+
+                            </div>
+                            <div class="list sync-test">
+                                <span class="title-txt">同步测验</span>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/tbjx/zj136248/t2/" class="item menu-item" target="_blank" rel="noflollow">单元测验</a>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/jdcs/t3" class="item menu-item" target="_blank" rel="noflollow">月考</a>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/jdcs/t4" class="item menu-item" target="_blank" rel="noflollow">期中</a>
+                                <a href="https://zujuan.xkw.com/gzwl/shijuan/jdcs/t5" class="item menu-item" target="_blank" rel="noflollow">期末</a>
+                            </div>
+                            <div class="list entrance-test">
+                                <span class="title-txt">升学备考</span>
+                                <a href="https://zujuan.xkw.com/xxsx/shijuan/bk/" class="item menu-item" target="_blank" rel="nofollow">小升初</a>
+                                <a href="https://zujuan.xkw.com/zkzq/zkjh/" class="item menu-item" target="_blank" rel="nofollow">中考真题</a>
+                                <a href="https://zujuan.xkw.com/gaokao/2021/" class="item menu-item" target="_blank" rel="nofollow">高考真题</a>
+                            </div>
+                            <div class="list rec-small">
+                                <span class="title-txt">小卷推荐</span>
+                                <a href="https://zujuan.xkw.com/gzwl/zsd41934/x4o2/" class="item menu-item" target="_blank" rel="nofollow">新题</a>
+
+                                        <a href="https://zujuan.xkw.com/gzwl/thematiclist/zhuanti/" class="item menu-item" target="_blank" rel="nofollow">精品专辑</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 产品服务 -->
+                    <li class="item sub-site ctrl-hide">
+                        <a class="dropdown-item" id="qixia_a" href="javascript:void 0">产品服务</a>
+                        <i class="icon icon-arrow"></i>
+                        <div class="sub-site-menu dropdown-menu">
+                            <div class="list tk-pro">
+                                <span class="title-txt">题库产品</span>
+                                <a target="_blank" href="https://p.xkw.com" rel="nofollow" class="item menu-item">e卷通</a>
+                                <a target="_blank" href="https://aixk.zxxk.com/" rel="nofollow" class="item menu-item">个性化学习报告</a>
+                                <a target="_blank" href="https://open.xkw.com/" rel="nofollow" class="item menu-item">开放平台</a>
+                                <a target="_blank" href="https://zhijiao.xkw.com/" rel="nofollow" class="item menu-item">中职组卷</a>
+                            </div>
+                            <div class="list other-pro">
+                                <span class="title-txt">全系其他产品</span>
+                                <a target="_blank" href="https://wxt.zxxk.com/introduce/" rel="nofollow" class="item menu-item">网校通</a>
+                                <a target="_blank" href="https://beike.zxxk.com/" rel="nofollow" class="item menu-item">e备课</a>
+                                <a target="_blank" href="https://yx.xkw.com/" rel="nofollow" class="item menu-item">AI研修</a>
+                                <a target="_blank" href="https://p.xkw.com/#/introduce" rel="nofollow" class="item menu-item">智慧教学平台</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--APP-->
+                    <li class="item app-download ctrl-hide">
+                        <b class="app-icon"></b>
+                        <a class="dropdown-item" target="_blank" href="https://zujuan.xkw.com/atc/app">APP</a>
+                        <i class="icon icon-arrow"></i>
+                        <div class="app-qr qr-box dropdown-menu">
+                             <img alt="官方APP" title="官方APP" data-aop-pos="pc_home_right_help_nav_app_diversion" src="https://oss-zujuan.oss-cn-hangzhou.aliyuncs.com/zujuanUpload/image/2024-03/banner/ed77a2d634c647a193ee8b399c644cc3.png">
+                        </div>
+                    </li>
+                    <li class="item invite-award">
+                        <i class="icon-invite-award"></i>
+                        <a class="link-txt" href="/score_pull_new/" target="_blank">邀请有礼</a>
+                    </li>
+                    <!--会员购买-->
+                    <li class="item join-member">
+                        <i class="vip-icon"></i>
+                        <a class="link-txt" target="_blank" href="https://zujuan.xkw.com/membership/">会员购买</a>
+                    </li>
+                        <li class="item message zjms"><a href="/message/" id="msg-info" class="msg-info"><i class="message-icon"></i><b class="sum-txt">16</b></a></li>
+                        <li class="item user-info ctrl-hide">
+                            <a href="javascript:void 0" class="user-name">
+                                <div class="avatar"><img src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erQZuia1fuZmpbuRMpWS60fohHEjZz9jeaSiazYoM0pdokvROnJAaiceezcJEJAAo6qJyovxBMy6kKtQ/132" alt="jatty01" onerror="javascript:tk_picErr(this)"></div>
+                                </a><a href="javascript:void 0" class="nickname">我的</a>
+                                <i class="icon icon-arrow"></i>
+                            
+                            <!--用户信息浮窗-->
+                            <div class="user-info-box">
+                                <div class="user-info-base">
+                                    <a href="javascript:void 0" class="user-avatar">
+                                        <img src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erQZuia1fuZmpbuRMpWS60fohHEjZz9jeaSiazYoM0pdokvROnJAaiceezcJEJAAo6qJyovxBMy6kKtQ/132" alt="jatty01" onerror="javascript:tk_picErr(this)">
+                                    </a>
+                                    <div class="other-info">
+                                        <a href="/wode/" target="_blank" class="user-nickname">jatty01</a>
+                                            <div class="user-type-box">
+                                                    <span class="user-type e-user" title="e卷通高端">
+                                                        <i class="icon-pic"></i><em>e卷通高端</em>
+                                                    </span>
+                                                    <span class="end-time">2026.12.24到期</span>
+                                            </div>
+                                            <div class="user-assets-box">
+                                                <span class="user-asset buy-credits">
+                                                    <span>储值:</span>
+                                                    <em>0.6</em>
+                                                    <a class="assets-method" href="javascript:PayDialogToCashUpgrade();">充值</a>
+                                                </span>
+                                                <span class="user-asset e-card">
+                                                    <span>积分:</span>
+                                                    <em>0</em>
+                                                    <a class="assets-method" href="/score_task/" target="_blank">签到</a>
+                                                </span>
+                                            </div>
+                                    </div>
+                                    <div class="ctrl-box">
+                                        <a href="https://account.xkw.com/#/setting-index?source=zujuan" target="_blank" class="ctrl-link opt-link">设置</a>
+                                        <a href="javascript:logOut();" class="ctrl-link exit-link">退出</a>
+                                    </div>
+                                </div>
+
+                                <div class="detail-box">
+                                    <div class="fn-nav">
+                                        <a href="/usertk/" target="_blank" class="item shoucang">
+                                            <i class="icon"></i>
+                                            <span>个人题库</span>
+                                        </a>
+                                        <a href="/usehistory/" target="_blank" class="item jilu">
+                                            <i class="icon"></i>
+                                            <span>选题记录</span>
+                                        </a>
+                                        <a href="/jilu/" target="_blank" class="item xiazai">
+                                            <i class="icon"></i>
+                                            <span>下载记录</span>
+                                        </a>
+                                        <a href="/usertk/t3/" target="_blank" class="item cundang">
+                                            <i class="icon"></i>
+                                            <span>我的存档</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </nav>
+    <div hiddden="hidden" class="tk-notice-container"></div></div>
+</div>
+
+    <div class="free-ad">
+</div>
+<!--中层功能集合-->
+<div class="fn-box">
+    <div class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <a href="/" title="组卷网" class="logo-link">
+                <img class="pic" src="https://static.zxxk.com/zujuan/zjms/static/assets/zujuan_logo.png?v=20230905" alt="组卷网" title="组卷网">
+                <span class="site-collect"></span>
+            </a>
+        </div>
+        <div class="area-panel-place"></div>
+        <!--搜索-->
+        <div class="search">
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <input tabindex="0" id="ques_paper_search_input" class="search-input" placeholder="请输入文字或直接拖拽您想要查找的试题图片" type="text">
+                    <div class="ctrl-box">
+                        <a href="javascript:void 0" class="ai-search-btn xyio_ai_search_btn">
+                            <i class="icon"></i>
+                            <span>AI智搜</span>
+                        </a>
+                        <div class="place"></div>
+                        <a class="upload-img-btn" data-type="openFnPanel" href="javascript:void 0"></a>
+                        <a class="search-btn" id="searchQuesBtn" href="javascript:void 0">搜索</a>
+                    </div>
+
+                    <div hidden="" class="search-fn-panel" data-panel="search">
+                        <div class="ctrl-box" data-panel="search">
+                            <span class="title-txt" data-panel="search"></span>
+                            
+                        </div>
+                        <div class="pic-area" data-panel="search">
+                            <!-- <div class="ajax-upload-dragdrop" style="vertical-align: top; width: 100%;">
+                                <div class="ajax-file-upload" style="position: relative; cursor: default;">
+                                    <div class="drag-box">
+                                        <span data-type="selectFile" class="msg-txt">拖拽或粘贴图片进行搜题</span>
+                                        <span class="msg-txt sub-txt">支持 Ctrl+V 直接粘贴图片</span>
+                                        <a class="ui-upload-btn" href="javascript:void 0">
+                                            <i class="icon "></i><span>上传图片</span>
+                                        </a>
+                                    </div>
+                                    <form method="POST" action="/ms-upload/FormImg" enctype="multipart/form-data"
+                                          style="margin: 0px; padding: 0px;">
+                                        <input type="file" id="ajax-upload-id-1666345507968" name="file"
+                                               accept="image/*"
+                                               style="position: absolute; cursor: pointer; top: 0px; width: 100%; height: 100%; left: 0px; z-index: 100; opacity: 0;">
+                                    </form>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- <div hidden  data-panel="search" class="recognizing-box ">
+                            <img class="pic" src="" alt=""  data-panel="search">
+                            <div class="msg-box">
+                                <i class="icon icon-lujing"></i><span>识别中...</span>
+                            </div>
+                            <div class="err-box" data-panel="search">
+                                <span class="msg-box" data-panel="search">识别失败，<a href="javascript:onKST();" class="ocr-feedback" data-panel="search">点我反馈</a></span>
+                                <a href="javascript:void 0" data-action="reupload" class="reupload-btn" data-panel="search">
+                                    <i class="icon"></i>重新上传
+                                </a>
+                            </div>
+                            <div class="boundary-box" data-panel="search">本日图片搜索试题次数，已达上限</div>
+                        </div> -->
+                        <!-- <div class="search-suggest-box wait-input" data-panel="search">
+                            <div class="suggest-box" data-panel="search">
+                            </div>
+                            <div class="other-box" data-panel="search">
+                                <a data-type="setupUpload" href="javascript:void 0" class="upload-btn" data-panel="search">
+                                    <i data-type="setupUpload" class="icon icon-xingzhuangjiehe3"></i>
+                                    <span data-type="setupUpload">上传图片搜题</span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="ai-search-panel" hidden="">
+                        <div class="top-box">
+                            <i class="icon"></i>
+                            <span class="txt">AI正在深度思考中......</span>
+                        </div>
+                        <div class="bottom-box">
+                            <div class="item txt-box" hidden="">
+                                <span class="txt">AI正在分析您的需求......</span>
+                            </div>
+                            <div class="item btn-box" hidden="">
+                                <span class="txt">分析您的需求为 智能组卷</span>
+                                <a href="javascript:void 0" class="btn">立即前往</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="count-sum">
+                            <a href="https://zujuan.xkw.com/ac/2026sqczj/" target="_blank" class="item hot">
+                                <span>暑假作业·预习衔接</span>
+                            </a>
+                            <a href="https://www.zxxk.com/subject/jp-2026/2026gkzttjjm/?id=3683852" target="_blank" class="item hot">
+                                <span>高考真题解密</span>
+                            </a>
+                            <a href="https://zujuan.xkw.com/daily-coupon" target="_blank" class="item hot">
+                                <span>天天领券，天天省钱</span>
+                            </a>
+                </div>
+            </div>
+        </div>
+        <!--功能快捷入口-->
+        <div class="fn-list">
+            <!--APP引导-->
+            <a target="_blank" class="item item-app " data-aop-pos="pc_home_app_sign" href="https://zujuan.xkw.com/atc/app" title="APP">
+                <span class="icon icon-xiazai-kong"></span>
+                <span>APP</span>
+            </a>
+                        <!--e卷通-->
+                        <a id="ejt-xep" href="https://p.xkw.com" target="_blank" title="e卷通" class="item item-ejt ejt yikaitong" data-io-hover="tracker">
+                            <span id="ejt-xep-berth" class="icon icon-ejuantong"></span>
+                            <span>e卷通</span>
+                        </a>
+            <!--会员-->
+            <a class="item item-chongzhi new" data-aop-pos="pc_home_membershipsign" title="会员" target="_blank" href="/membership/">
+                <span class="icon icon-member2024"></span>
+                <span>会员</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<nav class="main-nav">
+    <!--fiexd: <div class="fixed-box fixed-pos" > -->
+    <div class="fixed-box">
+        <div class="wrapper">
+            <aside class="subject-menu ctrl-hide">
+                <div class="subject-menu__title">
+                    <span class="title-txt">高中物理</span>
+                    <i class="icon  icon-arrow"></i>
+                </div>
+                <div class="subject-nav tk-tabs">
+    <div class="tabs">
+        <a href="javascript:void 0" data-action="selectPhase" data-tab="primary" class="tab" data-index="0">小学</a>
+        <a href="javascript:void 0" data-action="selectPhase" data-tab="junior" class="tab" data-index="1">初中</a>
+        <a href="javascript:void 0" data-action="selectPhase" data-tab="senior" class="tab selected" data-index="2">高中</a>
+        <a href="javascript:void 0" data-action="selectPhase" data-tab="zhijiao" class="tab zhijiao" data-index="3">中职</a>
+    </div>
+    <div class="tab-container">
+        <div class="tab-box grade-item__list" data-tab="primary" data-index="0" hidden="">
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="24" data-action="selectSubject">语文</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="23" data-action="selectSubject">数学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="25" data-action="selectSubject">英语</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="32" data-action="selectSubject">科学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="31" data-action="selectSubject">道德与法治</a>
+        </div>
+        <div class="tab-box grade-item__list" data-tab="junior" data-index="1" hidden="">
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="1" data-action="selectSubject">语文</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="2" data-action="selectSubject">数学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="3" data-action="selectSubject">英语</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="4" data-action="selectSubject">物理</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="5" data-action="selectSubject">化学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="6" data-action="selectSubject">生物</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="9" data-action="selectSubject">地理</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="8" data-action="selectSubject">历史</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="26" data-action="selectSubject">科学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="7" data-action="selectSubject">道德与法治</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="30" data-action="selectSubject">历史与社会</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="29" data-action="selectSubject">信息科技</a>
+        </div>
+        <div class="tab-box grade-item__list" data-tab="senior" data-index="2">
+            <a class="item subject-nav-item  selected" href="javascript:void(0)" data-subject-id="10" data-action="selectSubject">语文</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="11" data-action="selectSubject">数学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="12" data-action="selectSubject">英语</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="13" data-action="selectSubject">物理</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="14" data-action="selectSubject">化学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="15" data-action="selectSubject">生物</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="16" data-action="selectSubject">政治</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="17" data-action="selectSubject">历史</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="18" data-action="selectSubject">地理</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="27" data-action="selectSubject">信息技术</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="28" data-action="selectSubject">通用技术</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="33" data-action="selectSubject">日语</a>
+        </div>
+        <div class="tab-box grade-item__list" data-tab="zhijiao" data-index="3">
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="41" data-action="selectSubject">语文</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="42" data-action="selectSubject">数学</a>
+            <a class="item subject-nav-item " href="javascript:void(0)" data-subject-id="43" data-action="selectSubject">英语</a>
+        </div>
+    </div>
+</div>
+            </aside>
+
+
+            <nav id="menu_tab" class="nav-list clearfix">
+                        <a href="/" data-theme="" class="item  ">首页</a>
+
+                <!--当前的导航，附加css样式selected-main-nav-->
+                <a href="/zhangjie/" data-theme="" class="item selected-main-nav" id="nav_zj">章节选题</a>
+                <a href="/zhishidian/" data-theme="" class="item ">知识点选题</a>
+                <span class="item shijuan-nav has-sub ">
+                    <b>试卷选题</b>
+                    <span class="tap-area" data-type="toggleSubNav"></span>
+                    <div class="sub-navs">
+                        <a href="/shijuan/" class="sub-nav sub-item ">
+                            <span>同步教学</span>
+                        </a>
+                        <a href="/jdcs/" class="sub-nav sub-item ">
+                            <span>阶段测试</span>
+                        </a>
+                        <a href="/bk/" id="bk_a" class="sub-nav sub-item ">
+                            <span>高考备考</span>
+                        </a>
+                    </div>
+                </span>
+                        <a href="/shanghaoke/" data-theme="" class="item new ">上好课</a>
+                
+                <span class="item smart-nav has-sub zhineng-nav ">
+                    <b>智能组卷</b>
+                    <span class="tap-area" data-type="toggleSubNav"></span>
+                    <div class="sub-navs">
+                        <a href="/zhineng/" class="sub-nav sub-item zhineng-sub-nav ">
+                            <span>智能组卷</span>
+                        </a>
+                        <a href="/basic/" id="myXiMu" class="sub-nav sub-item ximubiao-sub-nav ">
+                            <span>细目表组卷</span>
+                        </a>
+                          <a href="https://ai.xkw.com/zj/" id="AiSub" class="sub-nav sub-item ai-sub-nav ">
+                            <span>AI小博士</span>
+                        </a>
+                    </div>
+                </span>
+                
+                    <a href="javascript: void 0" id="hundredNav" class="item ">名校卷</a>
+
+                            <a href="/gkzq/" class="item ">高考</a>
+
+                            <a href="/thematiclist/" class="item spec-nav ">
+                                <span>精品专辑</span>
+                            </a>
+
+
+                <span data-io-click="tracker" data-type="gotoSchoolBase" class="item has-sub switch switch_tk_li xyio-nav-xiaoben_tk">    <b>校本题库</b>    <span class="tap-area" data-type="toggleSubNav"></span>    <div class="sub-navs"><a id="usertk_li" data-type="gotoPersonalTK" href="/usertk/zsd" class="sub-nav sub-item xyio-nav-user_tk" title="个人题库"><span data-type="gotoPersonalTK">个人题库</span></a></div></span>
+
+
+                <a href="https://yuejuan.xkw.com/third/xep?xep_flag=1" target="_blank" id="readpaper" class="item " hidden="">
+                    阅卷
+                </a>
+            </nav>
+            <a href="/wode/" class="item wode-item ">我的</a>
+        </div>
+    </div>
+    <!-- 侧边运营位 -->
+    <a href="http://xkw.com/EBuybyri" class="aside-pop activity-btn" data-aop-pos="pc_home_rightbubble" title="" target="_blank">
+        <img alt="" src="https://oss-zujuan.oss-cn-hangzhou.aliyuncs.com/zujuanUpload/image/2026-07/banner/75a579cc25a0422fabcfe5c0ec3892b3.png">
+    </a>
+</nav>
+
+<div class="ai-entry">
+    <a href="https://ai.xkw.com/zj/" target="_blank" class="entry-link xyio-ai_enter"></a>
+    
+</div>
+
+
+</header>
+
+    
+<article class="page disabled-page">
+    <div class="wrapper">
+        <div class="pic-box">
+            <img src="https://static.zxxk.com/zujuan/zjms/zjxt/static/assets/down-tip-bg.png" alt="由于您的访问过于频繁，已被封禁。">
+        </div>
+            <p class="msg-line">
+                <span>您的用户编号：</span>
+                <b>23251919</b>
+                (请完成验证)
+            </p>
+            <p class="msg-line">账号行为异常，已被封禁。</p>
+            <p class="msg-line">安全使用提醒：请规范使用用户权益，禁止将我方内容转载或商用。</p>
+    </div>
+</article>
+
+
+    
+<!--右侧固定位置快捷导航-->
+<div class="fixed-nav alpha">
+    <div data-type="closeBasket" class="bg-mask"></div>
+    <div data-type="closeBasket" class="fn-box">
+        <div class="wrapper">
+            <div class="basket-nav">
+                <div title="试题篮" data-action="quesBasketNav" data-io-click="tracker" data-type="quesBasketNav" class="quest-basket-nav xyio-basket_open" rel="nofollow">
+                    <i class="icon icon-ziyuanlan"></i>
+                    <em>试题篮</em>
+                    <span id="quescount2" class="sum-txt">0</span>
+                </div>
+                <a href="javascript:void 0;" data-type="recentCollect" class="recent-collect">最近收藏</a>
+                <a href="javascript:void 0;" data-type="recentDownload" class="recent-download">最近下载</a>
+                <a href="javascript:void 0;" data-type="closeBasket" class="close-basket">收起&gt;&gt;</a>
+            </div>
+
+            <div class="help-nav">
+                <a href="javascript:void 0;" data-action="toggleOpen" class="toggle-btn">
+                    <em data-type="toggleOpen">收起</em>
+                </a>
+                <a href="https://official.zxxk.com/client/RCEInstall.zip" title="识别端" class="item yuejuanapp" rel="nofollow" hidden="">
+                    <i class="icon icon-yuejuanapp"></i>
+                    <em>识别端</em>
+                </a>
+                <a href="javascript:void(0);" title="客服" data-action="openKST" class="item service-online" rel="nofollow">
+                    <i class="icon icon-zaixiankefu"></i>
+                    <em>客服</em>
+                </a>
+                <a href="javascript:void 0;" title="反馈" class="item video-intro" data-action="doFeedback" rel="nofollow">
+                    <i class="icon icon-fankui"></i>
+                    <em>反馈</em>
+                </a>
+                        <a href="javascript:void 0" class="item weixin" title="公众号">
+                            <i class="icon icon-gongzhonghao"></i>
+                            <em>公众号</em>
+                            <span class="weixin-qr">
+                                <img src="https://static.zxxk.com/zujuan/zjms/static/assets/weixin.jpg" alt="官方微信" title="官方微信">
+                            </span>
+                        </a>
+                <a href="javascript:void 0" class="item weixin app-diversion" data-aop-pos="pc_home_right_help_nav_app_diversion" title="APP">
+                    <i class="icon icon-APP-hui"></i>
+                    <em>APP</em>
+                    <span class="weixin-qr">
+                        <img alt="官方APP" title="官方APP" src="https://oss-zujuan.oss-cn-hangzhou.aliyuncs.com/zujuanUpload/image/2024-03/banner/ed77a2d634c647a193ee8b399c644cc3.png">
+                    </span>
+                </a>
+                <a href="javascript:void 0" class="item gotop-btn" data-action="gotoTop" title="顶部">
+                    <i class="icon icon-zhiding"></i>
+                    <em>顶部</em>
+                </a>
+            </div>
+        </div>
+        <div class="quest-basket"></div>
+        <!-- <div class="quest-basket-loading">
+            <div class="wrapper">
+                <div class="pic">
+                    <img src="https://static.zxxk.com/zujuan/assets/site_basket_loading.gif" alt="">
+                </div>
+                <div class="txt">试题加载中…</div>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div hidden="" class="que-detail-pos">
+    <div class="ques-detail-pop">
+        <div class="ques-cnt"></div>
+        <div class="ctrl-bar">
+            <a href="javascript:void 0" target="_blank" class="btn detail-btn">查看更多详情</a>
+            
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="footer-cnt">
+            <p>
+                ©2007-2026学科网（北京）股份有限公司版权所有&nbsp;&nbsp;题库自主建设&nbsp;&nbsp;
+                <a href="https://beian.miit.gov.cn/ " target="_blank" class="anchor-font5">
+                    京ICP备12013499号-24
+                </a>
+                <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11011102001266" rel="noreferrer" class="anchor-font5 beian" target="_blank">京公网安备11011102001266号</a>
+            </p>
+            <p>
+                举报电话：400-102-2000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;举报邮箱：
+                <span class="mail">
+                    <img src="https://static.zxxk.com/zujuan/zjms/static/assets/mail_1024.png">
+                </span>&nbsp;&nbsp;&nbsp;
+                <a href="http://kf.zujuan.xkw.com/announcedetail/428" target="_blank" class="anchor-font5">
+                    版权异议
+                </a>
+            </p>
+            <p>组卷网拥有组卷网、组卷商标，若您发现其他网站违规使用，欢迎您向我们举报</p>
+        </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OW1CShgKKlJoY-XmIlJWPmh-MhNZ359RgbyerQ6-yjDmDOAQWQzINxJzQcXdSlEzkhDMle6dSGW-0tL_gQQxI_SwSVRkkX6SKjxnI33mgtWJrHRb7DztqnrR_VwmnzyywGCZ9y-CsvvnhDDK7Lv0c9oWUOT0Ie_Ud6OhUdv0zlOE_7VdbDViPg0GJQ9RYlprw">
+    </div>
+
+    <script src="/zujuan-api/user?t=639191971604137639"></script>
+      <script src="https://static.zxxk.com/zujuan/libs/libs.js?v=1783070288895"></script>
+  <script src="https://static.zxxk.com/zujuan/libs/storageManager.js?v=1783070288895"></script>
+  
+<script>
+    var pageToken = $('[name=__RequestVerificationToken]').val();
+    $(function () {
+        var util = tklib.require('util')
+        //全局设置header
+        tklib.request.tokenKey = 'RequestVerification';
+        tklib.request.token = pageToken;
+
+        // 检查试题篮
+
+
+        // tklib.hooks.register('fixedNavEnter', function (env) {
+        //     // { window, $, tklib, require, mod }
+        //     ZujuanCom.quesBasketOperation.initBasketHtml(env);
+
+        // });
+
+        // //试题篮隐藏记忆功能
+        // tklib.hooks.register('sideBarHide', function (tools) {
+        //     Cookie.Set("sideBar", false, 1)
+        // });
+        // tklib.hooks.register('sideBarShow', function (tools) {
+        //     Cookie.Set("sideBar", true, 1)
+        // });
+
+        // tklib.hooks.register('checkBasketHide', function () {
+        //     var sideBar = Cookie.Get("sideBar");
+        //     var fixedNav$ = $('.fiexd-nav');
+        //     var show = util.isNullOrEmpty(sideBar) ? true : (sideBar === "true");
+        //     fixedNav$.css({
+        //         right: (show ? -470 : -530)
+        //     });
+        //     util.showEl(fixedNav$);
+        //     return show;
+        // });
+
+
+
+        var devicePixelRatio = (window.devicePixelRatio || 1);
+
+        if (devicePixelRatio > 1 && Cookie.Get('devicePixelRatio') == null) {
+            Cookie.Set("devicePixelRatio", devicePixelRatio, 1);
+        }
+
+        var openSchoolServiceHref = sso_url + '/login?bindingService=true&service=' + encodeURIComponent(location.origin + '/logout2login?return_url=' + encodeURIComponent(location.href));
+        $('a.school-service').attr('href', openSchoolServiceHref);
+    })
+</script>
+
+  <script src="https://cdn5.xkw.com/zujuan/zjms/static/common/common.js?v=1783070288896"></script>
+  <script src="https://geetest.xkw.com/static/tools/gt.js?v=1783070288896" async=""></script>
+  <script src="https://cdn6.xkw.com/zujuan/zjms/static/libs/xkwTracker.js?v=1783070288896" async=""></script>
+  <script src="https://cdn7.xkw.com/zujuan/zjms/static/activity/aop.js?v=1783070288896" async=""></script>
+  <script src="https://static.zxxk.com/zujuan/libs/onKST.js?v=1783070288896" async=""></script>
+  <script src="https://static.zxxk.com/zujuan/libs/baidu_statistics.js?v=1783070288896" async=""></script>
+  <script src="https://cdn5.xkw.com/zujuan/zjms/static/common/xepPop.js?v=1783070288896" async=""></script>
+  
+<!--[if lte IE 9]>
+    <style>
+      .low-browser { display: none; overflow: hidden; width: 100%; height: 236px; background: rgba(0,0,0,0.76); -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none; position:fixed;left:0;bottom:0;z-index:9999; }
+      .low-browser .wrapper { min-width: 1024px; max-width: 1200px; height: 100%; margin: 0 auto; font-size: 0; position:relative;box-sizing: border-box;padding:44px 0; }
+      .low-browser .wrapper >.box { box-sizing: border-box; }
+      .low-browser .title-txt { font-size: 18px; font-weight: 500; color: #FFFFFF; line-height: 18px;text-align: center;margin-bottom:20px; }
+      .low-browser .txt { font-size: 14px; font-weight: 400; color: #FFFFFF; line-height: 14px;text-align: center;margin-bottom: 32px; }
+      .low-browser .browser-list { display: block; text-align: center; }
+      .low-browser .browser-list .browser-item { display: inline-block; vertical-align: middle; width: 178px; height: 64px;line-height:64px;font-size: 0;background: rgba(0, 0, 0, 0.3);border-radius: 8px;border: 1px solid #808080; }
+      .low-browser .browser-list .browser-item:hover { opacity: 0.5; }
+      .low-browser .browser-list .browser-item>i, .low-browser .browser-list .browser-item>div { display: inline-block;vertical-align: middle;line-height:1;  }
+      .low-browser .browser-list .browser-item>i { width: 42px; height: 42px;margin-right: 16px; background:url(https://static.zxxk.com/zujuan/ms/static/assets/low_browser.png) no-repeat; }
+      .low-browser .browser-list .browser-item.chrome {margin-right: 40px;}
+      .low-browser .browser-list .browser-item.chrome>i {width:42px;height:42px;background-position: -8px -8px;}
+      .low-browser .browser-list .browser-item.firefox>i {width:44px;height:46px;background-position: -55px -8px;}
+      .low-browser .browser-list .browser-item>div {text-align: left;}
+      .low-browser .browser-list .browser-item>div>span {display:block;font-size: 12px;color: #FFFFFF;text-align: left;margin-bottom:8px;}
+      .low-browser .browser-list .browser-item>div>div {display:block;font-size: 14px;color: #FFFFFF;text-align: left;}
+      #closeLowB { display: inline-block; width: 22px; height: 22px; background: url(https://static.zxxk.com/zujuan/ms/static/assets/low_browser.png) no-repeat -104px -9px; position:absolute;top:12px;right:32px; }
+      #closeLowB:hover {opacity: 0.5;}
+    </style>
+    <div id="lowBrowser" class="low-browser"><div class="wrapper"><div class="box"><div class="title-txt">组卷网温馨提示</div><p class="txt">当前的浏览器版本过低，为了给您提供更好的组卷服务，推荐使用以下浏览器</p><div class="browser-list"><a class="browser-item chrome" target="_blank" href="https://www.baidu.com/s?wd=Google Chrome 网络浏览器得益于 Google 智能工具，Chrome 现在更易用、更安全、更快速。"><i></i><div><span>下载浏览器</span><div>谷歌浏览器</div></div></a><a class="browser-item firefox" target="_blank" href="https://www.baidu.com/s?wd=Firefox 火狐浏览器 - 全新、安全、快速 | 官方最新下载"><i></i><div><span>下载浏览器</span><div>火狐浏览器</div></div></a></div></div><a id="closeLowB" title="关闭" href="javascript:void 0"></a></div></div>
+    <script>
+      (function($) {
+        'use strict';
+        function showLowBrowser() {
+            var lowBrowser$ = $('#lowBrowser');
+            var closeLowB$ = $('#closeLowB');
+            var body$ = $(document.body);
+            body$.prepend(lowBrowser$);
+            lowBrowser$.show();
+            if (closeLowB$ && closeLowB$.length > 0) {
+                closeLowB$.on('click', function(e) {
+                    lowBrowser$.hide();
+                });
+            }
+        }
+        function initLowBrowser() {
+            showLowBrowser();
+        }
+        $(initLowBrowser);
+      })(jQuery);
+    </script>
+    <![endif]-->
+
+
+
+    
+    <script>
+        (function (window, $, tklib, require) {
+            'use strict';
+            var ui;
+            var phoneRiskPop = tklib.require('RiskCtrlPhonePop');
+            var imgRiskPop = tklib.require('RiskCtrlIPPop');
+            var pageObj = {
+                limitLevel: 8,
+                uri: '/gzwl/zj136248/',
+                clientType:'user',
+                sss: 0
+            };
+            $(function () {
+                console.log(pageObj.limitLevel)
+                switch (pageObj.limitLevel) {
+                    case 7:
+                        //图片挑战
+                        imgRiskPop.scrollValidate(pageObj.uri,pageObj.limitLevel,pageObj.clientType);
+                        break;
+                    case 8:
+                        //手机号挑战
+                        phoneRiskPop.show(userinfo.UserPhone.substring(0, 3) + "****" + userinfo.UserPhone.substring(7, 11), pageObj.uri, pageObj.limitLevel,pageObj.clientType);
+                        break;
+                }
+            });
+        })(window, jQuery, tklib, tklib.require);
+    </script>
+
+
+
+<dialog class="tk-dialog showDialog" id="tkDialogBox" data-sysid="ef2c6fedb6d718-2b9421315044c4"><div class="wrapper" data-el="mask"><div class="box risk-ctrl-pop-box"><div class="dialog__cnt" style="background: transparent;"><div class="risk-ctrl-pop" data-pop="" data-sys-id="2dc619bef540ac-c2a7f0bc440a3"><div class="title-box"><div class="title-txt">本次操作需要验证码</div></div><div class="mobile">158****0582</div><div class="code-box"><input type="text" maxlength="6" class="code-input" placeholder="请输入验证码"><a href="javascript:void 0" class="code-btn" data-type="getCode">发送验证码</a><span hidden="" class="code-btn disabled time-count" data-type="timeCount">60s</span><a hidden="" href="javascript:void 0" class="code-btn retry-send" data-type="retrySend">重新发送</a></div><div class="ctrl-box"><button class="confirm-btn disabled" data-type="sendCode">确认</button></div></div></div></div></div></dialog><iframe src="https://p.xkw.com/xep/index.html" height="0" width="0" id="xep_iframe" style="display: none;"></iframe><div class="xep-root xep-root-hide" data-io-hover="tracker"><div class="xep-entrance-tip" style="background-image: url(&quot;https://p.xkw.com/xep/images/service_background.svg&quot;);"><div class="xep-tip-focus"><div class="xep-focus-header"><span class="xep-focus-title">快捷入口</span><img class="xep-tip-img" src="https://p.xkw.com/xep/images/arrow.svg"></div><div class="xep-focus-services"><div class="xep-services-grid"><div class="xep-service-item" data-url="https://p.xkw.com/xuanti?xep_flag=1" data-io-click="tracker" data-io-hover="tracker"><div class="xep-service-icon-open exam-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div><div class="xep-service-content"><span class="xep-service-title">选题组卷</span><span class="xep-service-subtitle">智能选题 灵活组卷</span></div><div class="xep-service-enter"><span>进入</span><div class="xep-service-arrow" style="background-image: url(&quot;https://p.xkw.com/xep/images/services/arrow.svg&quot;);"></div></div></div><div class="xep-service-item" data-url="https://p.xkw.com/job/list?xep_flag=1" data-io-click="tracker" data-io-hover="tracker"><div class="xep-service-icon-open homework-manage-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div><div class="xep-service-content"><span class="xep-service-title">作业管理</span><span class="xep-service-subtitle">布置作业 错题管理</span></div><div class="xep-service-enter"><span>进入</span><div class="xep-service-arrow" style="background-image: url(&quot;https://p.xkw.com/xep/images/services/arrow.svg&quot;);"></div></div></div><div class="xep-service-item" data-url="https://ejt.xkw.com/readpaperland" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-not-open exam-paper-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div><div class="xep-service-content"><span class="xep-service-title">考试阅卷</span><span class="xep-service-subtitle">答题卡 考试报告</span></div><div class="xep-service-enter xep-service-trial"><span>去试用</span><div class="xep-service-arrow" style="background-image: url(&quot;https://p.xkw.com/xep/images/services/arrow.svg&quot;);"></div></div></div><div class="xep-service-item" data-url="https://ejt.xkw.com/readpaperland" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-not-open analysis-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div><div class="xep-service-content"><span class="xep-service-title">学情分析</span><span class="xep-service-subtitle">挖掘学习特点</span></div><div class="xep-service-enter xep-service-trial"><span>去试用</span><div class="xep-service-arrow" style="background-image: url(&quot;https://p.xkw.com/xep/images/services/arrow.svg&quot;);"></div></div></div></div><div class="xep-service-item xep-service-item-main" data-url="https://p.xkw.com" data-io-click="tracker" data-io-hover="tracker"><div class="xep-service-icon-open smart-teaching-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div><div class="xep-service-content"><span class="xep-service-title">智慧教学平台</span><span class="xep-service-subtitle">备课找资料 找试卷 组卷 考试阅卷 一站式解决</span></div><div class="xep-service-enter"><span>进入</span><div class="xep-service-arrow" style="background-image: url(&quot;https://p.xkw.com/xep/images/services/arrow.svg&quot;);"></div></div></div></div></div><div class="xep-tip-more"><div class="xep-tip-divide"></div><div class="xep-recommend-container"><div class="xep-recommend-title">专属推荐</div><div class="xep-recommend-grid"><div class="xep-recommend-item" data-url="https://wxt.xkw.com/zyk/books?xep_flag=1" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><div class="xep-recommend-icon-open resource-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div></div><span class="xep-recommend-item-title">资源库</span></div><div class="xep-recommend-item" data-url="https://beike.xkw.com/index.html#/third/iclass?xep_flag=1&amp;appId=86b4faf40c4847ee" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><div class="xep-recommend-icon-open prepare-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div></div><span class="xep-recommend-item-title">备课空间</span></div><div class="xep-recommend-item" data-url="https://wxt.xkw.com/introduce/lab.html" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><span class="xep-recommend-trial-label">去试用</span><div class="xep-recommend-icon-not-open simulation-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div></div><span class="xep-recommend-item-title">仿真实验</span></div><div class="xep-recommend-item" data-url="https://wxt.xkw.com/introduce/read.html" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><span class="xep-recommend-trial-label">去试用</span><div class="xep-recommend-icon-not-open ai-reading-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div></div><span class="xep-recommend-item-title">AI阅读</span></div><div class="xep-recommend-item" data-url="https://wxt.xkw.com/introduce/sci.html" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><span class="xep-recommend-trial-label">去试用</span><div class="xep-recommend-icon-not-open ai-science-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div></div><span class="xep-recommend-item-title">AI科学</span></div><div class="xep-recommend-item" data-url="https://wxt.xkw.com/shk/books?xep_flag=1" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><div class="xep-recommend-icon-open good-lecture-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services-org.svg&quot;);"></div></div><span class="xep-recommend-item-title">上好课</span></div><div class="xep-recommend-item" data-url="https://kehou.xkw.com" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><span class="xep-recommend-trial-label">去试用</span><div class="xep-recommend-icon-not-open homework-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div></div><span class="xep-recommend-item-title">课后服务</span></div><div class="xep-recommend-item" data-url="https://yx.xkw.com/?v=xkw" data-io-click="tracker" data-io-hover="tracker"><div class="xep-recommend-icon-wrapper"><span class="xep-recommend-trial-label">去试用</span><div class="xep-recommend-icon-not-open research-icon" style="background-image: url(&quot;https://p.xkw.com/xep/images/services.svg&quot;);"></div></div><span class="xep-recommend-item-title">研修学习</span></div></div></div></div></div><div class="xep-triangle"></div></div></body><script src="https://static.zxxk.com/baseapp/xyio/tracker.js"></script><script id="xep-script" data-target-id="ejt-xep" data-berth-id="ejt-xep-berth" data-app-id="yjt" data-z-index="900" async="true" src="https://p.xkw.com/xep/js/xep-shortcut.js?1783571558624"></script></html>

@@ -1,0 +1,34 @@
+[\r
+    {\r
+        \"resource\": \"ruoyi-auth\",\r
+        \"count\": 500,\r
+        \"grade\": 1,\r
+        \"limitApp\": \"default\",\r
+        \"strategy\": 0,\r
+        \"controlBehavior\": 0\r
+    },\r
+	{\r
+        \"resource\": \"ruoyi-system\",\r
+        \"count\": 1000,\r
+        \"grade\": 1,\r
+        \"limitApp\": \"default\",\r
+        \"strategy\": 0,\r
+        \"controlBehavior\": 0\r
+    },\r
+	{\r
+        \"resource\": \"ruoyi-gen\",\r
+        \"count\": 200,\r
+        \"grade\": 1,\r
+        \"limitApp\": \"default\",\r
+        \"strategy\": 0,\r
+        \"controlBehavior\": 0\r
+    },\r
+	{\r
+        \"resource\": \"ruoyi-job\",\r
+        \"count\": 300,\r
+        \"grade\": 1,\r
+        \"limitApp\": \"default\",\r
+        \"strategy\": 0,\r
+        \"controlBehavior\": 0\r
+    }\r
+]

@@ -6,10 +6,19 @@ import errorCode from '@/utils/errorCode'
 import { tansParams, blobValidate } from "@/utils/ruoyi"
 import cache from '@/plugins/cache'
 import { saveAs } from 'file-saver'
+import { ADMIN_LOGIN, PORTAL_LOGIN, isPortalPath } from '@/constants/routes'
 
 let downloadLoadingInstance
 // 是否显示重新登录
 export let isRelogin = { show: false }
+
+function resolveReloginUrl() {
+  const redirect = encodeURIComponent(window.location.pathname + window.location.search)
+  if (isPortalPath(window.location.pathname)) {
+    return `${PORTAL_LOGIN}?redirect=${redirect}`
+  }
+  return `${ADMIN_LOGIN}?redirect=${redirect}`
+}
 
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 // 创建axios实例
@@ -83,12 +92,13 @@ service.interceptors.response.use(res => {
     return res.data
   }
   if (code === 401) {
-    if (!isRelogin.show) {
+    const skipRelogin = res.config && res.config.headers && (res.config.headers.isToken === false || res.config.headers.skipRelogin === true)
+    if (!skipRelogin && !isRelogin.show) {
       isRelogin.show = true
       MessageBox.confirm('登录状态已过期，您可以继续留在该页面，或者重新登录', '系统提示', { confirmButtonText: '重新登录', cancelButtonText: '取消', type: 'warning' }).then(() => {
         isRelogin.show = false
         store.dispatch('LogOut').then(() => {
-          location.href = '/index'
+          location.href = resolveReloginUrl()
         })
       }).catch(() => {
         isRelogin.show = false
@@ -96,11 +106,22 @@ service.interceptors.response.use(res => {
     }
     return Promise.reject('无效的会话，或者会话已过期，请重新登录。')
   } else if (code === 500) {
-    Message({ message: msg, type: 'error' })
+    const skipNotify = res.config && res.config.headers && res.config.headers.skipNotify === true
+    if (!skipNotify) {
+      Message({ message: msg, type: 'error' })
+    }
     return Promise.reject(new Error(msg))
   } else if (code === 601) {
     Message({ message: msg, type: 'warning' })
     return Promise.reject('error')
+  } else if (code === 402) {
+    const skipNotify = res.config && res.config.headers && res.config.headers.skipNotify === true
+    if (!skipNotify) {
+      Message({ message: msg, type: 'warning' })
+    }
+    const err = new Error(msg)
+    err.code = 402
+    return Promise.reject(err)
   } else if (code !== 200) {
     Notification.error({ title: msg })
     return Promise.reject('error')

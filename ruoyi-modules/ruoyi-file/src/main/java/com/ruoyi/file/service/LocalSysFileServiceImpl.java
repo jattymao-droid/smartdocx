@@ -1,7 +1,7 @@
 package com.ruoyi.file.service;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import com.ruoyi.common.core.utils.StringUtils;
@@ -13,8 +13,8 @@ import com.ruoyi.file.utils.FileUploadUtils;
  * 
  * @author ruoyi
  */
-@Primary
 @Service
+@ConditionalOnProperty(name = "file.storage-type", havingValue = "local", matchIfMissing = true)
 public class LocalSysFileServiceImpl implements ISysFileService
 {
     /**

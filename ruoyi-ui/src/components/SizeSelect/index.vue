@@ -46,7 +46,7 @@ export default {
 
       this.$nextTick(() => {
         this.$router.replace({
-          path: '/redirect' + fullPath
+          path: '/admin/redirect' + fullPath
         })
       })
     }

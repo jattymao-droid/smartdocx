@@ -1,0 +1,4991 @@
+{
+  "source_url": "https://zujuan.xkw.com/gzry/zj191126/",
+  "crawled_at": "2026-07-09T05:02:37.708018+00:00",
+  "subject": {
+    "code": "gzry",
+    "label": "高中日语",
+    "school_stage": "高中",
+    "menu_title": "高中日语",
+    "subject_id": "33",
+    "phase": "senior",
+    "nav_name": "日语"
+  },
+  "versions": [
+    {
+      "version_id": "191122",
+      "name": "人教版",
+      "url_template": "/gzry/zj{0}/",
+      "textbooks": [
+        {
+          "zj_id": "191126",
+          "name": "第一册",
+          "url": "https://zujuan.xkw.com/gzry/zj191126/",
+          "chapter_count": 27,
+          "chapters": [
+            {
+              "zj_id": "191144",
+              "label": "第1課 おじぎ",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191144",
+              "children": [
+                {
+                  "zj_id": "190668",
+                  "label": "N的 带有某种性质、符合某种规律",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk190668",
+                  "children": []
+                },
+                {
+                  "zj_id": "190193",
+                  "label": "ます形",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk190193",
+                  "children": []
+                },
+                {
+                  "zj_id": "190425",
+                  "label": "~合う 表相互动作或共同进行",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk190425",
+                  "children": []
+                },
+                {
+                  "zj_id": "190832",
+                  "label": "にとって从某人物或组织的视角或立场做出评价或判断",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk190832",
+                  "children": []
+                },
+                {
+                  "zj_id": "190284",
+                  "label": "で 表示时间、空间范围",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk190284",
+                  "children": []
+                },
+                {
+                  "zj_id": "191079",
+                  "label": "描写句    （形容词、形容动词作谓语）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191144/ctk191079",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191145",
+              "label": "第2課 部活の選択",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191145",
+              "children": [
+                {
+                  "zj_id": "190670",
+                  "label": "なくてもいい 不做~也没关系",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191145/ctk190670",
+                  "children": []
+                },
+                {
+                  "zj_id": "190665",
+                  "label": "Vてはいけない=てはだめ・ていけない・じゃいけない・ちゃいけない禁止做~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191145/ctk190665",
+                  "children": []
+                },
+                {
+                  "zj_id": "190775",
+                  "label": "Vなくてはいけない・なければいけない・ないといけない 不做~不行",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191145/ctk190775",
+                  "children": []
+                },
+                {
+                  "zj_id": "190870",
+                  "label": "～始める 开始",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191145/ctk190870",
+                  "children": []
+                },
+                {
+                  "zj_id": "190462",
+                  "label": "おかげ・おかげで・おかげだ 表原因，因为，多亏~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191145/ctk190462",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191146",
+              "label": "第3課 自分にできるボランティア活動",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191146",
+              "children": [
+                {
+                  "zj_id": "190591",
+                  "label": "A1くする",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191146/ctk190591",
+                  "children": []
+                },
+                {
+                  "zj_id": "190541",
+                  "label": "けど・けれど ・けれども 转折",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191146/ctk190541",
+                  "children": []
+                },
+                {
+                  "zj_id": "190770",
+                  "label": "なら 假定条件，后接主张",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191146/ctk190770",
+                  "children": []
+                },
+                {
+                  "zj_id": "190464",
+                  "label": "~終わる 结束",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191146/ctk190464",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191147",
+              "label": "第4課 健康的な生活習慣",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191147",
+              "children": [
+                {
+                  "zj_id": "190830",
+                  "label": "について 动作、行为涉及的主题、范围等",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190830",
+                  "children": []
+                },
+                {
+                  "zj_id": "190559",
+                  "label": "~込む思想、状态的持续、加深",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190559",
+                  "children": []
+                },
+                {
+                  "zj_id": "190558",
+                  "label": "~込む 行为动作的深入“进入”",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190558",
+                  "children": []
+                },
+                {
+                  "zj_id": "190903",
+                  "label": "前に 在~之前",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190903",
+                  "children": []
+                },
+                {
+                  "zj_id": "190776",
+                  "label": "なければならない／ねばならぬ 必须",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190776",
+                  "children": []
+                },
+                {
+                  "zj_id": "190635",
+                  "label": "～出す　表示突然发生某一动作、状态等",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190635",
+                  "children": []
+                },
+                {
+                  "zj_id": "190694",
+                  "label": "でも 前接疑问词、不定词，全面或全部的肯定和认可",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191147/ctk190694",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191148",
+              "label": "综合复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191148",
+              "children": []
+            }
+          ]
+        },
+        {
+          "zj_id": "191128",
+          "name": "第二册",
+          "url": "https://zujuan.xkw.com/gzry/zj191128/",
+          "chapter_count": 24,
+          "chapters": [
+            {
+              "zj_id": "191169",
+              "label": "第5課 町案内",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191169",
+              "children": [
+                {
+                  "zj_id": "190856",
+                  "label": "Sのか 是~吧，用于自言自语的提问",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191169/ctk190856",
+                  "children": []
+                },
+                {
+                  "zj_id": "191004",
+                  "label": "Aは私・うちの人に~てくれる(A为我或我方做某事）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191169/ctk191004",
+                  "children": []
+                },
+                {
+                  "zj_id": "191003",
+                  "label": "AはBに~てあげる (A为B做某事)",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191169/ctk191003",
+                  "children": []
+                },
+                {
+                  "zj_id": "191005",
+                  "label": "AはBに~ていただく  (A让/请求B为自己做某事）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191169/ctk191005",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191170",
+              "label": "第6課 年越し",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191170",
+              "children": [
+                {
+                  "zj_id": "190219",
+                  "label": "Vておく 表示准备、实现做某事;放任不管",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191170/ctk190219",
+                  "children": []
+                },
+                {
+                  "zj_id": "190467",
+                  "label": "か~ないか",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191170/ctk190467",
+                  "children": []
+                },
+                {
+                  "zj_id": "190660",
+                  "label": "AはBに~てやる  (A为B做某事)",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191170/ctk190660",
+                  "children": []
+                },
+                {
+                  "zj_id": "190452",
+                  "label": "うちに 趁着~，正在~时候",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191170/ctk190452",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191171",
+              "label": "第7課 三つの節約",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191171",
+              "children": [
+                {
+                  "zj_id": "190865",
+                  "label": "のに 用在句尾，省略后句",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190865",
+                  "children": []
+                },
+                {
+                  "zj_id": "190624",
+                  "label": "ため・ために 表示客观原因、理由",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190624",
+                  "children": []
+                },
+                {
+                  "zj_id": "190945",
+                  "label": "やすい 容易~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190945",
+                  "children": []
+                },
+                {
+                  "zj_id": "190485",
+                  "label": "から 判断的出发点、依据",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190485",
+                  "children": []
+                },
+                {
+                  "zj_id": "190622",
+                  "label": "たことがある　曾~过",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190622",
+                  "children": []
+                },
+                {
+                  "zj_id": "190815",
+                  "label": "にくい 难以~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190815",
+                  "children": []
+                },
+                {
+                  "zj_id": "190644",
+                  "label": "~続く／続ける 表继续某动作、作用等",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191171/ctk190644",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191172",
+              "label": "第8課 ごみ問題",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191172",
+              "children": [
+                {
+                  "zj_id": "190701",
+                  "label": "と恒常性状态、真理或习惯",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191172/ctk190701",
+                  "children": []
+                },
+                {
+                  "zj_id": "190553",
+                  "label": "ことにする 主观决定",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191172/ctk190553",
+                  "children": []
+                },
+                {
+                  "zj_id": "190556",
+                  "label": "ことになる 经过推论得出的结果",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191172/ctk190556",
+                  "children": []
+                },
+                {
+                  "zj_id": "190707",
+                  "label": "SというN",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191172/ctk190707",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191173",
+              "label": "综合复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191173",
+              "children": []
+            }
+          ]
+        },
+        {
+          "zj_id": "191130",
+          "name": "第三册",
+          "url": "https://zujuan.xkw.com/gzry/zj191130/",
+          "chapter_count": 25,
+          "chapters": [
+            {
+              "zj_id": "191194",
+              "label": "第9課  餃子",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191194",
+              "children": [
+                {
+                  "zj_id": "190710",
+                  "label": "Nの通り（とおり）・Vとおり・",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191194/ctk190710",
+                  "children": []
+                },
+                {
+                  "zj_id": "190951",
+                  "label": "Vように 为了~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191194/ctk190951",
+                  "children": []
+                },
+                {
+                  "zj_id": "190480",
+                  "label": "かどうか　意为“是否”",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191194/ctk190480",
+                  "children": []
+                },
+                {
+                  "zj_id": "190719",
+                  "label": "となる 成为~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191194/ctk190719",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191195",
+              "label": "第10課 鑑真精神の継承",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191195",
+              "children": [
+                {
+                  "zj_id": "190892",
+                  "label": "ほう 事物间的比较，进而说明某人或某物的所属类型",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190892",
+                  "children": []
+                },
+                {
+                  "zj_id": "190372",
+                  "label": "と同一主体相继进行的两个动作",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190372",
+                  "children": []
+                },
+                {
+                  "zj_id": "190718",
+                  "label": "として・としては 作为~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190718",
+                  "children": []
+                },
+                {
+                  "zj_id": "190880",
+                  "label": "ばかり表大概的程度、数量，意为“大约、左右”",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190880",
+                  "children": []
+                },
+                {
+                  "zj_id": "190657",
+                  "label": "ている　动作、作用的结果状态",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190657",
+                  "children": []
+                },
+                {
+                  "zj_id": "190645",
+                  "label": "つもり 表说话者意图、打算",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191195/ctk190645",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191196",
+              "label": "第11課 中国のアニメ",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191196",
+              "children": [
+                {
+                  "zj_id": "190207",
+                  "label": "被动助动词（物主）：AはBに物を～れる・られる（受害意识）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191196/ctk190207",
+                  "children": []
+                },
+                {
+                  "zj_id": "190955",
+                  "label": "ようになる 表示变化",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191196/ctk190955",
+                  "children": []
+                },
+                {
+                  "zj_id": "190901",
+                  "label": "Nっぽい/Vっぽい 表具备前面名词所标示的性质；前接动词表容易产生该行为",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191196/ctk190901",
+                  "children": []
+                },
+                {
+                  "zj_id": "190910",
+                  "label": "时间N+までに 截止点",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191196/ctk190910",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191197",
+              "label": "第12課 砂漠を緑に",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191197",
+              "children": [
+                {
+                  "zj_id": "190625",
+                  "label": "たら 确定条件，表动作先后顺序",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190625",
+                  "children": []
+                },
+                {
+                  "zj_id": "190623",
+                  "label": "ため ために　表目的",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190623",
+                  "children": []
+                },
+                {
+                  "zj_id": "190897",
+                  "label": "ほど 表比较的基准，常用“ほど~ない”形式",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190897",
+                  "children": []
+                },
+                {
+                  "zj_id": "190589",
+                  "label": "～すぎる 超出",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190589",
+                  "children": []
+                },
+                {
+                  "zj_id": "190552",
+                  "label": "ことがある 有时，往往",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190552",
+                  "children": []
+                },
+                {
+                  "zj_id": "190551",
+                  "label": "こと 表抽象事物、概念，使句子或词组名词化",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191197/ctk190551",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191198",
+              "label": "综合复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191198",
+              "children": []
+            }
+          ]
+        },
+        {
+          "zj_id": "191132",
+          "name": "选择性必修第一册",
+          "url": "https://zujuan.xkw.com/gzry/zj191132/",
+          "chapter_count": 38,
+          "chapters": [
+            {
+              "zj_id": "191217",
+              "label": "第1課 わたしの日本語学習",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191217",
+              "children": [
+                {
+                  "zj_id": "190666",
+                  "label": "Vてばかりいる・Nばかり・Vるばかり 总是，一味~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191217/ctk190666",
+                  "children": []
+                },
+                {
+                  "zj_id": "190695",
+                  "label": "でも 列举一个事项，暗示存在其他同类事项",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191217/ctk190695",
+                  "children": []
+                },
+                {
+                  "zj_id": "190313",
+                  "label": "し 列举两个或两个以上同类事项“も~し~も“",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191217/ctk190313",
+                  "children": []
+                },
+                {
+                  "zj_id": "190940",
+                  "label": "も～ば～も～／も~し~も表并列，即~又~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191217/ctk190940",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191218",
+              "label": "第2課 雨にも負けず",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191218",
+              "children": [
+                {
+                  "zj_id": "190628",
+                  "label": "たばかり 刚~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191218/ctk190628",
+                  "children": []
+                },
+                {
+                  "zj_id": "190601",
+                  "label": "ずに 不做前项而做后项",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191218/ctk190601",
+                  "children": []
+                },
+                {
+                  "zj_id": "190940",
+                  "label": "も～ば～も～／も~し~も表并列，即~又~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191218/ctk190940",
+                  "children": []
+                },
+                {
+                  "zj_id": "190206",
+                  "label": "被动助动词（受害）：AはBに～れる・られる（引起不愉快心情）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191218/ctk190206",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191219",
+              "label": "第3課 高齢化社会とわたしたち",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191219",
+              "children": [
+                {
+                  "zj_id": "190283",
+                  "label": "で 表示动作、作用的状态",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191219/ctk190283",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191220",
+              "label": "第4課 豊かな海",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191220",
+              "children": [
+                {
+                  "zj_id": "190481",
+                  "label": "かもしれない 表推测",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191220/ctk190481",
+                  "children": []
+                },
+                {
+                  "zj_id": "190207",
+                  "label": "被动助动词（物主）：AはBに物を～れる・られる（受害意识）",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191220/ctk190207",
+                  "children": []
+                },
+                {
+                  "zj_id": "190814",
+                  "label": "Nによる 通过~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191220/ctk190814",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191221",
+              "label": "第5課 火災の予防",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191221",
+              "children": [
+                {
+                  "zj_id": "191060",
+                  "label": "お／ご~する",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191221/ctk191060",
+                  "children": []
+                },
+                {
+                  "zj_id": "190696",
+                  "label": "でも 大致的类别范围，提出最低要求，提出建议语气",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191221/ctk190696",
+                  "children": []
+                },
+                {
+                  "zj_id": "190829",
+                  "label": "Nに対して／Nに対する　每~，表比例的基准",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191221/ctk190829",
+                  "children": []
+                },
+                {
+                  "zj_id": "190459",
+                  "label": "美化语 お・ご+N",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191221/ctk190459",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191222",
+              "label": "第6課 莫高窟",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191222",
+              "children": [
+                {
+                  "zj_id": "190771",
+                  "label": "なら 承接前面的话题",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191222/ctk190771",
+                  "children": []
+                },
+                {
+                  "zj_id": "190650",
+                  "label": "Sって传闻",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191222/ctk190650",
+                  "children": []
+                },
+                {
+                  "zj_id": "190299",
+                  "label": "に 表作用或状态变化的结果",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191222/ctk190299",
+                  "children": []
+                },
+                {
+                  "zj_id": "190677",
+                  "label": "てほしい 希望对方做~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191222/ctk190677",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191223",
+              "label": "第7課 賢い消費",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191223",
+              "children": [
+                {
+                  "zj_id": "190680",
+                  "label": "Vてくれませんか／せ・させてくれませんか",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191223/ctk190680",
+                  "children": []
+                },
+                {
+                  "zj_id": "190841",
+                  "label": "によって 方式、手段",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191223/ctk190841",
+                  "children": []
+                },
+                {
+                  "zj_id": "190679",
+                  "label": "Vてもらえませんか／せ・させてもらえませんか",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191223/ctk190679",
+                  "children": []
+                },
+                {
+                  "zj_id": "190881",
+                  "label": "ば ~ほど 越~越",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191223/ctk190881",
+                  "children": []
+                },
+                {
+                  "zj_id": "190245",
+                  "label": "推量：らしい  带有该有的特征",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191223/ctk190245",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191224",
+              "label": "第8課 タンチョウの保護",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191224",
+              "children": [
+                {
+                  "zj_id": "190244",
+                  "label": "推量：らしい 表示有根据的推测、判断",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191224/ctk190244",
+                  "children": []
+                },
+                {
+                  "zj_id": "191050",
+                  "label": "表示尊他助动词 　れる／られる",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191224/ctk191050",
+                  "children": []
+                },
+                {
+                  "zj_id": "190339",
+                  "label": "ぞ 男性专用，接终止形后。",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191224/ctk190339",
+                  "children": []
+                },
+                {
+                  "zj_id": "191052",
+                  "label": "お／ご~になる",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191224/ctk191052",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191225",
+              "label": "综合复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191225",
+              "children": []
+            }
+          ]
+        },
+        {
+          "zj_id": "191134",
+          "name": "选择性必修第二册",
+          "url": "https://zujuan.xkw.com/gzry/zj191134/",
+          "chapter_count": 38,
+          "chapters": [
+            {
+              "zj_id": "191244",
+              "label": "第9課  シリの奇跡",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191244",
+              "children": [
+                {
+                  "zj_id": "190648",
+                  "label": "~づらい 难以~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191244/ctk190648",
+                  "children": []
+                },
+                {
+                  "zj_id": "190678",
+                  "label": "Vてくださいませんか／せ・させてくださいませんか",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191244/ctk190678",
+                  "children": []
+                },
+                {
+                  "zj_id": "190659",
+                  "label": "Vていただけませんか／せ・させていただけませんか",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191244/ctk190659",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191245",
+              "label": "第10課 シルクロ一ドの昔と現在",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191245",
+              "children": [
+                {
+                  "zj_id": "190251",
+                  "label": "推量比况：ようだ 表示推测",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191245/ctk190251",
+                  "children": []
+                },
+                {
+                  "zj_id": "190526",
+                  "label": "~切る　动作内容彻底做干净",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191245/ctk190526",
+                  "children": []
+                },
+                {
+                  "zj_id": "190527",
+                  "label": "~切る 行为程度达到极致",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191245/ctk190527",
+                  "children": []
+                },
+                {
+                  "zj_id": "190906",
+                  "label": "まで 表超出普通范围，极端程度",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191245/ctk190906",
+                  "children": []
+                },
+                {
+                  "zj_id": "190358",
+                  "label": "からこそ 强调原因",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191245/ctk190358",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191246",
+              "label": "第11課 交通安全",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191246",
+              "children": [
+                {
+                  "zj_id": "190871",
+                  "label": "はず 根据客观情况推断的结果，常用「はずだ 」",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191246/ctk190871",
+                  "children": []
+                },
+                {
+                  "zj_id": "190606",
+                  "label": "せいで・せいか ~的缘故",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191246/ctk190606",
+                  "children": []
+                },
+                {
+                  "zj_id": "190485",
+                  "label": "から 判断的出发点、依据",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191246/ctk190485",
+                  "children": []
+                },
+                {
+                  "zj_id": "190872",
+                  "label": "はずがない 不可能",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191246/ctk190872",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191247",
+              "label": "第12課 モノのインタ一ネツト",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191247",
+              "children": [
+                {
+                  "zj_id": "191018",
+                  "label": "させてください　请让我",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191247/ctk191018",
+                  "children": []
+                },
+                {
+                  "zj_id": "190572",
+                  "label": "さえ~ば／さえ~たら 只要~就",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191247/ctk190572",
+                  "children": []
+                },
+                {
+                  "zj_id": "191014",
+                  "label": "使役态+授受关系",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191247/ctk191014",
+                  "children": []
+                },
+                {
+                  "zj_id": "191059",
+                  "label": "自谦语表达句式",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191247/ctk191059",
+                  "children": []
+                },
+                {
+                  "zj_id": "190571",
+                  "label": "さえ 表举例，低程度极端举例",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191247/ctk190571",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191248",
+              "label": "第13課  十年後の自分",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191248",
+              "children": [
+                {
+                  "zj_id": "190728",
+                  "label": "たところ（が）～た・だった 表吃惊、意外，做了~却",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191248/ctk190728",
+                  "children": []
+                },
+                {
+                  "zj_id": "190971",
+                  "label": "わけだ 表客观常理，当然~",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191248/ctk190971",
+                  "children": []
+                },
+                {
+                  "zj_id": "190379",
+                  "label": "くらい 表客观叙述状态达到的程度，意为“像~样的”",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191248/ctk190379",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191249",
+              "label": "第14課 ひと 朝だけの朝顔",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191249",
+              "children": [
+                {
+                  "zj_id": "191063",
+                  "label": "特殊的自谦动词",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191249/ctk191063",
+                  "children": []
+                },
+                {
+                  "zj_id": "191055",
+                  "label": "特殊的敬语动词",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191249/ctk191055",
+                  "children": []
+                },
+                {
+                  "zj_id": "191051",
+                  "label": "尊他语表达句式",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191249/ctk191051",
+                  "children": []
+                },
+                {
+                  "zj_id": "191059",
+                  "label": "自谦语表达句式",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191249/ctk191059",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191250",
+              "label": "第15課 進学と進路",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191250",
+              "children": [
+                {
+                  "zj_id": "190842",
+                  "label": "によって 原因或根据",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191250/ctk190842",
+                  "children": []
+                },
+                {
+                  "zj_id": "190519",
+                  "label": "がち 不好倾向",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191250/ctk190519",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191251",
+              "label": "第16課 国境のない地球",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191251",
+              "children": [
+                {
+                  "zj_id": "190973",
+                  "label": "わけではない／わけでもない 并非",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191251/ctk190973",
+                  "children": []
+                },
+                {
+                  "zj_id": "190866",
+                  "label": "ば～のに・けれども・のですが反事实的假设条件",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191251/ctk190866",
+                  "children": []
+                },
+                {
+                  "zj_id": "190972",
+                  "label": "わけがない 不可能",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191251/ctk190972",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191252",
+              "label": "综合复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191252",
+              "children": []
+            }
+          ]
+        },
+        {
+          "zj_id": "191135",
+          "name": "初中日语人教版第一册",
+          "url": "https://zujuan.xkw.com/gzry/zj191135/",
+          "chapter_count": 82,
+          "chapters": [
+            {
+              "zj_id": "191253",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191253",
+              "children": [
+                {
+                  "zj_id": "191256",
+                  "label": "课次1  会话：おはようございます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191256",
+                  "children": [
+                    {
+                      "zj_id": "190161",
+                      "label": "五十音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191256/ctk190161",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191259",
+                  "label": "课次 2 会话：さようなら",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191259",
+                  "children": [
+                    {
+                      "zj_id": "190162",
+                      "label": "浊音、半浊音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191259/ctk190162",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191262",
+                  "label": "课次3  会话：行ってきます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191262",
+                  "children": [
+                    {
+                      "zj_id": "190162",
+                      "label": "浊音、半浊音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191262/ctk190162",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191265",
+                  "label": "课次4 会话：はじめまして",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191265",
+                  "children": [
+                    {
+                      "zj_id": "190163",
+                      "label": "拗音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191265/ctk190163",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191266",
+                  "label": "第一单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191266",
+                  "children": [
+                    {
+                      "zj_id": "190161",
+                      "label": "五十音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191266/ctk190161",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190162",
+                      "label": "浊音、半浊音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191266/ctk190162",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190163",
+                      "label": "拗音",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191266/ctk190163",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "191267",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191267",
+              "children": [
+                {
+                  "zj_id": "191268",
+                  "label": "课次5  会话：家族の写真",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191268",
+                  "children": [
+                    {
+                      "zj_id": "191068",
+                      "label": "肯定：~は~だ・です",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191268/ctk191068",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191072",
+                      "label": "疑问式：判断句各句式+か",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191268/ctk191072",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191049",
+                      "label": "表示尊他的后缀 ~さん、~様　、~がた",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191268/ctk191049",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190184",
+                      "label": "序数词",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191268/ctk190184",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191269",
+                  "label": "课次6  会话：折り紙",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191269",
+                  "children": [
+                    {
+                      "zj_id": "190371",
+                      "label": "も 并列，常用“も~も”",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191269/ctk190371",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190345",
+                      "label": "ね 表确认或想征得对方的认同",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191269/ctk190345",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191270",
+                  "label": "课次7  会话：学校案内",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191270",
+                  "children": [
+                    {
+                      "zj_id": "191077",
+                      "label": "表示无生命的物体　ある",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191270/ctk191077",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191076",
+                      "label": "表示有生命的物体    いる",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191270/ctk191076",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190346",
+                      "label": "ね 表感叹，有时也读成ねえ，语气较之ね更强",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191270/ctk190346",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190352",
+                      "label": "よ 表提醒、叮嘱或唤起对方的注意。有说话者地位较高的感觉。",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191270/ctk190352",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191271",
+                  "label": "课次8  会话：公園",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191271",
+                  "children": [
+                    {
+                      "zj_id": "190222",
+                      "label": "形容词词义",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191271/ctk190222",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190401",
+                      "label": "こんな・そんな・あんな・どんな (表形容)",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191271/ctk190401",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191070",
+                      "label": "过去肯定式：だった・でした",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191271/ctk191070",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190428",
+                      "label": "あまり~ない  不太......",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191271/ctk190428",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190513",
+                      "label": "が 希望、能力、好恶等对象",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191271/ctk190513",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "191272",
+              "label": "第二单元复习",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191272",
+              "children": []
+            },
+            {
+              "zj_id": "191273",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191273",
+              "children": [
+                {
+                  "zj_id": "191274",
+                  "label": "课次9  会话：わたしの1日",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191274",
+                  "children": [
+                    {
+                      "zj_id": "190188",
+                      "label": "动词分类",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191274/ctk190188",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190978",
+                      "label": "を 自动词的使役对象",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191274/ctk190978",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190296",
+                      "label": "に 表动作、作用的时间",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191274/ctk190296",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191622",
+                      "label": "ごろ・ごろに・ころ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191274/ctk191622",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190579",
+                      "label": "では・じゃ・じゃあ转换话题",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191274/ctk190579",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191275",
+                  "label": "课次10 会话：バス停で",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191275",
+                  "children": [
+                    {
+                      "zj_id": "190302",
+                      "label": "に 表动作方向、到达点。",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190302",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190479",
+                      "label": "方 表示~方法",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190479",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190280",
+                      "label": "で 表示动作场所",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190280",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190693",
+                      "label": "でも・ても 既定条件的转折关系，",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190693",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190303",
+                      "label": "に　表移动的目的",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190303",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190809",
+                      "label": "にも 添加到达的地点",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191275/ctk190809",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191276",
+                  "label": "课次11 会话：応援",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191276",
+                  "children": [
+                    {
+                      "zj_id": "190223",
+                      "label": "形容词活用",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191276/ctk190223",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190287",
+                      "label": "と表动作共同者、相互作用的对象",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191276/ctk190287",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190185",
+                      "label": "量数词(助数词)",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191276/ctk190185",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191277",
+                  "label": "课次12 会话：夏休みの思い出",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191277",
+                  "children": [
+                    {
+                      "zj_id": "190230",
+                      "label": "形容动词活用",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191277/ctk190230",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190689",
+                      "label": "で 工具",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191277/ctk190689",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190298",
+                      "label": "に 表事物存在的动作、场所、位置",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191277/ctk190298",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190293",
+                      "label": "へ 表示动作方向",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191277/ctk190293",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191278",
+                  "label": "第三单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191278",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191279",
+              "label": "第四单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191279",
+              "children": [
+                {
+                  "zj_id": "191280",
+                  "label": "课次13 会话：買い物",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191280",
+                  "children": [
+                    {
+                      "zj_id": "191077",
+                      "label": "表示无生命的物体　ある",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191280/ctk191077",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "191076",
+                      "label": "表示有生命的物体    いる",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191280/ctk191076",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190515",
+                      "label": "が 提示主语，表客观现象、状态、性质等",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191280/ctk190515",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190372",
+                      "label": "と同一主体相继进行的两个动作",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191280/ctk190372",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191281",
+                  "label": "课次14 会话：誕生日",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191281",
+                  "children": [
+                    {
+                      "zj_id": "190919",
+                      "label": "ましょう 让~吧，表劝诱",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191281/ctk190919",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190489",
+                      "label": "から~まで 从~到",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191281/ctk190489",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190531",
+                      "label": "くらい大致的时间或数量",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191281/ctk190531",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190943",
+                      "label": "や 列举两个或多个事物",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191281/ctk190943",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191282",
+                  "label": "课次15 会话：趣味",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191282",
+                  "children": [
+                    {
+                      "zj_id": "190203",
+                      "label": "ことができる 能够",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191282/ctk190203",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190874",
+                      "label": "は~が~ 描述某人或某物具有某种特征、状态或性质等",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191282/ctk190874",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190236",
+                      "label": "断定：だ・です ・である",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191282/ctk190236",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190304",
+                      "label": "に　表比较、评价的基准",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191282/ctk190304",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190332",
+                      "label": "か 表疑问",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191282/ctk190332",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191283",
+                  "label": "课次16 会话：ねずみの相談",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191283",
+                  "children": [
+                    {
+                      "zj_id": "190807",
+                      "label": "には 存在的场所",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191283/ctk190807",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190808",
+                      "label": "には 事物的拥有者",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191283/ctk190808",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190928",
+                      "label": "も 同类事物的重复、并存，添加，意为“~也”",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191283/ctk190928",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190690",
+                      "label": "で 数量状态",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191283/ctk190690",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190302",
+                      "label": "に 表动作方向、到达点。",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191283/ctk190302",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191284",
+                  "label": "第四单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191284",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "191136",
+          "name": "初中日语人教版第二册",
+          "url": "https://zujuan.xkw.com/gzry/zj191136/",
+          "chapter_count": 93,
+          "chapters": [
+            {
+              "zj_id": "191285",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191285",
+              "children": [
+                {
+                  "zj_id": "191286",
+                  "label": "课次1",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191286",
+                  "children": [
+                    {
+                      "zj_id": "191287",
+                      "label": "会话：工場見学",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191287",
+                      "children": [
+                        {
+                          "zj_id": "190194",
+                          "label": "て形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190194",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190681",
+                          "label": "Vてください",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190681",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190196",
+                          "label": "た形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190196",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190297",
+                          "label": "に 表动作涉及的对象",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190297",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190979",
+                          "label": "を 表动作的起点、出发点",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190979",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190363",
+                          "label": "など 表谦逊，较低地评价自己",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191287/ctk190363",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191289",
+                  "label": "课次2",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191289",
+                  "children": [
+                    {
+                      "zj_id": "191290",
+                      "label": "会话：ブログ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191290",
+                      "children": [
+                        {
+                          "zj_id": "190194",
+                          "label": "て形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191290/ctk190194",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190246",
+                          "label": "希望： たい 表示主观愿望",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191290/ctk190246",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190813",
+                          "label": "Nにする 从若干项选择一个",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191290/ctk190813",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190223",
+                          "label": "形容词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191290/ctk190223",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191292",
+                  "label": "课次3",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191292",
+                  "children": [
+                    {
+                      "zj_id": "191293",
+                      "label": "会话：ぺット",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191293",
+                      "children": [
+                        {
+                          "zj_id": "190223",
+                          "label": "形容词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190223",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190516",
+                          "label": "が 前后事项转折",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190516",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190287",
+                          "label": "と表动作共同者、相互作用的对象",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190287",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190303",
+                          "label": "に　表移动的目的",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190303",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190290",
+                          "label": "と表示思考、说话或引用的内容、",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190290",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190359",
+                          "label": "は 强调",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190359",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190521",
+                          "label": "がほしい　想要",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191293/ctk190521",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191295",
+                  "label": "第一单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191295",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191296",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191296",
+              "children": [
+                {
+                  "zj_id": "191297",
+                  "label": "课次4",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191297",
+                  "children": [
+                    {
+                      "zj_id": "191298",
+                      "label": "会话：箸とスプーン",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191298",
+                      "children": [
+                        {
+                          "zj_id": "190223",
+                          "label": "形容词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191298/ctk190223",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190945",
+                          "label": "やすい 容易~",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191298/ctk190945",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190374",
+                          "label": "しか　表限定范围，“只、仅”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191298/ctk190374",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190576",
+                          "label": "しかない　表没有其他办法，“只好'",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191298/ctk190576",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191072",
+                          "label": "疑问式：判断句各句式+か",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191298/ctk191072",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191300",
+                  "label": "课次5",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191300",
+                  "children": [
+                    {
+                      "zj_id": "191301",
+                      "label": "会话：言葉の意味",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191301",
+                      "children": [
+                        {
+                          "zj_id": "190655",
+                          "label": "ている　正在进行某动作或行为",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191301/ctk190655",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190223",
+                          "label": "形容词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191301/ctk190223",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190332",
+                          "label": "か 表疑问",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191301/ctk190332",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190951",
+                          "label": "Vように 为了~",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191301/ctk190951",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191303",
+                  "label": "课次6",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191303",
+                  "children": [
+                    {
+                      "zj_id": "191304",
+                      "label": "会话：発表の準備",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191304",
+                      "children": [
+                        {
+                          "zj_id": "190830",
+                          "label": "について 动作、行为涉及的主题、范围等",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191304/ctk190830",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190785",
+                          "label": "ながら 两个动作同时进行",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191304/ctk190785",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190905",
+                          "label": "まで  时、空的终点，保持某种状态、连续做某动作",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191304/ctk190905",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191306",
+                  "label": "第二单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191306",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191307",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191307",
+              "children": [
+                {
+                  "zj_id": "191308",
+                  "label": "课次7",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191308",
+                  "children": [
+                    {
+                      "zj_id": "191309",
+                      "label": "会话：ボランティア",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191309",
+                      "children": [
+                        {
+                          "zj_id": "190656",
+                          "label": "ている　反复或习惯性的动作",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190656",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190810",
+                          "label": "A2になる",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190810",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190812",
+                          "label": "Nになる 成为",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190812",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190772",
+                          "label": "A1くなる",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190772",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191075",
+                          "label": "存在句",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk191075",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190276",
+                          "label": "から 表因果接续，“因为”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190276",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190667",
+                          "label": "てから 先后顺序，~后再",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191309/ctk190667",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191311",
+                  "label": "课次8",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191311",
+                  "children": [
+                    {
+                      "zj_id": "191312",
+                      "label": "会话：おもしろい絵",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191312",
+                      "children": [
+                        {
+                          "zj_id": "190195",
+                          "label": "ない形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191312/ctk190195",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190535",
+                          "label": "ないでください 请不要",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191312/ctk190535",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190216",
+                          "label": "Vてみる 表示尝试做某事",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191312/ctk190216",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190291",
+                          "label": "と 表示比较对象",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191312/ctk190291",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191314",
+                  "label": "课次9",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191314",
+                  "children": [
+                    {
+                      "zj_id": "191315",
+                      "label": "会话：遅刻",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191315",
+                      "children": [
+                        {
+                          "zj_id": "190192",
+                          "label": "动词活用分类",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191315/ctk190192",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190223",
+                          "label": "形容词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191315/ctk190223",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190230",
+                          "label": "形容动词活用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191315/ctk190230",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190743",
+                          "label": "Sと思う 认为",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191315/ctk190743",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190483",
+                          "label": "から 时间界限的起点",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191315/ctk190483",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191317",
+                  "label": "第三单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191317",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191318",
+              "label": "第四单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191318",
+              "children": [
+                {
+                  "zj_id": "191319",
+                  "label": "课次10",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191319",
+                  "children": [
+                    {
+                      "zj_id": "191320",
+                      "label": "会话：図書館で",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191320",
+                      "children": [
+                        {
+                          "zj_id": "190193",
+                          "label": "ます形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190193",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190225",
+                          "label": "い→た形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190225",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190226",
+                          "label": "い→ない形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190226",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190997",
+                          "label": "のだ・のです・んです・んだ　解释、说明",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190997",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190998",
+                          "label": "んですか・のですか 是~吗，表详细询问",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190998",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190517",
+                          "label": "が 引出话题",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191320/ctk190517",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191322",
+                  "label": "课次11",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191322",
+                  "children": [
+                    {
+                      "zj_id": "191323",
+                      "label": "会话：島の学校",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191323",
+                      "children": [
+                        {
+                          "zj_id": "190706",
+                          "label": "NというN",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191323/ctk190706",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190626",
+                          "label": "たり 列举一个动作或状态，常用“たり（など）する”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191323/ctk190626",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190376",
+                          "label": "だけ　表限定",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191323/ctk190376",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190956",
+                          "label": "より～ほうが～",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191323/ctk190956",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191325",
+                  "label": "课次12",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191325",
+                  "children": [
+                    {
+                      "zj_id": "191326",
+                      "label": "会话：雨とあめ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191326",
+                      "children": [
+                        {
+                          "zj_id": "190189",
+                          "label": "自动词",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190189",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190190",
+                          "label": "他动词",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190190",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190654",
+                          "label": "てある动作、行为结果的存续状态",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190654",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190220",
+                          "label": "てしまう 表示完成体，有遗憾后悔等心情",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190220",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190381",
+                          "label": "ほど  表动作或状态达到的程度，意为“几乎”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190381",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190897",
+                          "label": "ほど 表比较的基准，常用“ほど~ない”形式",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191326/ctk190897",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191328",
+                  "label": "第四单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191328",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "191137",
+          "name": "初中日语人教版第三册",
+          "url": "https://zujuan.xkw.com/gzry/zj191137/",
+          "chapter_count": 87,
+          "chapters": [
+            {
+              "zj_id": "191329",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191329",
+              "children": [
+                {
+                  "zj_id": "191330",
+                  "label": "课次1",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191330",
+                  "children": [
+                    {
+                      "zj_id": "191331",
+                      "label": "会话：交流会",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191331",
+                      "children": [
+                        {
+                          "zj_id": "190426",
+                          "label": "Aは（Bに）~をあげる (A给B某物)",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191331/ctk190426",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191009",
+                          "label": "Aは（Bに）~から／をもらう (A从B那里得到某物)",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191331/ctk191009",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190716",
+                          "label": "V基+時・とき 动作之前或同时",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191331/ctk190716",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190859",
+                          "label": "ので  表因果接续，“因为”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191331/ctk190859",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190694",
+                          "label": "でも 前接疑问词、不定词，全面或全部的肯定和认可",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191331/ctk190694",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191333",
+                  "label": "课次2",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191333",
+                  "children": [
+                    {
+                      "zj_id": "191334",
+                      "label": "会话：農業体験",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191334",
+                      "children": [
+                        {
+                          "zj_id": "191008",
+                          "label": "Aは（私・うちの人に）~をくれる(A给我或我方某物",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191334/ctk191008",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190717",
+                          "label": "た時・とき 动作之后或同时",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191334/ctk190717",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190304",
+                          "label": "に　表比较、评价的基准",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191334/ctk190304",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190618",
+                          "label": "たいと思う 想",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191334/ctk190618",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191336",
+                  "label": "课次3",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191336",
+                  "children": [
+                    {
+                      "zj_id": "191337",
+                      "label": "会话：ロボット",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191337",
+                      "children": [
+                        {
+                          "zj_id": "190715",
+                          "label": "時・とき 在某状态下",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191337/ctk190715",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190551",
+                          "label": "こと 表抽象事物、概念，使句子或词组名词化",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191337/ctk190551",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190711",
+                          "label": "とおり・とおりに 按照",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191337/ctk190711",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191339",
+                  "label": "第一单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191339",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191340",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191340",
+              "children": [
+                {
+                  "zj_id": "191341",
+                  "label": "课次4",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191341",
+                  "children": [
+                    {
+                      "zj_id": "191342",
+                      "label": "会话：手紙",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191342",
+                      "children": [
+                        {
+                          "zj_id": "190239",
+                          "label": "传闻： そうだ",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191342/ctk190239",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190661",
+                          "label": "Vてもいい 做~也没关系",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191342/ctk190661",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190613",
+                          "label": "それで前因致后果",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191342/ctk190613",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191344",
+                  "label": "课次5",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191344",
+                  "children": [
+                    {
+                      "zj_id": "191345",
+                      "label": "会话：鳥の巣箱",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191345",
+                      "children": [
+                        {
+                          "zj_id": "190193",
+                          "label": "ます形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191345/ctk190193",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190454",
+                          "label": "Vうと思う・ようと思う",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191345/ctk190454",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190707",
+                          "label": "SというN",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191345/ctk190707",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190929",
+                          "label": "も 强调数量多，意为“多达”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191345/ctk190929",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190602",
+                          "label": "ずつ 等量分配，“に~ずつ”形式",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191345/ctk190602",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191347",
+                  "label": "课次6",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191347",
+                  "children": [
+                    {
+                      "zj_id": "191348",
+                      "label": "会话：電気",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191348",
+                      "children": [
+                        {
+                          "zj_id": "190619",
+                          "label": "たら 假定条件，前项成立后后项成立",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190619",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190591",
+                          "label": "A1くする",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190591",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190811",
+                          "label": "A2にする",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190811",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190813",
+                          "label": "Nにする 从若干项选择一个",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190813",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190773",
+                          "label": "ないで 不做前项而做后项",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190773",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190544",
+                          "label": "こうして说明前项，说明结果",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191348/ctk190544",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191350",
+                  "label": "第二单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191350",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191351",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191351",
+              "children": [
+                {
+                  "zj_id": "191352",
+                  "label": "课次7",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191352",
+                  "children": [
+                    {
+                      "zj_id": "191353",
+                      "label": "会话：中学生地球会議",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191353",
+                      "children": [
+                        {
+                          "zj_id": "190487",
+                          "label": "から～へ",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191353/ctk190487",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190621",
+                          "label": "た後で  之后",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191353/ctk190621",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190870",
+                          "label": "～始める 开始",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191353/ctk190870",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190582",
+                          "label": "じゅう・中 表示时间或空间的整个范围",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191353/ctk190582",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191355",
+                  "label": "课次8",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191355",
+                  "children": [
+                    {
+                      "zj_id": "191356",
+                      "label": "会话：象の重さ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191356",
+                      "children": [
+                        {
+                          "zj_id": "190774",
+                          "label": "なさい 轻微命令",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191356/ctk190774",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190342",
+                          "label": "な 表禁止",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191356/ctk190342",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190351",
+                          "label": "なあ 表钦佩、失望等之类的感叹",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191356/ctk190351",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190340",
+                          "label": "ぞ 用于引人注意而加强语气",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191356/ctk190340",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190503",
+                          "label": "かわりに 表一事物代替另一事物起作用",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191356/ctk190503",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191358",
+                  "label": "课次9",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191358",
+                  "children": [
+                    {
+                      "zj_id": "191359",
+                      "label": "会话：風邪",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191359",
+                      "children": [
+                        {
+                          "zj_id": "190896",
+                          "label": "ほうがいい 还是~的好",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191359/ctk190896",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190253",
+                          "label": "推量比况： みたいだ  表示依据不确切根据做出的判断或推测",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191359/ctk190253",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190855",
+                          "label": "の 句子或词组名词化，表具体可感觉到的事项",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191359/ctk190855",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190282",
+                          "label": "で 表示原因、理由",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191359/ctk190282",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191361",
+                  "label": "第三单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191361",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191362",
+              "label": "第四单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191362",
+              "children": [
+                {
+                  "zj_id": "191363",
+                  "label": "课次10",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191363",
+                  "children": [
+                    {
+                      "zj_id": "191364",
+                      "label": "会话：小さな親切",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191364",
+                      "children": [
+                        {
+                          "zj_id": "190622",
+                          "label": "たことがある　曾~过",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190622",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190197",
+                          "label": "命令形",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190197",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190879",
+                          "label": "ばいい 要是~就好了",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190879",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190815",
+                          "label": "にくい 难以~",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190815",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190592",
+                          "label": "～がする 觉得",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190592",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190542",
+                          "label": "決して~ない",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191364/ctk190542",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191366",
+                  "label": "课次11",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191366",
+                  "children": [
+                    {
+                      "zj_id": "191367",
+                      "label": "会话：世界のお茶",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191367",
+                      "children": [
+                        {
+                          "zj_id": "190638",
+                          "label": "だろう・でしょう 高可能性推测",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191367/ctk190638",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190383",
+                          "label": "か  表列举两个事物任选其一",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191367/ctk190383",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190278",
+                          "label": "から 表示材料要素或事物的出处、由来",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191367/ctk190278",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190387",
+                          "label": "ほど  表大概的程度、数量，意为“大约、左右”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191367/ctk190387",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191369",
+                  "label": "课次12",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191369",
+                  "children": [
+                    {
+                      "zj_id": "191370",
+                      "label": "会话：十年後の楽しみ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191370",
+                      "children": [
+                        {
+                          "zj_id": "190248",
+                          "label": "希望 ：たがる 表第三人称的愿望",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190248",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190336",
+                          "label": "かな(あ) 表疑问的语气",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190336",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190805",
+                          "label": "に 行为目的、物品的用途",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190805",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190930",
+                          "label": "も 接疑问词后，表全面否定",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190930",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190348",
+                          "label": "の 表疑问，语调升调",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190348",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190692",
+                          "label": "でいい ~就可以了",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191370/ctk190692",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191372",
+                  "label": "第四单元复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191372",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version_id": "191124",
+      "name": "新版标准日本语",
+      "url_template": "/gzry/zj{0}/",
+      "textbooks": [
+        {
+          "zj_id": "191138",
+          "name": "初级上册",
+          "url": "https://zujuan.xkw.com/gzry/zj191138/",
+          "chapter_count": 63,
+          "chapters": [
+            {
+              "zj_id": "191373",
+              "label": "第1单元 小李赴日",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191373",
+              "children": [
+                {
+                  "zj_id": "191374",
+                  "label": "第1课 李さんは 中国人です",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191374",
+                  "children": [
+                    {
+                      "zj_id": "191375",
+                      "label": "出迎え",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191375",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191376",
+                  "label": "第2课 これは本です",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191376",
+                  "children": [
+                    {
+                      "zj_id": "191377",
+                      "label": "家族の写真",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191377",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191378",
+                  "label": "第3课 ここはデパートです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191378",
+                  "children": [
+                    {
+                      "zj_id": "191379",
+                      "label": "ホテルの周辺",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191379",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191380",
+                  "label": "第4课 部屋に机といすが あります",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191380",
+                  "children": [
+                    {
+                      "zj_id": "191381",
+                      "label": "会社の 場所",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191381",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191382",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191382",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191383",
+              "label": "第2单元 小李的公司生活",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191383",
+              "children": [
+                {
+                  "zj_id": "191384",
+                  "label": "第5课 森さんは 7時に 起きます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191384",
+                  "children": [
+                    {
+                      "zj_id": "191385",
+                      "label": "遅刻",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191385",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191386",
+                  "label": "第6课 吉田さんは来月 中国 へ行きます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191386",
+                  "children": [
+                    {
+                      "zj_id": "191387",
+                      "label": "交通機関",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191387",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191388",
+                  "label": "第7课 李さんは 每日 コーヒーを 飲みます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191388",
+                  "children": [
+                    {
+                      "zj_id": "191389",
+                      "label": "昼ご飯",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191389",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191390",
+                  "label": "第8课 李さんは 日本語で 手紙を 書きます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191390",
+                  "children": [
+                    {
+                      "zj_id": "191391",
+                      "label": "スケジュール表",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191391",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191392",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191392",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191393",
+              "label": "第3单元 小李在箱根",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191393",
+              "children": [
+                {
+                  "zj_id": "191394",
+                  "label": "第9课 四川料理は 辛いです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191394",
+                  "children": [
+                    {
+                      "zj_id": "191067",
+                      "label": "判断句",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191394/ctk191067",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190226",
+                      "label": "い→ない形",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191394/ctk190226",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190359",
+                      "label": "は 强调",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191394/ctk190359",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "190428",
+                      "label": "あまり~ない  不太......",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191394/ctk190428",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191395",
+                  "label": "第10课 京都の紅葉は 有名です",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191395",
+                  "children": [
+                    {
+                      "zj_id": "191396",
+                      "label": "美術館",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191396",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191397",
+                  "label": "第11课 小野さんは 歌が 好きです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191397",
+                  "children": [
+                    {
+                      "zj_id": "191398",
+                      "label": "お土産",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191398",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191399",
+                  "label": "第12课 李さんは 森さんより 若いです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191399",
+                  "children": [
+                    {
+                      "zj_id": "191400",
+                      "label": "お酒 とお茶",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191400",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191401",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191401",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191402",
+              "label": "第4单元 小李的公司生活",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191402",
+              "children": [
+                {
+                  "zj_id": "191403",
+                  "label": "第13课 机の上に本が 3冊 あります",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191403",
+                  "children": [
+                    {
+                      "zj_id": "191404",
+                      "label": "居酒屋",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191404",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191405",
+                  "label": "第14课 昨日 デパートヘ 行って，買い物しました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191405",
+                  "children": [
+                    {
+                      "zj_id": "191406",
+                      "label": "原稿",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191406",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191407",
+                  "label": "第15课 小野さんは 今 新聞を 読んでいます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191407",
+                  "children": [
+                    {
+                      "zj_id": "191408",
+                      "label": "風邪",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191408",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191409",
+                  "label": "第16课 ホテルの 部屋は 広くて明るいです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191409",
+                  "children": [
+                    {
+                      "zj_id": "191410",
+                      "label": "展示場",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191410",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191411",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191411",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191412",
+              "label": "第5单元 小李在日本迎新春",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191412",
+              "children": [
+                {
+                  "zj_id": "191413",
+                  "label": "第17课 わたしは 新しい 洋服が 欲しいです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191413",
+                  "children": [
+                    {
+                      "zj_id": "191414",
+                      "label": "初詣",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191414",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191415",
+                  "label": "第18课 携帯電話は とても 小さく なりました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191415",
+                  "children": [
+                    {
+                      "zj_id": "191416",
+                      "label": "新春セール",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191416",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191417",
+                  "label": "第19课 部屋のかぎを 忘れないで ください",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191417",
+                  "children": [
+                    {
+                      "zj_id": "191418",
+                      "label": "スキー",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191418",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191419",
+                  "label": "第20课 スミスさんは ピアノを 弾くことが できます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191419",
+                  "children": [
+                    {
+                      "zj_id": "191420",
+                      "label": "春節",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191420",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191421",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191421",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191422",
+              "label": "第6单元 再见！日本",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191422",
+              "children": [
+                {
+                  "zj_id": "191423",
+                  "label": "第21课 わたしは すき焼きを 食べた ことが あります",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191423",
+                  "children": [
+                    {
+                      "zj_id": "191424",
+                      "label": "歌舞伎",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191424",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191425",
+                  "label": "第22课 森さんは 每晚 テレビを見る",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191425",
+                  "children": [
+                    {
+                      "zj_id": "191426",
+                      "label": "友達",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191426",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191427",
+                  "label": "第23课 休みの 日， 散歩したり 買い物に 行ったりします",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191427",
+                  "children": [
+                    {
+                      "zj_id": "191428",
+                      "label": "送别会",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191428",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191429",
+                  "label": "第24课 李さんは もう すぐ 来ると 思います",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191429",
+                  "children": [
+                    {
+                      "zj_id": "191430",
+                      "label": "見送り",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191430",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191431",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191431",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "191139",
+          "name": "初级下册",
+          "url": "https://zujuan.xkw.com/gzry/zj191139/",
+          "chapter_count": 60,
+          "chapters": [
+            {
+              "zj_id": "191432",
+              "label": "第7单元 森赴北京",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191432",
+              "children": [
+                {
+                  "zj_id": "191433",
+                  "label": "第25课 これは明日会議で使う資料です",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191433",
+                  "children": [
+                    {
+                      "zj_id": "191434",
+                      "label": "北京市街へ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191434",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191435",
+                  "label": "第26课  自転车に2人で乗るのは危ないです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191435",
+                  "children": [
+                    {
+                      "zj_id": "191436",
+                      "label": "握手とお辞儀",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191436",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191437",
+                  "label": "第27课 子供の時，大きな地震がありました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191437",
+                  "children": [
+                    {
+                      "zj_id": "191438",
+                      "label": "朝の公園",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191438",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191439",
+                  "label": "第28课 馬さんはわたしに地図をくれました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191439",
+                  "children": [
+                    {
+                      "zj_id": "191440",
+                      "label": "森さんの新居",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191440",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191441",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191441",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191442",
+              "label": "第8单元 余暇",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191442",
+              "children": [
+                {
+                  "zj_id": "191443",
+                  "label": "第29课 電気を消せ",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191443",
+                  "children": [
+                    {
+                      "zj_id": "191444",
+                      "label": "カラオケ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191444",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191445",
+                  "label": "第30课 もう11時だから寝よう",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191445",
+                  "children": [
+                    {
+                      "zj_id": "191446",
+                      "label": "春のピクニック",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191446",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191447",
+                  "label": "第31课 このボタンを押すと，電源が入ります",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191447",
+                  "children": [
+                    {
+                      "zj_id": "191448",
+                      "label": "散歩",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191448",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191449",
+                  "label": "第32课 今度の日曜日に遊園地へ行くつもりです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191449",
+                  "children": [
+                    {
+                      "zj_id": "191450",
+                      "label": "連休",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191450",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191451",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191451",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191452",
+              "label": "第9单元 小野赴北京",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191452",
+              "children": [
+                {
+                  "zj_id": "191453",
+                  "label": "第33课 電車が急に止まりました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191453",
+                  "children": [
+                    {
+                      "zj_id": "191454",
+                      "label": "再会",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191454",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191455",
+                  "label": "第34课 壁にカレンダーが掛けてあります",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191455",
+                  "children": [
+                    {
+                      "zj_id": "191456",
+                      "label": "北京ダック",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191456",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191457",
+                  "label": "第35课 明日雨が降ったら，マラソン大会は中止です",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191457",
+                  "children": [
+                    {
+                      "zj_id": "191458",
+                      "label": "ホームパーティー",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191458",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191459",
+                  "label": "第36课 遅くなって，すみません",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191459",
+                  "children": [
+                    {
+                      "zj_id": "191460",
+                      "label": "北京の生活",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191460",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191461",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191461",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191462",
+              "label": "第10单元 游览北京",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191462",
+              "children": [
+                {
+                  "zj_id": "191463",
+                  "label": "第37课 優勝すれば，オリンピックに出場することができます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191463",
+                  "children": [
+                    {
+                      "zj_id": "191464",
+                      "label": "万里の長城",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191464",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191465",
+                  "label": "第38课 戴さんは英語が話せます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191465",
+                  "children": [
+                    {
+                      "zj_id": "191466",
+                      "label": "胡同",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191466",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191467",
+                  "label": "第39课 眼鏡をかけて本を読みます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191467",
+                  "children": [
+                    {
+                      "zj_id": "191468",
+                      "label": "故宫",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191468",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191469",
+                  "label": "第40课 これかち友達と食事に行くところです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191469",
+                  "children": [
+                    {
+                      "zj_id": "191470",
+                      "label": "京劇",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191470",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191471",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191471",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191472",
+              "label": "第11单元 在北京的工作情况",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191472",
+              "children": [
+                {
+                  "zj_id": "191473",
+                  "label": "第41课 李さんは部長にほめられました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191473",
+                  "children": [
+                    {
+                      "zj_id": "191474",
+                      "label": "市場調査",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191474",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191475",
+                  "label": "第42课 テレビをつけたまま，出かけてしまいました",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191475",
+                  "children": [
+                    {
+                      "zj_id": "191476",
+                      "label": "企画案",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191476",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191477",
+                  "label": "第43课 陳さんは，息子をアメリカに留学させます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191477",
+                  "children": [
+                    {
+                      "zj_id": "191478",
+                      "label": "プレゼンテーション",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191478",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191479",
+                  "label": "第44课 玄関のところにだれかいるようです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191479",
+                  "children": [
+                    {
+                      "zj_id": "191480",
+                      "label": "売れ行き",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191480",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191481",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191481",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191482",
+              "label": "第12单元 新的拓展",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191482",
+              "children": [
+                {
+                  "zj_id": "191483",
+                  "label": "第45课 少子化が進んで，日本の人にはだんだん減っていくでしょう",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191483",
+                  "children": [
+                    {
+                      "zj_id": "191484",
+                      "label": "上海",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191484",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191485",
+                  "label": "第46课 これは柔らかくて，まるで本物の毛皮のようです",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191485",
+                  "children": [
+                    {
+                      "zj_id": "191486",
+                      "label": "事務所探し",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191486",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191487",
+                  "label": "第47课 周先生は明日日本へ行かれます",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191487",
+                  "children": [
+                    {
+                      "zj_id": "191488",
+                      "label": "社長の下見",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191488",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191489",
+                  "label": "第48课 お荷物は私がお持ちします",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191489",
+                  "children": [
+                    {
+                      "zj_id": "191490",
+                      "label": "上海事務所",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191490",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191491",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191491",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "191140",
+          "name": "中级上册",
+          "url": "https://zujuan.xkw.com/gzry/zj191140/",
+          "chapter_count": 89,
+          "chapters": [
+            {
+              "zj_id": "191492",
+              "label": "第1单元 “金星”项目相关人员",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191492",
+              "children": [
+                {
+                  "zj_id": "191493",
+                  "label": "第1課 出会い",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191493",
+                  "children": [
+                    {
+                      "zj_id": "191494",
+                      "label": "日本の鉄道",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191494",
+                      "children": [
+                        {
+                          "zj_id": "190721",
+                          "label": "とは 下定义",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk190721",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190668",
+                          "label": "N的 带有某种性质、符合某种规律",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk190668",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191068",
+                          "label": "肯定：~は~だ・です",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk191068",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191865",
+                          "label": "どんどん",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk191865",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191700",
+                          "label": "また",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk191700",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190932",
+                          "label": "もの 表示物品",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk190932",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191714",
+                          "label": "そこで 表因果",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk191714",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190401",
+                          "label": "こんな・そんな・あんな・どんな (表形容)",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191494/ctk190401",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191495",
+                  "label": "第2課 あいさつ",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191495",
+                  "children": [
+                    {
+                      "zj_id": "191496",
+                      "label": "あいさつの時の礼儀",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191496",
+                      "children": [
+                        {
+                          "zj_id": "190307",
+                          "label": "より 表比较的基准",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190307",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190489",
+                          "label": "から~まで 从~到",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190489",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190651",
+                          "label": "て 动作先后顺序",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190651",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190896",
+                          "label": "ほうがいい 还是~的好",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190896",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190389",
+                          "label": "か　前接疑问词，表不确定",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190389",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190443",
+                          "label": "いくら~ても 即使再~也",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190443",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190980",
+                          "label": "をする ・をしている从事",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190980",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190324",
+                          "label": "ては・では 表假定条件，后项多含消极语气",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190324",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191691",
+                          "label": "ては・では 表确定条件，前项多用“コ”系名词",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk191691",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190936",
+                          "label": "ものだ事物普遍性、一般性",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191496/ctk190936",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191497",
+                  "label": "第3課 顔合わせ",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191497",
+                  "children": [
+                    {
+                      "zj_id": "191498",
+                      "label": "名字",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191498",
+                      "children": [
+                        {
+                          "zj_id": "190975",
+                          "label": "わけにはいかない・ないわけにはいかない不能~；必须",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191498/ctk190975",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191695",
+                          "label": "のは~からだ・ためだ 意为“之所以~是因为”",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191498/ctk191695",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192064",
+                          "label": "～と言われている・考えられている・思われている 大家都认为",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191498/ctk192064",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191720",
+                          "label": "それでも",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191498/ctk191720",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190439",
+                          "label": "一方で　一方面",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191498/ctk190439",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191499",
+                  "label": "第4課 東京本社",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191499",
+                  "children": [
+                    {
+                      "zj_id": "191500",
+                      "label": "近年サラリーマン事情",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191500",
+                      "children": [
+                        {
+                          "zj_id": "190705",
+                          "label": "といえば・っていえば 提到~",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk190705",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191653",
+                          "label": "ていく 表示现在到将来的动作持续或变化",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk191653",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191851",
+                          "label": "さらに",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk191851",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191807",
+                          "label": "ほとんど",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk191807",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191774",
+                          "label": "のではないか 不是~吗",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk191774",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191872",
+                          "label": "ではないか・じゃないか 让人吃惊的是",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk191872",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190209",
+                          "label": "自发助动词：れる・られる",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191500/ctk190209",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191501",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191501",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191502",
+              "label": "第2单元 启动“金星”项目",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191502",
+              "children": [
+                {
+                  "zj_id": "191503",
+                  "label": "第5課 商品紹介",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191503",
+                  "children": [
+                    {
+                      "zj_id": "191504",
+                      "label": "日本語の語彙",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191504",
+                      "children": [
+                        {
+                          "zj_id": "191756",
+                          "label": "に基づいて 以~为根据",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk191756",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191899",
+                          "label": "うち表时间、空间范围；~之中，~之内",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk191899",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "191804",
+                          "label": "たいてい",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk191804",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192056",
+                          "label": "という点から・という点から 从~点",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk192056",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192059",
+                          "label": "を中心とした・を中心とする・を中心に 以~为主",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk192059",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190250",
+                          "label": "推量比况：ようだ 表示例示（ような・ように）",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191504/ctk190250",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191505",
+                  "label": "第6課 先輩",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191505",
+                  "children": [
+                    {
+                      "zj_id": "191506",
+                      "label": "「はしの文化 」さまざま",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191506",
+                      "children": [
+                        {
+                          "zj_id": "190842",
+                          "label": "によって 原因或根据",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191506/ctk190842",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190893",
+                          "label": "Nの+ほかに~ 除~之外还有",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191506/ctk190893",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192119",
+                          "label": "をする ・をしている 具备~特征",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191506/ctk192119",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192114",
+                          "label": "といっても 虽说",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191506/ctk192114",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "192103",
+                          "label": "実に 表完全、非常",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191506/ctk192103",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191507",
+                  "label": "第7課 打ち合わせ",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191507",
+                  "children": [
+                    {
+                      "zj_id": "191508",
+                      "label": "電子メールの作法",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191508",
+                      "children": [
+                        {
+                          "zj_id": "191977",
+                          "label": "うえで　表范围，在~方面",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk191977",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190572",
+                          "label": "さえ~ば／さえ~たら 只要~就",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190572",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190366",
+                          "label": "すら 甚至，连~也",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190366",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190906",
+                          "label": "まで 表超出普通范围，极端程度",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190906",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190747",
+                          "label": "といい  表劝说",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190747",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190879",
+                          "label": "ばいい 要是~就好了",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190879",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190563",
+                          "label": "ごとに 数量词之后，每这么长时间、区间来一次",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190563",
+                          "children": []
+                        },
+                        {
+                          "zj_id": "190564",
+                          "label": "ごとに 非数量名词后，每个都不例外",
+                          "level": 4,
+                          "url": "https://zujuan.xkw.com/gzry/zj191508/ctk190564",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191509",
+                  "label": "第8課 企画書",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191509",
+                  "children": [
+                    {
+                      "zj_id": "191510",
+                      "label": "カップラーメン",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191510",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191511",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191511",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191512",
+              "label": "第3单元 大阪采访之旅",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191512",
+              "children": [
+                {
+                  "zj_id": "191513",
+                  "label": "第9課 トラブル",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191513",
+                  "children": [
+                    {
+                      "zj_id": "191514",
+                      "label": "イタリア旅行",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191514",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191515",
+                  "label": "第10課 スケジュール",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191515",
+                  "children": [
+                    {
+                      "zj_id": "191516",
+                      "label": "温泉大国，日本",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191516",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191517",
+                  "label": "第11課 若者の意識",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191517",
+                  "children": [
+                    {
+                      "zj_id": "191518",
+                      "label": "漫画とアニメ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191518",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191519",
+                  "label": "第12課 最終日",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191519",
+                  "children": [
+                    {
+                      "zj_id": "191520",
+                      "label": "方言と共通語",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191520",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191521",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191521",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191522",
+              "label": "第4单元 值得庆贺的事",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191522",
+              "children": [
+                {
+                  "zj_id": "191523",
+                  "label": "第13課 スピーチの依頼",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191523",
+                  "children": [
+                    {
+                      "zj_id": "191524",
+                      "label": "日本の人口が減っている——少子化",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191524",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191525",
+                  "label": "第14課 恩師",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191525",
+                  "children": [
+                    {
+                      "zj_id": "191526",
+                      "label": "日本の就職活動",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191526",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191527",
+                  "label": "第15課 同級生",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191527",
+                  "children": [
+                    {
+                      "zj_id": "191528",
+                      "label": "日本レストラン事情",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191528",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191529",
+                  "label": "第16課 結婚披露宴",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191529",
+                  "children": [
+                    {
+                      "zj_id": "191530",
+                      "label": "変わる結婚式",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191530",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191531",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191531",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "191141",
+          "name": "中级下册",
+          "url": "https://zujuan.xkw.com/gzry/zj191141/",
+          "chapter_count": 39,
+          "chapters": [
+            {
+              "zj_id": "191532",
+              "label": "第5单元 “金星”项目渐入佳境",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191532",
+              "children": [
+                {
+                  "zj_id": "191533",
+                  "label": "第17 課 日本取材の成果",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191533",
+                  "children": [
+                    {
+                      "zj_id": "191534",
+                      "label": "北京の顔",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191534",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191535",
+                  "label": "第18 売り込み",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191535",
+                  "children": [
+                    {
+                      "zj_id": "191536",
+                      "label": "手紙",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191536",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191537",
+                  "label": "第19 クレーム",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191537",
+                  "children": [
+                    {
+                      "zj_id": "191538",
+                      "label": "水道水の話",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191538",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191539",
+                  "label": "第20 希望の灯",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191539",
+                  "children": [
+                    {
+                      "zj_id": "191540",
+                      "label": "太極拳で広がる交流",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191540",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191541",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191541",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191542",
+              "label": "第6单元 奔走中国各地",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191542",
+              "children": [
+                {
+                  "zj_id": "191543",
+                  "label": "第21 広州で",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191543",
+                  "children": [
+                    {
+                      "zj_id": "191544",
+                      "label": "中国茶の歴史",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191544",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191545",
+                  "label": "第22 電話",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191545",
+                  "children": [
+                    {
+                      "zj_id": "191546",
+                      "label": "デジタルカメラ新製品紹介",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191546",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191547",
+                  "label": "第23 紹興を訪ねる",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191547",
+                  "children": [
+                    {
+                      "zj_id": "191548",
+                      "label": "水郷の町",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191548",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191549",
+                  "label": "第24 香港——CM撮影の下見",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191549",
+                  "children": [
+                    {
+                      "zj_id": "191550",
+                      "label": "M",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191550",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191551",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191551",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191552",
+              "label": "第7单元 准备大型宣传活动",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191552",
+              "children": [
+                {
+                  "zj_id": "191553",
+                  "label": "第25 創作中華料理コンテスト",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191553",
+                  "children": []
+                },
+                {
+                  "zj_id": "191554",
+                  "label": "第26 イべント前夜",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191554",
+                  "children": [
+                    {
+                      "zj_id": "191555",
+                      "label": "地球温暖化",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191555",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191556",
+                  "label": "第27 イべント当日",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191556",
+                  "children": [
+                    {
+                      "zj_id": "191557",
+                      "label": "桜",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191557",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191558",
+                  "label": "第28 病院",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191558",
+                  "children": [
+                    {
+                      "zj_id": "191559",
+                      "label": "ロボット",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191559",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191560",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191560",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "191561",
+              "label": "第8单元 新的旅程",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzry/zj191561",
+              "children": [
+                {
+                  "zj_id": "191562",
+                  "label": "第29 イべント打ち上げ",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191562",
+                  "children": [
+                    {
+                      "zj_id": "191563",
+                      "label": "宇宙食",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191563",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191564",
+                  "label": "第30 本社での報告",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191564",
+                  "children": [
+                    {
+                      "zj_id": "191565",
+                      "label": "地震",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191565",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191566",
+                  "label": "第31  栄転の話",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191566",
+                  "children": [
+                    {
+                      "zj_id": "191567",
+                      "label": "クモの 糸",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191567",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191568",
+                  "label": "第32 思い出の場所",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191568",
+                  "children": [
+                    {
+                      "zj_id": "191569",
+                      "label": "トキ",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzry/zj191569",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "191570",
+                  "label": "单元综合复习",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzry/zj191570",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

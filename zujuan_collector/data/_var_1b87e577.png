@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>页面没有找到</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="https://zxxkstatic.zxxk.com/error/css/error-new.css" />
+</head>
+<body>
+<div class="resource-body">
+    <div class="resource-detail clearfix">
+        <div class="error-box">
+            <p>很抱歉，页面出错了，给您带来了麻烦，您可以咨询客服或返回首页</p>
+            <span>(错误代码:404)</span>
+            <div class="error-btn">
+                <a href="https://account.xkw.com/kf/link?appId=xkw" class="error-btn-1" target="_blank">咨询客服</a>
+                <a href="//www.zxxk.com" class="error-btn-2">返回首页</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

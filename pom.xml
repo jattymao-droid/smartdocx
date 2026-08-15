@@ -31,6 +31,7 @@
         <fastjson.version>2.0.62</fastjson.version>
         <jjwt.version>0.9.1</jjwt.version>
         <minio.version>8.2.2</minio.version>
+        <tencent.cos.version>5.6.227</tencent.cos.version>
         <poi.version>4.1.2</poi.version>
         <springdoc.version>3.0.3</springdoc.version>
         <transmittable-thread-local.version>2.14.5</transmittable-thread-local.version>

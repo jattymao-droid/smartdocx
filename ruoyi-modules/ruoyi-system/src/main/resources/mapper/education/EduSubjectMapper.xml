@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduSubjectMapper">
+
+    <resultMap id="EduSubjectResult" type="EduSubject">
+        <result property="subjectId" column="subject_id"/>
+        <result property="subjectName" column="subject_name"/>
+        <result property="fullScore" column="full_score"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectEduSubjectVo">
+        select subject_id, subject_name, full_score, order_num, status, create_by, create_time, update_by, update_time, remark
+        from edu_subject
+    </sql>
+
+    <select id="selectEduSubjectById" parameterType="Long" resultMap="EduSubjectResult">
+        <include refid="selectEduSubjectVo"/>
+        where subject_id = #{subjectId}
+    </select>
+
+    <select id="selectEduSubjectList" parameterType="EduSubject" resultMap="EduSubjectResult">
+        <include refid="selectEduSubjectVo"/>
+        <where>
+            <if test="subjectName != null and subjectName != ''">
+                and subject_name like ('%' || #{subjectName} || '%')
+            </if>
+            <if test="status != null and status != ''">
+                and status = #{status}
+            </if>
+        </where>
+        order by order_num, subject_id
+    </select>
+
+    <insert id="insertEduSubject" parameterType="EduSubject" useGeneratedKeys="true" keyProperty="subjectId">
+        insert into edu_subject (
+            subject_name, full_score, order_num, status, remark, create_by, create_time
+        ) values (
+            #{subjectName}, #{fullScore}, #{orderNum}, #{status}, #{remark}, #{createBy}, CURRENT_TIMESTAMP
+        )
+    </insert>
+
+    <update id="updateEduSubject" parameterType="EduSubject">
+        update edu_subject
+        <set>
+            subject_name = #{subjectName},
+            full_score = #{fullScore},
+            order_num = #{orderNum},
+            status = #{status},
+            remark = #{remark},
+            update_by = #{updateBy},
+            update_time = CURRENT_TIMESTAMP
+        </set>
+        where subject_id = #{subjectId}
+    </update>
+
+    <delete id="deleteEduSubjectById" parameterType="Long">
+        delete from edu_subject where subject_id = #{subjectId}
+    </delete>
+
+    <delete id="deleteEduSubjectByIds" parameterType="Long">
+        delete from edu_subject where subject_id in
+        <foreach collection="subjectIds" item="subjectId" open="(" separator="," close=")">
+            #{subjectId}
+        </foreach>
+    </delete>
+
+    <select id="selectSubjectNameById" parameterType="Long" resultType="String">
+        select subject_name from edu_subject where subject_id = #{subjectId}
+    </select>
+
+    <select id="selectSubjectNamesByIds" parameterType="Long" resultType="String">
+        select subject_name
+        from edu_subject
+        where subject_id in
+        <foreach collection="subjectIds" item="subjectId" open="(" separator="," close=")">
+            #{subjectId}
+        </foreach>
+    </select>
+
+    <select id="countBySubjectName" resultType="int">
+        select count(1)
+        from edu_subject
+        where subject_name = #{subjectName}
+        <if test="excludeId != null">
+            and subject_id &lt;&gt; #{excludeId}
+        </if>
+    </select>
+
+    <select id="selectSubjectOptions" resultType="String">
+        select subject_name
+        from edu_subject
+        where status = '0'
+        order by order_num, subject_id
+    </select>
+</mapper>

@@ -7,10 +7,12 @@ usage() {
 }
 
 
-# copy sql
+# copy sql (PostgreSQL)
 echo "begin copy sql "
-cp ../sql/ry_20260402.sql ./mysql/db
-cp ../sql/ry_config_20260311.sql ./mysql/db
+mkdir -p ./postgres/db
+cp ../sql/postgresql/ry_cloud.sql ./postgres/db/
+cp ../sql/postgresql/ry_config.sql ./postgres/db/
+cp ../sql/postgresql/ry_config_supplement.sql ./postgres/db/
 
 # copy html
 echo "begin copy html "

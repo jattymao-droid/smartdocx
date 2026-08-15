@@ -1,0 +1,15 @@
+# PostgreSQL for RuoYi-Cloud
+FROM postgres:16
+MAINTAINER ruoyi
+
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=mm5621528
+ENV POSTGRES_DB=postgres
+ENV TZ=Asia/Shanghai
+
+COPY init.sh /docker-entrypoint-initdb.d/00-init.sh
+COPY db/ry_cloud.sql /docker-entrypoint-initdb.d/ry_cloud.sql
+COPY db/ry_config.sql /docker-entrypoint-initdb.d/ry_config.sql
+COPY db/ry_config_supplement.sql /docker-entrypoint-initdb.d/ry_config_supplement.sql
+
+RUN chmod +x /docker-entrypoint-initdb.d/00-init.sh

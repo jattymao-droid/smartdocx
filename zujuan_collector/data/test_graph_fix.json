@@ -1,0 +1,35 @@
+[
+  {
+    "zujuan_id": "34245959",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245959.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.76,
+    "knowledge_points": [
+      "验证加速度与质量成反比的实验",
+      "探究加速度与物体受力、物体质量的关系",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "一同学在“探究加速度与力、质量的关系”实验中保持拉力不变，得到了物体加速度与物体质量变化的一组数据，如下表所示。实验次数 | 物体质量m/kg | 质量的倒数 $\\frac{1}{m}/\\mathrm{kg}^{-1}$ | 加速度 $a/(\\mathrm{m}\\cdot\\mathrm{s}^{-2})$\n1 | 0.20 | 5.0 | 0.29\n2 | 0.25 | 4.0 | 0.25\n3 | 0.30 | 3.3 | 0.21\n4 | 0.35 | 2.9 | 0.18\n5 | 0.40 | 2.5 | 0.16\n(1)请你在如图所示的方格纸中建立合适的坐标系，并画出能直观地反映加速度与质量关系的图像；![图1]\n(2)由图像可知F一定时，a与m成________关系。",
+    "content_html": "一同学在“探究加速度与力、质量的关系”实验中保持拉力不变，得到了物体加速度与物体质量变化的一组数据，如下表所示。实验次数 | 物体质量m/kg | 质量的倒数 $\\frac{1}{m}/\\mathrm{kg}^{-1}$ | 加速度 $a/(\\mathrm{m}\\cdot\\mathrm{s}^{-2})$\n1 | 0.20 | 5.0 | 0.29\n2 | 0.25 | 4.0 | 0.25\n3 | 0.30 | 3.3 | 0.21\n4 | 0.35 | 2.9 | 0.18\n5 | 0.40 | 2.5 | 0.16\n(1)请你在如图所示的方格纸中建立合适的坐标系，并画出能直观地反映加速度与质量关系的图像；![图1]\n(2)由图像可知F一定时，a与m成________关系。",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/46fa9ea9-9202-4e6d-a3b7-5b4cd71e3f06.png?resizew=142"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)由数据猜测a与1/m成正比关系，以a为纵坐标、1/m为横坐标建立坐标系，根据数据进行描点连线，如图所示。\n(2) 由上图可知a- \\frac{1}{m}图像为过原点的直线，故F一定时，a与1/m成正比，即a与m成反比关系。",
+    "chapter_text": "力学实验",
+    "page_ctx": {
+      "textbook": "必修 第一册"
+    },
+    "detail_chapter_text": "高中物理综合库 > 物理实验 > 力学实验 > 探究加速度与物体受力、物体质量的关系 > 验证加速度与质量成反比的实验",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245959/13/042db9d5fc0db6e014a421a40db6f5159161783051192469?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  }
+]

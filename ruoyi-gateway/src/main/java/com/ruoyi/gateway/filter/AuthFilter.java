@@ -46,10 +46,11 @@ public class AuthFilter implements GlobalFilter, Ordered
         ServerHttpRequest.Builder mutate = request.mutate();
 
         String url = request.getURI().getPath();
-        // 跳过不需要验证的路径
+        // 白名单路径：允许匿名访问；若携带有效 token 则透传用户信息（门户可选登录）
         if (StringUtils.matches(url, ignoreWhite.getWhites()))
         {
-            return chain.filter(exchange);
+            attachUserIfAuthenticated(mutate, request);
+            return chain.filter(exchange.mutate().request(mutate.build()).build());
         }
         String token = getToken(request);
         if (StringUtils.isEmpty(token))
@@ -81,6 +82,38 @@ public class AuthFilter implements GlobalFilter, Ordered
         // 内部请求来源参数清除
         removeHeader(mutate, SecurityConstants.FROM_SOURCE);
         return chain.filter(exchange.mutate().request(mutate.build()).build());
+    }
+
+    /**
+     * 白名单接口可选登录：有效 token 时向下游透传用户头，供「继续阅读 / 我的文档」等使用。
+     */
+    private void attachUserIfAuthenticated(ServerHttpRequest.Builder mutate, ServerHttpRequest request)
+    {
+        String token = getToken(request);
+        if (StringUtils.isEmpty(token))
+        {
+            return;
+        }
+        Claims claims = JwtUtils.parseToken(token);
+        if (claims == null)
+        {
+            return;
+        }
+        String userkey = JwtUtils.getUserKey(claims);
+        if (!redisService.hasKey(getTokenKey(userkey)))
+        {
+            return;
+        }
+        String userid = JwtUtils.getUserId(claims);
+        String username = JwtUtils.getUserName(claims);
+        if (StringUtils.isEmpty(userid) || StringUtils.isEmpty(username))
+        {
+            return;
+        }
+        addHeader(mutate, SecurityConstants.USER_KEY, userkey);
+        addHeader(mutate, SecurityConstants.DETAILS_USER_ID, userid);
+        addHeader(mutate, SecurityConstants.DETAILS_USERNAME, username);
+        removeHeader(mutate, SecurityConstants.FROM_SOURCE);
     }
 
     private void addHeader(ServerHttpRequest.Builder mutate, String name, Object value)

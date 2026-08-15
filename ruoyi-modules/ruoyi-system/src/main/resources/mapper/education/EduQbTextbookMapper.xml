@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbTextbookMapper">
+
+    <resultMap id="EduQbTextbookVersionResult" type="EduQbTextbookVersion">
+        <result property="versionId" column="version_id"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="schoolStage" column="school_stage"/>
+        <result property="versionName" column="version_name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+    </resultMap>
+
+    <resultMap id="EduQbTextbookResult" type="EduQbTextbook">
+        <result property="textbookId" column="textbook_id"/>
+        <result property="versionId" column="version_id"/>
+        <result property="textbookName" column="textbook_name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+    </resultMap>
+
+    <resultMap id="EduQbCatalogChapterResult" type="EduQbCatalogChapter">
+        <result property="chapterId" column="chapter_id"/>
+        <result property="textbookId" column="textbook_id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="chapterName" column="chapter_name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="questionCount" column="question_count"/>
+    </resultMap>
+
+    <select id="selectVersionsBySubjectId" resultMap="EduQbTextbookVersionResult">
+        select version_id, subject_id, school_stage, version_name, order_num, status
+        from edu_qb_textbook_version
+        where status = '0'
+        <if test="subjectId != null">
+            and subject_id = #{subjectId}
+        </if>
+        <if test="schoolStage != null and schoolStage != ''">
+            and school_stage = #{schoolStage}
+        </if>
+        order by order_num, version_id
+    </select>
+
+    <select id="selectTextbooksByVersionId" resultMap="EduQbTextbookResult">
+        select textbook_id, version_id, textbook_name, order_num, status
+        from edu_qb_textbook
+        where status = '0' and version_id = #{versionId}
+        order by order_num, textbook_id
+    </select>
+
+    <select id="selectVersionsAdminBySubjectId" resultMap="EduQbTextbookVersionResult">
+        select version_id, subject_id, school_stage, version_name, order_num, status
+        from edu_qb_textbook_version
+        <where>
+            <if test="subjectId != null">and subject_id = #{subjectId}</if>
+            <if test="schoolStage != null and schoolStage != ''">and school_stage = #{schoolStage}</if>
+        </where>
+        order by order_num, version_id
+    </select>
+
+    <select id="selectVersionById" resultMap="EduQbTextbookVersionResult">
+        select version_id, subject_id, school_stage, version_name, order_num, status
+        from edu_qb_textbook_version
+        where version_id = #{versionId}
+    </select>
+
+    <insert id="insertVersion" parameterType="EduQbTextbookVersion" useGeneratedKeys="true" keyProperty="versionId">
+        insert into edu_qb_textbook_version (subject_id, school_stage, version_name, order_num, status, create_time)
+        values (#{subjectId}, #{schoolStage}, #{versionName}, #{orderNum}, #{status}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <update id="updateVersion" parameterType="EduQbTextbookVersion">
+        update edu_qb_textbook_version
+        set subject_id = #{subjectId},
+            school_stage = #{schoolStage},
+            version_name = #{versionName},
+            order_num = #{orderNum},
+            status = #{status}
+        where version_id = #{versionId}
+    </update>
+
+    <delete id="deleteVersionByIds">
+        delete from edu_qb_textbook_version where version_id in
+        <foreach collection="versionIds" item="versionId" open="(" separator="," close=")">
+            #{versionId}
+        </foreach>
+    </delete>
+
+    <select id="countTextbookByVersionId" resultType="int">
+        select count(*) from edu_qb_textbook where version_id = #{versionId}
+    </select>
+
+    <select id="selectTextbooksAdminByVersionId" resultMap="EduQbTextbookResult">
+        select textbook_id, version_id, textbook_name, order_num, status
+        from edu_qb_textbook
+        where version_id = #{versionId}
+        order by order_num, textbook_id
+    </select>
+
+    <select id="selectTextbookById" resultMap="EduQbTextbookResult">
+        select textbook_id, version_id, textbook_name, order_num, status
+        from edu_qb_textbook
+        where textbook_id = #{textbookId}
+    </select>
+
+    <insert id="insertTextbook" parameterType="EduQbTextbook" useGeneratedKeys="true" keyProperty="textbookId">
+        insert into edu_qb_textbook (version_id, textbook_name, order_num, status, create_time)
+        values (#{versionId}, #{textbookName}, #{orderNum}, #{status}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <update id="updateTextbook" parameterType="EduQbTextbook">
+        update edu_qb_textbook
+        set version_id = #{versionId},
+            textbook_name = #{textbookName},
+            order_num = #{orderNum},
+            status = #{status}
+        where textbook_id = #{textbookId}
+    </update>
+
+    <delete id="deleteTextbookByIds">
+        delete from edu_qb_textbook where textbook_id in
+        <foreach collection="textbookIds" item="textbookId" open="(" separator="," close=")">
+            #{textbookId}
+        </foreach>
+    </delete>
+
+    <select id="countChapterByTextbookId" resultType="int">
+        select count(*) from edu_qb_chapter where textbook_id = #{textbookId}
+    </select>
+
+    <select id="selectChapterListByTextbookId" resultMap="EduQbCatalogChapterResult">
+        select chapter_id, textbook_id, parent_id, chapter_name, order_num, 0 as question_count
+        from edu_qb_chapter
+        where textbook_id = #{textbookId}
+        order by parent_id nulls first, order_num, chapter_id
+    </select>
+
+    <select id="selectChapterById" resultMap="EduQbCatalogChapterResult">
+        select chapter_id, textbook_id, parent_id, chapter_name, order_num, 0 as question_count
+        from edu_qb_chapter
+        where chapter_id = #{chapterId}
+    </select>
+
+    <select id="selectChapterSubtree" resultMap="EduQbCatalogChapterResult">
+        with recursive chapter_tree as (
+            select chapter_id, textbook_id, parent_id, chapter_name, order_num
+            from edu_qb_chapter
+            where chapter_id = #{chapterId}
+            union all
+            select c.chapter_id, c.textbook_id, c.parent_id, c.chapter_name, c.order_num
+            from edu_qb_chapter c
+            inner join chapter_tree t on c.parent_id = t.chapter_id
+        )
+        select chapter_id, textbook_id, parent_id, chapter_name, order_num, 0 as question_count
+        from chapter_tree
+        order by order_num, chapter_id
+    </select>
+
+    <insert id="insertChapter" parameterType="EduQbCatalogChapter" useGeneratedKeys="true" keyProperty="chapterId">
+        insert into edu_qb_chapter (textbook_id, parent_id, chapter_name, order_num, create_time)
+        values (#{textbookId}, #{parentId}, #{chapterName}, #{orderNum}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <update id="updateChapter" parameterType="EduQbCatalogChapter">
+        update edu_qb_chapter
+        set textbook_id = #{textbookId},
+            parent_id = #{parentId},
+            chapter_name = #{chapterName},
+            order_num = #{orderNum}
+        where chapter_id = #{chapterId}
+    </update>
+
+    <delete id="deleteChapterByIds">
+        delete from edu_qb_chapter where chapter_id in
+        <foreach collection="chapterIds" item="chapterId" open="(" separator="," close=")">
+            #{chapterId}
+        </foreach>
+    </delete>
+
+    <select id="countChildChapter" resultType="int">
+        select count(*) from edu_qb_chapter where parent_id = #{parentId}
+    </select>
+
+    <select id="countQuestionByChapterId" resultType="int">
+        select count(distinct q.question_id)
+        from edu_qb_question q
+        where q.del_flag = '0' and q.status = '0'
+          and (
+            q.chapter_id in (
+                with recursive chapter_tree as (
+                    select chapter_id from edu_qb_chapter where chapter_id = #{chapterId}
+                    union all
+                    select c.chapter_id from edu_qb_chapter c
+                    inner join chapter_tree t on c.parent_id = t.chapter_id
+                )
+                select chapter_id from chapter_tree
+            )
+            or exists (
+                select 1 from (
+                    with recursive chapter_tree as (
+                        select chapter_id, chapter_name from edu_qb_chapter where chapter_id = #{chapterId}
+                        union all
+                        select c.chapter_id, c.chapter_name from edu_qb_chapter c
+                        inner join chapter_tree t on c.parent_id = t.chapter_id
+                    )
+                    select chapter_name from chapter_tree
+                ) ct
+                where (
+                    q.chapter_text = ct.chapter_name
+                    or q.chapter_text ilike (ct.chapter_name || ' > %')
+                    or q.chapter_text ilike ('% > ' || ct.chapter_name)
+                    or q.chapter_text ilike ('% > ' || ct.chapter_name || ' > %')
+                )
+            )
+          )
+    </select>
+
+    <select id="countQuestionsDirectInChapter" resultType="int">
+        select count(distinct q.question_id)
+        from edu_qb_question q
+        where q.del_flag = '0' and q.status = '0'
+          and q.chapter_id = #{chapterId}
+        <if test="subjectId != null">
+            and q.subject_id = #{subjectId}
+        </if>
+    </select>
+
+    <select id="countQuestionsInChapterSubtree" resultType="int">
+        with recursive chapter_tree as (
+            select chapter_id, chapter_name
+            from edu_qb_chapter
+            where chapter_id = #{chapterId}
+            union all
+            select c.chapter_id, c.chapter_name
+            from edu_qb_chapter c
+            inner join chapter_tree t on c.parent_id = t.chapter_id
+        )
+        select count(distinct q.question_id)
+        from edu_qb_question q
+        where q.del_flag = '0' and q.status = '0'
+        <if test="subjectId != null">
+            and q.subject_id = #{subjectId}
+        </if>
+        and (
+            q.chapter_id in (select chapter_id from chapter_tree)
+            or exists (
+                select 1 from chapter_tree ct
+                where (
+                    q.chapter_text = ct.chapter_name
+                    or q.chapter_text ilike (ct.chapter_name || ' > %')
+                    or q.chapter_text ilike ('% > ' || ct.chapter_name)
+                    or q.chapter_text ilike ('% > ' || ct.chapter_name || ' > %')
+                )
+            )
+        )
+    </select>
+
+    <select id="countQuestionsByTextbookId" resultType="int">
+        select count(distinct q.question_id)
+        from edu_qb_question q
+        where q.del_flag = '0' and q.status = '0'
+        <if test="subjectId != null">
+            and q.subject_id = #{subjectId}
+        </if>
+        and (
+            q.chapter_id in (select chapter_id from edu_qb_chapter where textbook_id = #{textbookId})
+            or exists (
+                select 1 from edu_qb_chapter c
+                where c.textbook_id = #{textbookId}
+                  and (
+                    q.chapter_text = c.chapter_name
+                    or q.chapter_text ilike (c.chapter_name || ' > %')
+                    or q.chapter_text ilike ('% > ' || c.chapter_name)
+                    or q.chapter_text ilike ('% > ' || c.chapter_name || ' > %')
+                  )
+            )
+        )
+    </select>
+
+    <select id="selectDirectQuestionCountsByTextbook" resultType="map">
+        select q.chapter_id as "chapterId", count(distinct q.question_id)::int as "questionCount"
+        from edu_qb_question q
+        inner join edu_qb_chapter c on c.chapter_id = q.chapter_id
+        where q.del_flag = '0'
+          and q.status = '0'
+          and c.textbook_id = #{textbookId}
+        <if test="subjectId != null">
+            and q.subject_id = #{subjectId}
+        </if>
+        group by q.chapter_id
+    </select>
+
+    <select id="selectChaptersByTextbookId" resultMap="EduQbCatalogChapterResult">
+        select c.chapter_id, c.textbook_id, c.parent_id, c.chapter_name, c.order_num,
+               0 as question_count
+        from edu_qb_chapter c
+        where c.textbook_id = #{textbookId}
+        order by c.parent_id nulls first, c.order_num, c.chapter_id
+    </select>
+
+</mapper>

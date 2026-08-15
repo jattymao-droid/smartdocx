@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduPayEntitlementMapper">
+
+    <select id="countEntitlement" resultType="int">
+        select count(1)
+        from edu_pay_entitlement
+        where username = #{username}
+          and biz_type = #{bizType}
+          and biz_id = #{bizId}
+          and coalesce(biz_ref, '') = coalesce(#{bizRef}, '')
+    </select>
+
+    <insert id="insertEntitlement" parameterType="EduPayEntitlement">
+        insert into edu_pay_entitlement (username, biz_type, biz_id, biz_ref, order_no, create_time)
+        values (#{username}, #{bizType}, #{bizId}, #{bizRef}, #{orderNo}, CURRENT_TIMESTAMP)
+        on conflict (username, biz_type, biz_id, biz_ref) do nothing
+    </insert>
+</mapper>

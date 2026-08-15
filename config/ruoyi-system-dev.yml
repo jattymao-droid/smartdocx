@@ -1,0 +1,105 @@
+# spring配置
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 
+  datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        loginUsername: ruoyi
+        loginPassword: 123456
+    dynamic:
+      druid:
+        initial-size: 5
+        min-idle: 5
+        maxActive: 20
+        maxWait: 60000
+        connectTimeout: 30000
+        socketTimeout: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat,slf4j
+        connectionProperties: druid.stat.mergeSql\\=true;druid.stat.slowSqlMillis\\=5000
+      datasource:
+          # 主库数据�?          master:
+            driver-class-name: org.postgresql.Driver
+            # Local Postgres (native install default port 5432; Docker compose may use 5433)
+            url: jdbc:postgresql://localhost:5432/ry_cloud
+            username: postgres
+            password: your_password
+          # 从库数据�?          # slave:
+            # username: 
+            # password: 
+            # url: 
+            # driver-class-name: 
+
+# mybatis配置
+mybatis:
+    # 搜索指定包别�?    typeAliasesPackage: com.ruoyi.system
+    # 配置mapper的扫描，找到所有的mapper.xml映射文件
+    mapperLocations: classpath:mapper/**/*.xml
+
+# springdoc配置
+springdoc:
+  gatewayUrl: http://localhost:8080/${spring.application.name}
+  api-docs:
+    # 是否开启接口文�?    enabled: true
+  info:
+    # 标题
+    title: '系统模块接口文档'
+    # 描述
+    description: '系统模块接口描述'
+    # 作者信�?    contact:
+      name: RuoYi
+      url: https://ruoyi.vip
+
+# 本地文件上传根目录（题库 DOCX/OCR/试卷上传�?file:
+  path: D:/ruoyi/uploadPath
+
+# 题库 OCR（auto 会依次尝�?paddle / tesseract / baidu，均不可用时回退 stub�?edu:
+  qb:
+    ocr:
+      provider: auto
+      paddle:
+        enabled: true
+        base-url: http://127.0.0.1:8867
+      tesseract:
+        enabled: true
+      baidu:
+        api-key: ''
+        secret-key: ''
+    ai:
+      enabled: true
+      base-url: https://api.deepseek.com
+      api-key: ''
+      model: deepseek-chat
+      connect-timeout-ms: 10000
+      read-timeout-ms: 120000
+      temperature: 0.7
+  library:
+    audit:
+      enabled: false
+    storage:
+      type: local
+    preview:
+      max-preview-pages: 5
+      kkfileview-base-url: http://127.0.0.1:8012
+      kkfileview-file-root: D:/AI/DlEducation/RuoYi-Cloud/tools/kkfileview/dist/kkFileView-4.2.1/file
+      file-public-base-url: http://127.0.0.1:8080
+      local-file-root: D:/ruoyi/uploadPath
+      local-file-prefix: /statics
+      libreoffice-home: D:/AI/DlEducation/RuoYi-Cloud/tools/kkfileview/dist/kkFileView-4.2.1/libreoffice
+    upload:
+      max-size-mb: 50
+    watermark:
+      enabled: true
+      template: "{username} {date}"

@@ -1,14 +1,15 @@
 {
   "name": "ruoyi",
   "version": "3.6.8",
-  "description": "若依管理系统",
+  "description": "东陆智能教学库",
   "author": "若依",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:prod": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
-    "preview": "node build/index.js --preview"
+    "preview": "node build/index.js --preview",
+    "fix:portal": "node scripts/fix-portal-all.js"
   },
   "keywords": [
     "vue",
@@ -24,19 +25,30 @@
     "url": "https://gitee.com/y_project/RuoYi-Cloud.git"
   },
   "dependencies": {
+    "@micromatrix.org/docx-math-converter": "^1.0.1",
     "@riophae/vue-treeselect": "0.4.0",
     "axios": "0.30.3",
     "clipboard": "2.0.8",
     "core-js": "3.37.1",
+    "docx": "^9.7.1",
+    "docx-preview": "^0.3.3",
     "echarts": "5.4.0",
     "element-ui": "2.15.14",
     "file-saver": "2.0.5",
     "fuse.js": "6.4.3",
     "highlight.js": "9.18.5",
+    "html-docx-js": "^0.3.1",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.2",
+    "interactjs": "^1.10.27",
     "js-beautify": "1.13.0",
     "js-cookie": "3.0.1",
     "jsencrypt": "3.0.0-rc.1",
+    "jspdf": "^2.5.2",
+    "katex": "^0.16.11",
+    "mathlive": "^0.104.2",
     "nprogress": "0.2.0",
+    "pdfjs-dist": "^2.16.105",
     "quill": "2.0.2",
     "screenfull": "5.0.2",
     "sortablejs": "1.10.2",

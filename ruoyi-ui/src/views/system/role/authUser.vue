@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
      <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch">
       <el-form-item label="用户名称" prop="userName">
@@ -151,7 +151,7 @@ export default {
     },
     // 返回按钮
     handleClose() {
-      const obj = { path: "/system/role" }
+      const obj = { path: "/admin/system/role" }
       this.$tab.closeOpenPage(obj)
     },
     /** 搜索按钮操作 */

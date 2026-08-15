@@ -38,7 +38,7 @@
           <span class="user-nickname"> {{ nickName }} </span>
         </div>
         <el-dropdown-menu slot="dropdown">
-          <router-link to="/user/profile">
+          <router-link to="/admin/user/profile">
             <el-dropdown-item>个人中心</el-dropdown-item>
           </router-link>
           <el-dropdown-item @click.native="setLayout" v-if="setting">
@@ -117,7 +117,7 @@ export default {
     lockScreen() {
       const currentPath = this.$route.fullPath
       this.$store.dispatch('lock/lockScreen', currentPath).then(() => {
-        this.$router.push('/lock')
+        this.$router.push('/admin/lock')
       })
     },
     logout() {
@@ -127,7 +127,7 @@ export default {
         type: 'warning'
       }).then(() => {
         this.$store.dispatch('LogOut').then(() => {
-          location.href = '/index'
+          location.href = '/admin'
         })
       }).catch(() => {})
     }

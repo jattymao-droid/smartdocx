@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch">
       <el-form-item label="角色名称" prop="roleName">
@@ -549,7 +549,7 @@ export default {
     /** 分配用户操作 */
     handleAuthUser(row) {
       const roleId = row.roleId
-      this.$router.push("/system/role-auth/user/" + roleId)
+      this.$router.push("/admin/system/role-auth/user/" + roleId)
     },
     /** 提交按钮 */
     submitForm() {

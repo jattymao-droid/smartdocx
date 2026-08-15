@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="字典名称" prop="dictType">
@@ -326,7 +326,7 @@ export default {
     },
     /** 返回按钮操作 */
     handleClose() {
-      const obj = { path: "/system/dict" }
+      const obj = { path: "/admin/system/dict" }
       this.$tab.closeOpenPage(obj)
     },
     /** 重置按钮操作 */

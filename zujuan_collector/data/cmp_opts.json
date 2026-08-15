@@ -1,0 +1,22 @@
+{
+  "detail_options": [
+    {
+      "label": "A",
+      "text": "位置"
+    },
+    {
+      "label": "B",
+      "text": "速度"
+    },
+    {
+      "label": "C",
+      "text": "受力"
+    },
+    {
+      "label": "D",
+      "text": "质量"
+    }
+  ],
+  "list_options": [],
+  "content_has_table": false
+}

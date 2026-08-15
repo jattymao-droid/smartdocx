@@ -1,0 +1,1880 @@
+{
+  "source_url": "https://zujuan.xkw.com/gzyw/zj135948/",
+  "crawled_at": "2026-07-09T03:52:27.199286+00:00",
+  "subject": {
+    "code": "gzyw",
+    "label": "高中语文",
+    "school_stage": "高中",
+    "menu_title": "高中语文",
+    "subject_id": "10",
+    "phase": "senior",
+    "nav_name": "语文"
+  },
+  "versions": [
+    {
+      "version_id": "135872",
+      "name": "统编版",
+      "url_template": "/gzyw/zj{0}/",
+      "textbooks": [
+        {
+          "zj_id": "135937",
+          "name": "必修上册",
+          "url": "https://zujuan.xkw.com/gzyw/zj135937/",
+          "chapter_count": 70,
+          "chapters": [
+            {
+              "zj_id": "135938",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135938",
+              "children": [
+                {
+                  "zj_id": "135947",
+                  "label": "第1课 沁园春·长沙/毛泽东",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135947",
+                  "children": []
+                },
+                {
+                  "zj_id": "185476",
+                  "label": "第2课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185476",
+                  "children": [
+                    {
+                      "zj_id": "135949",
+                      "label": "2-1 立在地球边上放号/郭沫若",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135949",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135948",
+                      "label": "2-2 红烛/闻一多",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135948",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135950",
+                      "label": "2-3 *峨日朵雪峰之侧/昌耀",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135950",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135951",
+                      "label": "2-4 *致云雀/雪莱",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135951",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185477",
+                  "label": "第3课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185477",
+                  "children": [
+                    {
+                      "zj_id": "135954",
+                      "label": "3-1 百合花/茹志鹃",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135954",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135953",
+                      "label": "3-2 *哦，香雪/铁凝",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135953",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "135956",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135956",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "135939",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135939",
+              "children": [
+                {
+                  "zj_id": "185478",
+                  "label": "第4课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185478",
+                  "children": [
+                    {
+                      "zj_id": "135974",
+                      "label": "4-1 喜看稻菽千重浪――记首届国家最高科技奖获得者袁隆平/ 沈英甲",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135974",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149795",
+                      "label": "4-2 *心有一团火，温暖众人心/林为民",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149795",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149796",
+                      "label": "4-3 *“探界者”钟扬/叶雨婷",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149796",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "149797",
+                  "label": "第5课 以工匠精神雕琢时代品质/李斌",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj149797",
+                  "children": []
+                },
+                {
+                  "zj_id": "185479",
+                  "label": "第6课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185479",
+                  "children": [
+                    {
+                      "zj_id": "149798",
+                      "label": "6-1 芣苢/《诗经·周南》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149798",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166903",
+                      "label": "6-2 插秧歌/杨万里",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166903",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "149800",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj149800",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "135940",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135940",
+              "children": [
+                {
+                  "zj_id": "185480",
+                  "label": "第7课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185480",
+                  "children": [
+                    {
+                      "zj_id": "135970",
+                      "label": "7-1 短歌行/曹操",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135970",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149787",
+                      "label": "7-2 *归园田居（其一）/陶渊明",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149787",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185481",
+                  "label": "第8课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185481",
+                  "children": [
+                    {
+                      "zj_id": "149788",
+                      "label": "8-1 梦游天姥吟留别/李白",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149788",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149789",
+                      "label": "8-2 登高/杜甫",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149789",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149790",
+                      "label": "8-3 *琵琶行并序/白居易",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149790",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185482",
+                  "label": "第9课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185482",
+                  "children": [
+                    {
+                      "zj_id": "149791",
+                      "label": "9-1 念奴娇·赤壁怀古/苏轼",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149791",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149792",
+                      "label": "9-2 *永遇乐·京口北固亭怀古/辛弃疾",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149792",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "149793",
+                      "label": "9-3 *声声慢（寻寻觅觅）/李清照",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj149793",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "149794",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj149794",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "135941",
+              "label": "第四单元 家乡文化生活",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135941",
+              "children": [
+                {
+                  "zj_id": "135977",
+                  "label": "学习活动",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135977",
+                  "children": [
+                    {
+                      "zj_id": "135981",
+                      "label": "一  记录家乡的人和物",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135981",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135982",
+                      "label": "二  家乡文化生活现状调查",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135982",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135983",
+                      "label": "三  参与家乡文化建设",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135983",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "135942",
+              "label": "第五单元  整本书阅读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135942",
+              "children": [
+                {
+                  "zj_id": "135993",
+                  "label": "《乡土中国》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135993",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "135943",
+              "label": "第六单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135943",
+              "children": [
+                {
+                  "zj_id": "185483",
+                  "label": "第10课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185483",
+                  "children": [
+                    {
+                      "zj_id": "135995",
+                      "label": "10-1 劝学/《荀子》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135995",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "135996",
+                      "label": "10-2  *师说/韩愈",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj135996",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "135998",
+                  "label": "第11课 反对党八股（节选）/毛泽东",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135998",
+                  "children": []
+                },
+                {
+                  "zj_id": "135999",
+                  "label": "第12课 拿来主义/鲁迅",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj135999",
+                  "children": []
+                },
+                {
+                  "zj_id": "185484",
+                  "label": "第13课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185484",
+                  "children": [
+                    {
+                      "zj_id": "136001",
+                      "label": "13-1 *读书：目的和前提/黑塞",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136001",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136002",
+                      "label": "13-2 *上图书馆/王佐良",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136002",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136004",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136004",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "135944",
+              "label": "第七单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj135944",
+              "children": [
+                {
+                  "zj_id": "185485",
+                  "label": "第14课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185485",
+                  "children": [
+                    {
+                      "zj_id": "136005",
+                      "label": "14-1 故都的秋/郁达夫",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136005",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136006",
+                      "label": "14-2 *荷塘月色/朱自清",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136006",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136007",
+                  "label": "第15课 我与地坛（节选）/史铁生",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136007",
+                  "children": []
+                },
+                {
+                  "zj_id": "185486",
+                  "label": "第16课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185486",
+                  "children": [
+                    {
+                      "zj_id": "136010",
+                      "label": "16-1 赤壁赋/苏轼",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136010",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136011",
+                      "label": "16-2 *登泰山记/姚鼐",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136011",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136013",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136013",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136014",
+              "label": "第八单元  词语积累与词语解释",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136014",
+              "children": [
+                {
+                  "zj_id": "150374",
+                  "label": "学习活动",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj150374",
+                  "children": [
+                    {
+                      "zj_id": "136018",
+                      "label": "一 丰富词语积累",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136018",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136019",
+                      "label": "二 把握古今词义的联系与区别",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136019",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136020",
+                      "label": "三 词义的辨析和词语的使用",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136020",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "136016",
+              "label": "古诗词诵读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136016",
+              "children": [
+                {
+                  "zj_id": "136024",
+                  "label": "静女/《诗经·邶风》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136024",
+                  "children": []
+                },
+                {
+                  "zj_id": "136026",
+                  "label": "涉江采芙蓉/《古诗十九首》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136026",
+                  "children": []
+                },
+                {
+                  "zj_id": "136027",
+                  "label": "虞美人（春花秋月何时了)/李煜",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136027",
+                  "children": []
+                },
+                {
+                  "zj_id": "136025",
+                  "label": "鹊桥仙（纤云弄巧）/秦观",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136025",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "136029",
+          "name": "必修下册",
+          "url": "https://zujuan.xkw.com/gzyw/zj136029/",
+          "chapter_count": 57,
+          "chapters": [
+            {
+              "zj_id": "136030",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136030",
+              "children": [
+                {
+                  "zj_id": "185487",
+                  "label": "第1课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185487",
+                  "children": [
+                    {
+                      "zj_id": "136039",
+                      "label": "1-1 子路、曾皙、冉有、公西华侍坐/《论语》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136039",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136040",
+                      "label": "1-2 *齐桓晋文之事/《孟子》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136040",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136041",
+                      "label": "1-3 庖丁解牛/《庄子》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136041",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136043",
+                  "label": "第2课 烛之武退秦师/《左传》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136043",
+                  "children": []
+                },
+                {
+                  "zj_id": "136044",
+                  "label": "第3课 *鸿门宴/司马迁",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136044",
+                  "children": []
+                },
+                {
+                  "zj_id": "136045",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136045",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136031",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136031",
+              "children": [
+                {
+                  "zj_id": "136046",
+                  "label": "第4课 《窦娥冤》（节选）/关汉卿",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136046",
+                  "children": []
+                },
+                {
+                  "zj_id": "136049",
+                  "label": "第5课 《雷雨》（节选）/曹禺",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136049",
+                  "children": []
+                },
+                {
+                  "zj_id": "136050",
+                  "label": "第6课 *《哈姆莱特》（节选）/莎士比亚",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136050",
+                  "children": []
+                },
+                {
+                  "zj_id": "136051",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136051",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136032",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136032",
+              "children": [
+                {
+                  "zj_id": "185488",
+                  "label": "第7课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185488",
+                  "children": [
+                    {
+                      "zj_id": "136052",
+                      "label": "7-1 青蒿素:人类征服疾病的一小步/屠呦呦",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136052",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136053",
+                      "label": "7-2 *一名物理学家的教育历程/加来道雄",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136053",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136055",
+                  "label": "第8课  *中国建筑的特征/梁思成",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136055",
+                  "children": []
+                },
+                {
+                  "zj_id": "136058",
+                  "label": "第9课 说“木叶”/林庚",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136058",
+                  "children": []
+                },
+                {
+                  "zj_id": "136061",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136061",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136033",
+              "label": "第四单元 信息时代的语文生活",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136033",
+              "children": [
+                {
+                  "zj_id": "136062",
+                  "label": "学习活动",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136062",
+                  "children": [
+                    {
+                      "zj_id": "159622",
+                      "label": "一 认识多媒介",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159622",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159623",
+                      "label": "二  善用多媒介",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159623",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159624",
+                      "label": "三  辨识媒介信息",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159624",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "136034",
+              "label": "第五单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136034",
+              "children": [
+                {
+                  "zj_id": "185489",
+                  "label": "第10课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185489",
+                  "children": [
+                    {
+                      "zj_id": "136072",
+                      "label": "10-1 在《人民报》创刊纪念会上的演说/马克思",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136072",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159481",
+                      "label": "10-2 在马克思墓前的讲话/恩格斯",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159481",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185490",
+                  "label": "第11课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185490",
+                  "children": [
+                    {
+                      "zj_id": "136073",
+                      "label": "11-1 谏逐客书/李斯",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136073",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136074",
+                      "label": "11-2 *与妻书/林觉民",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136074",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136077",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136077",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136036",
+              "label": "第六单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136036",
+              "children": [
+                {
+                  "zj_id": "136079",
+                  "label": "第12课  祝福/鲁迅",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136079",
+                  "children": []
+                },
+                {
+                  "zj_id": "185491",
+                  "label": "第13课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185491",
+                  "children": [
+                    {
+                      "zj_id": "136082",
+                      "label": "13-1 林教头风雪山神庙/施耐庵",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136082",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "136083",
+                      "label": "13-2 *装在套子里的人/契诃夫",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136083",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185492",
+                  "label": "第14课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185492",
+                  "children": [
+                    {
+                      "zj_id": "136085",
+                      "label": "14-1 促织/蒲松龄",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj136085",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159482",
+                      "label": "14-2  *变形记（节选）/卡夫卡",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159482",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136086",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136086",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136035",
+              "label": "第七单元 整本书阅读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136035",
+              "children": [
+                {
+                  "zj_id": "136078",
+                  "label": "《红楼梦》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136078",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136037",
+              "label": "第八单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136037",
+              "children": [
+                {
+                  "zj_id": "185493",
+                  "label": "第15课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185493",
+                  "children": [
+                    {
+                      "zj_id": "159483",
+                      "label": "15-1 谏太宗十思疏/魏征",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159483",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159484",
+                      "label": "15-2 *答司马谏议书/王安石",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159484",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185494",
+                  "label": "第16课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185494",
+                  "children": [
+                    {
+                      "zj_id": "159486",
+                      "label": "16-1 阿房宫赋/杜牧",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159486",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "159487",
+                      "label": "16-2 *六国论/苏洵",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj159487",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "136089",
+                  "label": "单元学习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj136089",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "136038",
+              "label": "古诗词诵读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj136038",
+              "children": [
+                {
+                  "zj_id": "159625",
+                  "label": "登岳阳楼/杜甫",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj159625",
+                  "children": []
+                },
+                {
+                  "zj_id": "159626",
+                  "label": "桂枝香·金陵怀古/王安石",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj159626",
+                  "children": []
+                },
+                {
+                  "zj_id": "159627",
+                  "label": "念奴娇·过洞庭/张孝祥",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj159627",
+                  "children": []
+                },
+                {
+                  "zj_id": "159628",
+                  "label": "游园(【皂罗袍】)/汤显祖",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj159628",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "166430",
+          "name": "选择性必修上册",
+          "url": "https://zujuan.xkw.com/gzyw/zj166430/",
+          "chapter_count": 36,
+          "chapters": [
+            {
+              "zj_id": "166447",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166447",
+              "children": [
+                {
+                  "zj_id": "166448",
+                  "label": "第1课 中国人民站起来了/毛泽东",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166448",
+                  "children": []
+                },
+                {
+                  "zj_id": "185495",
+                  "label": "第2课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185495",
+                  "children": [
+                    {
+                      "zj_id": "166449",
+                      "label": "2-1 长征胜利万岁/杨成武",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166449",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166450",
+                      "label": "2-2 *大战中的插曲/聂荣臻",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166450",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185496",
+                  "label": "第3课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185496",
+                  "children": [
+                    {
+                      "zj_id": "166451",
+                      "label": "3-1 别了，“不列颠尼亚”/周婷  杨兴",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166451",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166452",
+                      "label": "3-2 *县委书记的榜样——焦裕禄/穆青  冯健  周原",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166452",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "183102",
+                  "label": "第4课 在民族复兴的历史丰碑上——2020中国抗疫记/钟华论",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj183102",
+                  "children": []
+                },
+                {
+                  "zj_id": "166453",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166453",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166454",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166454",
+              "children": [
+                {
+                  "zj_id": "185497",
+                  "label": "第5课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185497",
+                  "children": [
+                    {
+                      "zj_id": "166455",
+                      "label": "5-1 《论语》十二章",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166455",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166456",
+                      "label": "5-2 大学之道/《礼记》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166456",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166457",
+                      "label": "5-3 *人皆有不忍人之心/《孟子》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166457",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185498",
+                  "label": "第6课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185498",
+                  "children": [
+                    {
+                      "zj_id": "166458",
+                      "label": "6-1 《老子》四章",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166458",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166459",
+                      "label": "6-2 *五石之瓠/《庄子》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166459",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166460",
+                  "label": "第7课 *兼爱/《墨子》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166460",
+                  "children": []
+                },
+                {
+                  "zj_id": "166461",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166461",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166462",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166462",
+              "children": [
+                {
+                  "zj_id": "166463",
+                  "label": "第8课 大卫·科波菲尔（节选）/狄更斯",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166463",
+                  "children": []
+                },
+                {
+                  "zj_id": "166464",
+                  "label": "第9课 复活（节选）/列夫·托尔斯泰",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166464",
+                  "children": []
+                },
+                {
+                  "zj_id": "166465",
+                  "label": "第10课 *老人与海（节选）/海明威",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166465",
+                  "children": []
+                },
+                {
+                  "zj_id": "166466",
+                  "label": "第11课 *百年孤独（节选）/加西亚•马尔克斯",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166466",
+                  "children": []
+                },
+                {
+                  "zj_id": "166467",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166467",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166468",
+              "label": "第四单元  逻辑的力量",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166468",
+              "children": [
+                {
+                  "zj_id": "185499",
+                  "label": "学习活动",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185499",
+                  "children": [
+                    {
+                      "zj_id": "166469",
+                      "label": "一 发现潜藏的逻辑谬误",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166469",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166470",
+                      "label": "二 运用有效的推理形式",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166470",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166471",
+                      "label": "三 采用合理的论证方法",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166471",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "zj_id": "166472",
+              "label": "古诗词诵读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166472",
+              "children": [
+                {
+                  "zj_id": "166473",
+                  "label": "无衣/《诗经·秦风》",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166473",
+                  "children": []
+                },
+                {
+                  "zj_id": "166474",
+                  "label": "春江花月夜/张若虚",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166474",
+                  "children": []
+                },
+                {
+                  "zj_id": "166475",
+                  "label": "将进酒/李白",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166475",
+                  "children": []
+                },
+                {
+                  "zj_id": "166476",
+                  "label": "江城子·乙卯正月二十日夜记梦/苏轼",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166476",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "166432",
+          "name": "选择性必修中册",
+          "url": "https://zujuan.xkw.com/gzyw/zj166432/",
+          "chapter_count": 41,
+          "chapters": [
+            {
+              "zj_id": "166509",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166509",
+              "children": [
+                {
+                  "zj_id": "166510",
+                  "label": "第1课 社会历史的决定性基础/恩格斯",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166510",
+                  "children": []
+                },
+                {
+                  "zj_id": "185500",
+                  "label": "第2课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185500",
+                  "children": [
+                    {
+                      "zj_id": "166511",
+                      "label": "2-1 改造我们的学习/毛泽东",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166511",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166512",
+                      "label": "2-2 人的正确思想是从哪里来的？/毛泽东",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166512",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166513",
+                  "label": "第3课 实践是检验真理的唯一标准/《光明日报》特约评论员",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166513",
+                  "children": []
+                },
+                {
+                  "zj_id": "185501",
+                  "label": "第4课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185501",
+                  "children": [
+                    {
+                      "zj_id": "166514",
+                      "label": "4-1 *修辞立其诚/张岱年",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166514",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166515",
+                      "label": "4-2 *怜悯是人的天性/卢梭",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166515",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166516",
+                  "label": "第5课  *人应当坚持正义/柏拉图",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166516",
+                  "children": []
+                },
+                {
+                  "zj_id": "170955",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170955",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166517",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166517",
+              "children": [
+                {
+                  "zj_id": "185502",
+                  "label": "第6课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185502",
+                  "children": [
+                    {
+                      "zj_id": "166518",
+                      "label": "6-1 记念刘和珍君/鲁迅",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166518",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166519",
+                      "label": "6-2 *为了忘却的记念/鲁迅",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166519",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166520",
+                  "label": "第7课 包身工/夏衍",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166520",
+                  "children": []
+                },
+                {
+                  "zj_id": "185503",
+                  "label": "第8课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185503",
+                  "children": [
+                    {
+                      "zj_id": "166521",
+                      "label": "8-1 荷花淀/孙犁",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166521",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166522",
+                      "label": "8-2 *小二黑结婚（节选）/赵树理",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166522",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166523",
+                      "label": "8-3 *党费/王愿坚",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166523",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "170958",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170958",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166524",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166524",
+              "children": [
+                {
+                  "zj_id": "166525",
+                  "label": "第9课 屈原列传/司马迁",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166525",
+                  "children": []
+                },
+                {
+                  "zj_id": "166526",
+                  "label": "第10课 *苏武传/班固",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166526",
+                  "children": []
+                },
+                {
+                  "zj_id": "185504",
+                  "label": "第11课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185504",
+                  "children": [
+                    {
+                      "zj_id": "166527",
+                      "label": "11-1 过秦论/贾谊",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166527",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166528",
+                      "label": "11-2 *五代史伶官传序/欧阳修",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166528",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "170959",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170959",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166529",
+              "label": "第四单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166529",
+              "children": [
+                {
+                  "zj_id": "166530",
+                  "label": "第12课 玩偶之家（节选）/易卜生",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166530",
+                  "children": []
+                },
+                {
+                  "zj_id": "185505",
+                  "label": "第13课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185505",
+                  "children": [
+                    {
+                      "zj_id": "166531",
+                      "label": "13-1 迷娘（之一）/歌德",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166531",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166532",
+                      "label": "13-2 致大海/普希金",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166532",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166533",
+                      "label": "13-3 *自己之歌（节选）/惠特曼",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166533",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166534",
+                      "label": "13-4 *树和天空/特朗斯特罗姆",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166534",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "170961",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170961",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166535",
+              "label": "古诗词诵读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166535",
+              "children": [
+                {
+                  "zj_id": "166536",
+                  "label": "燕歌行并序/高适",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166536",
+                  "children": []
+                },
+                {
+                  "zj_id": "166537",
+                  "label": "李凭箜篌引/李贺",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166537",
+                  "children": []
+                },
+                {
+                  "zj_id": "166538",
+                  "label": "锦瑟/李商隐",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166538",
+                  "children": []
+                },
+                {
+                  "zj_id": "166539",
+                  "label": "书愤/陆游",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166539",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "zj_id": "166431",
+          "name": "选择性必修下册",
+          "url": "https://zujuan.xkw.com/gzyw/zj166431/",
+          "chapter_count": 45,
+          "chapters": [
+            {
+              "zj_id": "166477",
+              "label": "第一单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166477",
+              "children": [
+                {
+                  "zj_id": "185506",
+                  "label": "第1课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185506",
+                  "children": [
+                    {
+                      "zj_id": "166478",
+                      "label": "1-1 氓/《诗经·卫风》",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166478",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166479",
+                      "label": "1-2 离骚（节选）/屈原",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166479",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166480",
+                  "label": "第2课 *孔雀东南飞并序",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166480",
+                  "children": []
+                },
+                {
+                  "zj_id": "185507",
+                  "label": "第3课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185507",
+                  "children": [
+                    {
+                      "zj_id": "166481",
+                      "label": "3-1 蜀道难/李白",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166481",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166482",
+                      "label": "3-2 *蜀相/杜甫",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166482",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185508",
+                  "label": "第4课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185508",
+                  "children": [
+                    {
+                      "zj_id": "166483",
+                      "label": "4-1 *望海潮（东南形胜）/柳永",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166483",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166484",
+                      "label": "4-2 *扬州慢（淮左名都）/姜夔",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166484",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "170967",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170967",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166485",
+              "label": "第二单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166485",
+              "children": [
+                {
+                  "zj_id": "185509",
+                  "label": "第5课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185509",
+                  "children": [
+                    {
+                      "zj_id": "166486",
+                      "label": "5-1 阿Q正传（节选）/鲁迅",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166486",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166487",
+                      "label": "5-2 *边城（节选）/沈从文",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166487",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185510",
+                  "label": "第6课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185510",
+                  "children": [
+                    {
+                      "zj_id": "166488",
+                      "label": "6-1 大堰河——我的保姆/艾青",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166488",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166489",
+                      "label": "6-2 *再别康桥/徐志摩",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166489",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185511",
+                  "label": "第7课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185511",
+                  "children": [
+                    {
+                      "zj_id": "193485",
+                      "label": "7-1 风景谈/茅盾",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj193485",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166491",
+                      "label": "7-2 *秦腔/贾平凹",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166491",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166492",
+                  "label": "第8课 茶馆（节选）/老舍",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166492",
+                  "children": []
+                },
+                {
+                  "zj_id": "170971",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170971",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166493",
+              "label": "第三单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166493",
+              "children": [
+                {
+                  "zj_id": "185512",
+                  "label": "第9课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185512",
+                  "children": [
+                    {
+                      "zj_id": "166494",
+                      "label": "9-1 陈情表/李密",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166494",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166495",
+                      "label": "9-2 *项脊轩志/归有光",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166495",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "185513",
+                  "label": "第10课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185513",
+                  "children": [
+                    {
+                      "zj_id": "166496",
+                      "label": "10-1 兰亭集序/王羲之",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166496",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166497",
+                      "label": "10-2 归去来兮辞并序/陶渊明",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166497",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166498",
+                  "label": "第11课 *种树郭橐驼传/柳宗元",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166498",
+                  "children": []
+                },
+                {
+                  "zj_id": "166499",
+                  "label": "第12课 *石钟山记/苏轼",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166499",
+                  "children": []
+                },
+                {
+                  "zj_id": "170974",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170974",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166500",
+              "label": "第四单元",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166500",
+              "children": [
+                {
+                  "zj_id": "185514",
+                  "label": "第13课",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj185514",
+                  "children": [
+                    {
+                      "zj_id": "166501",
+                      "label": "13-1 自然选择的证明/达尔文",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166501",
+                      "children": []
+                    },
+                    {
+                      "zj_id": "166502",
+                      "label": "13-2 *宇宙的边疆/卡尔·萨根",
+                      "level": 3,
+                      "url": "https://zujuan.xkw.com/gzyw/zj166502",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "zj_id": "166503",
+                  "label": "第14课 *天文学上的旷世之争/关增建",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166503",
+                  "children": []
+                },
+                {
+                  "zj_id": "170976",
+                  "label": "单元研习任务",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj170976",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "zj_id": "166504",
+              "label": "古诗词诵读",
+              "level": 1,
+              "url": "https://zujuan.xkw.com/gzyw/zj166504",
+              "children": [
+                {
+                  "zj_id": "166505",
+                  "label": "拟行路难（其四）/鲍照",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166505",
+                  "children": []
+                },
+                {
+                  "zj_id": "166506",
+                  "label": "客至/杜甫",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166506",
+                  "children": []
+                },
+                {
+                  "zj_id": "166507",
+                  "label": "登快阁/黄庭坚",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166507",
+                  "children": []
+                },
+                {
+                  "zj_id": "166508",
+                  "label": "临安春雨初霁/陆游",
+                  "level": 2,
+                  "url": "https://zujuan.xkw.com/gzyw/zj166508",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

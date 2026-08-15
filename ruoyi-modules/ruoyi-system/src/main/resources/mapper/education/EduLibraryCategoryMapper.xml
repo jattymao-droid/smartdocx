@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduLibraryCategoryMapper">
+
+    <resultMap id="EduLibraryCategoryResult" type="EduLibraryCategory">
+        <result property="categoryId" column="category_id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+        <result property="docCount" column="doc_count"/>
+    </resultMap>
+
+    <select id="selectEduLibraryCategoryById" resultMap="EduLibraryCategoryResult">
+        select category_id, parent_id, category_name, order_num, status
+        from edu_library_category
+        where category_id = #{categoryId}
+    </select>
+
+    <select id="selectEduLibraryCategoryList" parameterType="EduLibraryCategory" resultMap="EduLibraryCategoryResult">
+        select c.category_id, c.parent_id, c.category_name, c.order_num, c.status,
+               (select count(1) from edu_library_document d where d.category_id = c.category_id and d.del_flag = '0') as doc_count
+        from edu_library_category c
+        <where>
+            <if test="categoryName != null and categoryName != ''">and c.category_name like ('%' || #{categoryName} || '%')</if>
+            <if test="status != null and status != ''">and c.status = #{status}</if>
+        </where>
+        order by c.order_num, c.category_id
+    </select>
+
+    <insert id="insertEduLibraryCategory" parameterType="EduLibraryCategory" useGeneratedKeys="true" keyProperty="categoryId">
+        insert into edu_library_category (parent_id, category_name, order_num, status, create_time)
+        values (#{parentId}, #{categoryName}, #{orderNum}, #{status}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <update id="updateEduLibraryCategory" parameterType="EduLibraryCategory">
+        update edu_library_category
+        <set>
+            <if test="parentId != null">parent_id = #{parentId},</if>
+            <if test="categoryName != null">category_name = #{categoryName},</if>
+            <if test="orderNum != null">order_num = #{orderNum},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        where category_id = #{categoryId}
+    </update>
+
+    <delete id="deleteEduLibraryCategoryByIds">
+        delete from edu_library_category where category_id in
+        <foreach collection="categoryIds" item="categoryId" open="(" separator="," close=")">
+            #{categoryId}
+        </foreach>
+    </delete>
+
+    <select id="countDocumentsByCategoryId" resultType="int">
+        select count(1) from edu_library_document
+        where category_id = #{categoryId} and del_flag = '0'
+    </select>
+</mapper>

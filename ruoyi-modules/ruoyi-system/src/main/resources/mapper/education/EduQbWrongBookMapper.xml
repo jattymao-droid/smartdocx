@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbWrongBookMapper">
+
+
+
+    <resultMap id="EduQbWrongBookResult" type="EduQbWrongBook">
+
+        <id property="wrongId" column="wrong_id"/>
+
+        <result property="userName" column="user_name"/>
+
+        <result property="questionId" column="question_id"/>
+
+        <result property="subjectId" column="subject_id"/>
+
+        <result property="subjectName" column="subject_name"/>
+
+        <result property="chapterId" column="chapter_id"/>
+
+        <result property="chapterText" column="chapter_text"/>
+
+        <result property="questionType" column="question_type"/>
+
+        <result property="content" column="content"/>
+
+        <result property="wrongCount" column="wrong_count"/>
+
+        <result property="mastered" column="mastered"/>
+
+        <result property="lastWrongAnswer" column="last_wrong_answer"/>
+
+        <result property="lastWrongTime" column="last_wrong_time"/>
+
+        <result property="createTime" column="create_time"/>
+
+    </resultMap>
+
+
+
+    <resultMap id="EduQbWrongBookStatsResult" type="EduQbWrongBookStats">
+
+        <result property="activeCount" column="active_count"/>
+
+        <result property="masteredCount" column="mastered_count"/>
+
+        <result property="totalWrongAttempts" column="total_wrong_attempts"/>
+
+    </resultMap>
+
+
+
+    <sql id="selectWrongBookVo">
+
+        select w.wrong_id, w.user_name, w.question_id, w.subject_id, s.subject_name,
+
+               w.chapter_id, w.chapter_text, w.question_type, q.content,
+
+               w.wrong_count, w.mastered, w.last_wrong_time, w.create_time,
+
+               (
+
+                   select r.picked_answer
+
+                   from edu_qb_practice_record r
+
+                   where r.user_name = w.user_name
+
+                     and r.question_id = w.question_id
+
+                     and r.correct_flag = '0'
+
+                   order by r.create_time desc, r.record_id desc
+
+                   limit 1
+
+               ) as last_wrong_answer
+
+        from edu_qb_wrong_book w
+
+        left join edu_qb_question q on q.question_id = w.question_id and q.del_flag = '0'
+
+        left join edu_subject s on s.subject_id = w.subject_id
+
+    </sql>
+
+
+
+    <select id="selectWrongBookList" parameterType="EduQbWrongBook" resultMap="EduQbWrongBookResult">
+
+        <include refid="selectWrongBookVo"/>
+
+        <where>
+
+            w.user_name = #{userName}
+
+            <if test="subjectId != null">and w.subject_id = #{subjectId}</if>
+
+            <if test="mastered != null and mastered != ''">and w.mastered = #{mastered}</if>
+
+            <if test="questionType != null and questionType != ''">and w.question_type = #{questionType}</if>
+
+            <if test="chapterText != null and chapterText != ''">
+
+                and w.chapter_text ilike ('%' || #{chapterText} || '%')
+
+            </if>
+
+            <if test="content != null and content != ''">
+
+                and q.content ilike ('%' || #{content} || '%')
+
+            </if>
+
+        </where>
+
+        order by w.last_wrong_time desc, w.wrong_id desc
+
+    </select>
+
+
+
+    <select id="selectWrongBookByIdForUser" resultMap="EduQbWrongBookResult">
+        <include refid="selectWrongBookVo"/>
+        where w.wrong_id = #{wrongId} and w.user_name = #{userName}
+        limit 1
+    </select>
+
+    <select id="selectWrongBookByUserQuestion" resultMap="EduQbWrongBookResult">
+
+        <include refid="selectWrongBookVo"/>
+
+        where w.user_name = #{userName} and w.question_id = #{questionId}
+
+    </select>
+
+
+
+    <select id="selectActiveWrongBooks" resultMap="EduQbWrongBookResult">
+
+        <include refid="selectWrongBookVo"/>
+
+        where w.user_name = #{userName}
+
+          and w.mastered = '0'
+
+          <if test="subjectId != null">and w.subject_id = #{subjectId}</if>
+
+          <if test="questionIds != null and questionIds.size() > 0">
+
+              and w.question_id in
+
+              <foreach collection="questionIds" item="qid" open="(" separator="," close=")">#{qid}</foreach>
+
+          </if>
+
+        order by w.last_wrong_time desc, w.wrong_id desc
+
+        <if test="limit != null and limit > 0">limit #{limit}</if>
+
+    </select>
+
+
+
+    <select id="selectWrongBookStats" resultMap="EduQbWrongBookStatsResult">
+
+        select
+
+            count(*) filter (where mastered = '0')::int as active_count,
+
+            count(*) filter (where mastered = '1')::int as mastered_count,
+
+            coalesce(sum(wrong_count) filter (where mastered = '0'), 0)::int as total_wrong_attempts
+
+        from edu_qb_wrong_book
+
+        where user_name = #{userName}
+
+        <if test="subjectId != null">and subject_id = #{subjectId}</if>
+
+    </select>
+
+
+
+    <insert id="insertWrongBook" parameterType="EduQbWrongBook" useGeneratedKeys="true" keyProperty="wrongId">
+
+        insert into edu_qb_wrong_book (
+
+            user_name, question_id, subject_id, chapter_id, chapter_text, question_type,
+
+            wrong_count, last_wrong_time, mastered, create_time
+
+        ) values (
+
+            #{userName}, #{questionId}, #{subjectId}, #{chapterId}, #{chapterText}, #{questionType},
+
+            #{wrongCount}, now(), '0', now()
+
+        )
+
+    </insert>
+
+
+
+    <insert id="upsertWrongBook" parameterType="EduQbWrongBook">
+
+        insert into edu_qb_wrong_book (
+
+            user_name, question_id, subject_id, chapter_id, chapter_text, question_type,
+
+            wrong_count, last_wrong_time, mastered, create_time
+
+        ) values (
+
+            #{userName}, #{questionId}, #{subjectId}, #{chapterId}, #{chapterText}, #{questionType},
+
+            1, now(), '0', now()
+
+        )
+
+        on conflict (user_name, question_id) do update set
+
+            subject_id = excluded.subject_id,
+
+            chapter_id = excluded.chapter_id,
+
+            chapter_text = excluded.chapter_text,
+
+            question_type = excluded.question_type,
+
+            wrong_count = edu_qb_wrong_book.wrong_count + 1,
+
+            last_wrong_time = now(),
+
+            mastered = '0',
+
+            update_time = now()
+
+    </insert>
+
+
+
+    <update id="markMastered">
+
+        update edu_qb_wrong_book
+
+        set mastered = '1', update_time = now()
+
+        where wrong_id = #{wrongId} and user_name = #{userName}
+
+    </update>
+
+
+
+    <update id="restoreWrong">
+
+        update edu_qb_wrong_book
+
+        set mastered = '0', update_time = now()
+
+        where wrong_id = #{wrongId} and user_name = #{userName}
+
+    </update>
+
+
+
+    <delete id="deleteWrongBook">
+
+        delete from edu_qb_wrong_book
+
+        where wrong_id = #{wrongId} and user_name = #{userName}
+
+    </delete>
+
+
+
+    <update id="batchMarkMastered">
+
+        update edu_qb_wrong_book
+
+        set mastered = '1', update_time = now()
+
+        where user_name = #{userName}
+
+          and wrong_id in
+
+          <foreach collection="wrongIds" item="id" open="(" separator="," close=")">#{id}</foreach>
+
+    </update>
+
+
+
+    <delete id="batchDeleteWrongBook">
+
+        delete from edu_qb_wrong_book
+
+        where user_name = #{userName}
+
+          and wrong_id in
+
+          <foreach collection="wrongIds" item="id" open="(" separator="," close=")">#{id}</foreach>
+
+    </delete>
+
+
+
+    <select id="selectActiveWrongQuestionIds" resultType="long">
+
+        select question_id
+
+        from edu_qb_wrong_book
+
+        where user_name = #{userName}
+
+          and mastered = '0'
+
+          <if test="subjectId != null">and subject_id = #{subjectId}</if>
+
+        order by last_wrong_time desc, wrong_id desc
+
+    </select>
+
+</mapper>
+

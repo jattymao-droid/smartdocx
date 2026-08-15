@@ -44,3 +44,27 @@ nbdist/
 !*/build/*.java
 !*/build/*.html
 !*/build/*.xml
+
+######################################################################
+# Local runtime / bulky tooling (do not push to GitHub)
+logs/
+tools/
+packages/
+**/node_modules/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+ruoyi-ui/dist/
+*.jar
+!**/src/**/*.jar
+
+# Local Docker volumes
+docker/postgres/data/
+docker/redis/data/
+docker/nacos/logs/
+
+# Local uploads
+**/uploadPath/
+
+zujuan_collector/config.json
+

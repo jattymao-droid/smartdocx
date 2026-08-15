@@ -47,6 +47,7 @@
 <script>
 import { getToken } from "@/utils/auth"
 import Sortable from 'sortablejs'
+import { normalizePortalMediaPath, resolvePortalMediaUrl } from '@/utils/portalBanner'
 
 export default {
   props: {
@@ -128,7 +129,9 @@ export default {
           // 然后将数组转为对象数组
           this.fileList = list.map(item => {
             if (typeof item === "string") {
-              item = { name: item, url: item }
+              const stored = normalizePortalMediaPath(item) || item
+              const url = resolvePortalMediaUrl(stored)
+              item = { name: stored, url }
             }
             return item
           })
@@ -146,6 +149,9 @@ export default {
     showTip() {
       return this.isShowTip && (this.fileType || this.fileSize)
     },
+    baseUrl() {
+      return process.env.VUE_APP_BASE_API
+    }
   },
   methods: {
     // 上传前loading加载
@@ -190,7 +196,11 @@ export default {
     // 上传成功回调
     handleUploadSuccess(res, file) {
       if (res.code === 200) {
-        this.uploadList.push({ name: res.data.url, url: res.data.url })
+        const stored = normalizePortalMediaPath(res.data.url) || res.data.url
+        this.uploadList.push({
+          name: stored,
+          url: resolvePortalMediaUrl(stored)
+        })
         this.uploadedSuccessfully()
       } else {
         this.number--
@@ -233,11 +243,17 @@ export default {
       let strs = ""
       separator = separator || ","
       for (let i in list) {
-        if (list[i].url) {
-          strs += list[i].url.replace(this.baseUrl, "") + separator
+        const item = list[i]
+        if (!item) continue
+        let stored = item.name || normalizePortalMediaPath(item.url) || item.url
+        if (this.baseUrl && stored.indexOf(this.baseUrl) === 0) {
+          stored = stored.slice(this.baseUrl.length)
+        }
+        if (stored) {
+          strs += stored + separator
         }
       }
-      return strs != '' ? strs.substr(0, strs.length - 1) : ''
+      return strs !== '' ? strs.substr(0, strs.length - 1) : ''
     }
   }
 }

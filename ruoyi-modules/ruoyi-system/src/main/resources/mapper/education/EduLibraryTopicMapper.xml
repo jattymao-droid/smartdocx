@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduLibraryTopicMapper">
+
+    <resultMap id="EduLibraryTopicResult" type="EduLibraryTopic">
+        <result property="topicId" column="topic_id"/>
+        <result property="title" column="title"/>
+        <result property="summary" column="summary"/>
+        <result property="coverUrl" column="cover_url"/>
+        <result property="bundlePrice" column="bundle_price"/>
+        <result property="downloadCount" column="download_count"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="bundleDocumentId" column="bundle_document_id"/>
+        <result property="status" column="status"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="docCount" column="doc_count"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <resultMap id="EduLibraryTopicDocumentResult" type="EduLibraryDocument">
+        <result property="documentId" column="document_id"/>
+        <result property="title" column="title"/>
+        <result property="summary" column="summary"/>
+        <result property="fileName" column="file_name"/>
+        <result property="fileExt" column="file_ext"/>
+        <result property="fileSize" column="file_size"/>
+        <result property="fileUrl" column="file_url"/>
+        <result property="coverUrl" column="cover_url"/>
+        <result property="categoryId" column="category_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="subjectName" column="subject_name"/>
+        <result property="downloadPrice" column="download_price"/>
+        <result property="downloadCount" column="download_count"/>
+        <result property="viewCount" column="view_count"/>
+        <result property="allowDownload" column="allow_download"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <select id="selectEduLibraryTopicById" resultMap="EduLibraryTopicResult">
+        select t.topic_id, t.title, t.summary, t.cover_url, t.bundle_price, t.download_count,
+               t.order_num, t.bundle_document_id, t.status, t.del_flag, t.create_by, t.create_time, t.update_by, t.update_time, t.remark,
+               (select count(1) from edu_library_topic_document td
+                inner join edu_library_document d on d.document_id = td.document_id and d.del_flag = '0'
+                where td.topic_id = t.topic_id) as doc_count
+        from edu_library_topic t
+        where t.topic_id = #{topicId} and t.del_flag = '0'
+    </select>
+
+    <select id="selectEduLibraryTopicList" parameterType="EduLibraryTopic" resultMap="EduLibraryTopicResult">
+        select t.topic_id, t.title, t.summary, t.cover_url, t.bundle_price, t.download_count,
+               t.order_num, t.bundle_document_id, t.status, t.del_flag, t.create_by, t.create_time, t.update_by, t.update_time, t.remark,
+               (select count(1) from edu_library_topic_document td
+                inner join edu_library_document d on d.document_id = td.document_id and d.del_flag = '0'
+                where td.topic_id = t.topic_id) as doc_count
+        from edu_library_topic t
+        <where>
+            t.del_flag = '0'
+            <if test="title != null and title != ''">and t.title like ('%' || #{title} || '%')</if>
+            <if test="status != null and status != ''">and t.status = #{status}</if>
+            <if test="params.portalMode != null and params.portalMode == 'true'">
+                and t.status = '0'
+                and exists (
+                    select 1 from edu_library_topic_document td
+                    inner join edu_library_document d on d.document_id = td.document_id
+                    where td.topic_id = t.topic_id and d.del_flag = '0' and d.status = '0' and d.audit_status = '1'
+                )
+            </if>
+        </where>
+        order by t.order_num, t.topic_id desc
+    </select>
+
+    <insert id="insertEduLibraryTopic" parameterType="EduLibraryTopic" useGeneratedKeys="true" keyProperty="topicId">
+        insert into edu_library_topic (
+            title, summary, cover_url, bundle_price, download_count, order_num, bundle_document_id, status, del_flag,
+            create_by, create_time, remark
+        ) values (
+            #{title}, #{summary}, #{coverUrl}, #{bundlePrice}, coalesce(#{downloadCount}, 0), #{orderNum}, #{bundleDocumentId}, #{status}, '0',
+            #{createBy}, CURRENT_TIMESTAMP, #{remark}
+        )
+    </insert>
+
+    <update id="updateEduLibraryTopic" parameterType="EduLibraryTopic">
+        update edu_library_topic
+        <set>
+            <if test="title != null">title = #{title},</if>
+            <if test="summary != null">summary = #{summary},</if>
+            <if test="coverUrl != null">cover_url = #{coverUrl},</if>
+            <if test="bundlePrice != null">bundle_price = #{bundlePrice},</if>
+            <if test="orderNum != null">order_num = #{orderNum},</if>
+            <if test="bundleDocumentId != null">bundle_document_id = #{bundleDocumentId},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            update_time = CURRENT_TIMESTAMP
+        </set>
+        where topic_id = #{topicId} and del_flag = '0'
+    </update>
+
+    <update id="deleteEduLibraryTopicByIds">
+        update edu_library_topic set del_flag = '1', update_time = CURRENT_TIMESTAMP
+        where topic_id in
+        <foreach collection="array" item="topicId" open="(" separator="," close=")">
+            #{topicId}
+        </foreach>
+    </update>
+
+    <delete id="deleteTopicDocumentsByTopicId">
+        delete from edu_library_topic_document where topic_id = #{topicId}
+    </delete>
+
+    <insert id="batchInsertTopicDocuments">
+        insert into edu_library_topic_document (topic_id, document_id, order_num)
+        values
+        <foreach collection="documentIds" item="documentId" index="idx" separator=",">
+            (#{topicId}, #{documentId}, #{idx})
+        </foreach>
+    </insert>
+
+    <select id="selectTopicDocuments" resultMap="EduLibraryTopicDocumentResult">
+        select d.document_id, d.title, d.summary, d.file_name, d.file_ext, d.file_size, d.file_url, d.cover_url,
+               d.category_id, c.category_name, s.subject_name, d.download_price, d.download_count, d.view_count,
+               d.allow_download, d.create_time
+        from edu_library_topic_document td
+        inner join edu_library_document d on d.document_id = td.document_id and d.del_flag = '0'
+        left join edu_library_category c on c.category_id = d.category_id
+        left join edu_subject s on s.subject_id = d.subject_id
+        where td.topic_id = #{topicId}
+        <if test="portal">
+            and d.status = '0' and d.audit_status = '1'
+        </if>
+        order by td.order_num, td.id
+    </select>
+
+    <update id="incrementDownloadCount">
+        update edu_library_topic set download_count = download_count + 1 where topic_id = #{topicId}
+    </update>
+</mapper>

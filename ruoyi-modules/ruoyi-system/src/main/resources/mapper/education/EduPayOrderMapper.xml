@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduPayOrderMapper">
+
+    <resultMap id="EduPayOrderResult" type="EduPayOrder">
+        <result property="orderId" column="order_id"/>
+        <result property="orderNo" column="order_no"/>
+        <result property="username" column="username"/>
+        <result property="bizType" column="biz_type"/>
+        <result property="bizId" column="biz_id"/>
+        <result property="bizRef" column="biz_ref"/>
+        <result property="productName" column="product_name"/>
+        <result property="amount" column="amount"/>
+        <result property="payType" column="pay_type"/>
+        <result property="status" column="status"/>
+        <result property="tradeNo" column="trade_no"/>
+        <result property="payUrl" column="pay_url"/>
+        <result property="qrcodeUrl" column="qrcode_url"/>
+        <result property="clientIp" column="client_ip"/>
+        <result property="notifyTime" column="notify_time"/>
+        <result property="payTime" column="pay_time"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <select id="selectMyPayOrderList" parameterType="EduPayOrder" resultMap="EduPayOrderResult">
+        select order_id, order_no, username, biz_type, biz_id, biz_ref, product_name, amount, pay_type,
+               status, trade_no, pay_url, qrcode_url, client_ip, notify_time, pay_time, create_time, update_time, remark
+        from edu_pay_order
+        <where>
+            username = #{username}
+            <if test="status != null and status != ''">and status = #{status}</if>
+            <if test="bizType != null and bizType != ''">and biz_type = #{bizType}</if>
+            <if test="keyword != null and keyword != ''">
+                and (
+                    product_name ilike ('%' || #{keyword} || '%')
+                    or order_no ilike ('%' || #{keyword} || '%')
+                )
+            </if>
+        </where>
+        order by create_time desc, order_id desc
+    </select>
+
+    <select id="selectRecentPaidOrders" resultMap="EduPayOrderResult">
+        select order_id, order_no, username, biz_type, biz_id, biz_ref, product_name, amount, pay_type,
+               status, trade_no, pay_url, qrcode_url, client_ip, notify_time, pay_time, create_time, update_time, remark
+        from edu_pay_order
+        where biz_type = #{bizType}
+          and status = 'paid'
+        order by coalesce(pay_time, create_time) desc, order_id desc
+        limit #{limit}
+    </select>
+
+    <select id="selectPendingOrder" resultMap="EduPayOrderResult">
+        select order_id, order_no, username, biz_type, biz_id, biz_ref, product_name, amount, pay_type,
+               status, trade_no, pay_url, qrcode_url, client_ip, notify_time, pay_time, create_time, update_time, remark
+        from edu_pay_order
+        where username = #{username}
+          and biz_type = #{bizType}
+          and biz_id = #{bizId}
+          and status = 'pending'
+          and coalesce(biz_ref, '') = coalesce(#{bizRef}, '')
+        order by create_time desc, order_id desc
+        limit 1
+    </select>
+
+    <select id="selectEduPayOrderByOrderNo" resultMap="EduPayOrderResult">
+        select order_id, order_no, username, biz_type, biz_id, biz_ref, product_name, amount, pay_type,
+               status, trade_no, pay_url, qrcode_url, client_ip, notify_time, pay_time, create_time, update_time, remark
+        from edu_pay_order
+        where order_no = #{orderNo}
+    </select>
+
+    <insert id="insertEduPayOrder" parameterType="EduPayOrder" useGeneratedKeys="true" keyProperty="orderId">
+        insert into edu_pay_order (
+            order_no, username, biz_type, biz_id, biz_ref, product_name, amount, pay_type, status,
+            pay_url, qrcode_url, client_ip, create_time
+        ) values (
+            #{orderNo}, #{username}, #{bizType}, #{bizId}, #{bizRef}, #{productName}, #{amount}, #{payType}, #{status},
+            #{payUrl}, #{qrcodeUrl}, #{clientIp}, CURRENT_TIMESTAMP
+        )
+    </insert>
+
+    <update id="updateEduPayOrderPaid" parameterType="EduPayOrder">
+        update edu_pay_order
+        set status = #{status},
+            trade_no = #{tradeNo},
+            notify_time = #{notifyTime},
+            pay_time = #{payTime},
+            update_time = CURRENT_TIMESTAMP
+        where order_no = #{orderNo} and status = 'pending'
+    </update>
+</mapper>

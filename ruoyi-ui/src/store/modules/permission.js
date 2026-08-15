@@ -4,6 +4,8 @@ import { getRouters } from '@/api/menu'
 import Layout from '@/layout/index'
 import ParentView from '@/components/ParentView'
 import InnerLink from '@/layout/components/InnerLink'
+import { isExternal } from '@/utils/validate'
+import { prefixAdminPath } from '@/constants/routes'
 
 const permission = {
   state: {
@@ -34,8 +36,8 @@ const permission = {
       return new Promise(resolve => {
         // 向后端请求路由数据
         getRouters().then(res => {
-          const sdata = JSON.parse(JSON.stringify(res.data))
-          const rdata = JSON.parse(JSON.stringify(res.data))
+          const sdata = prefixAdminRoutes(JSON.parse(JSON.stringify(res.data)))
+          const rdata = prefixAdminRoutes(JSON.parse(JSON.stringify(res.data)))
           const sidebarRoutes = filterAsyncRouter(sdata)
           const rewriteRoutes = filterAsyncRouter(rdata, false, true)
           const asyncRoutes = filterDynamicRoutes(dynamicRoutes)
@@ -52,9 +54,25 @@ const permission = {
   }
 }
 
+function prefixAdminRoutes(routes) {
+  return routes.map(route => {
+    const nextRoute = { ...route }
+    if (nextRoute.path) {
+      nextRoute.path = prefixAdminPath(nextRoute.path)
+    }
+    if (typeof nextRoute.redirect === 'string' && nextRoute.redirect.startsWith('/') && !nextRoute.redirect.startsWith('http')) {
+      nextRoute.redirect = prefixAdminPath(nextRoute.redirect)
+    }
+    return nextRoute
+  })
+}
+
 // 遍历后台传来的路由字符串，转换为组件对象
 function filterAsyncRouter(asyncRouterMap, lastRouter = false, type = false) {
   return asyncRouterMap.filter(route => {
+    if (type && isExternal(route.path)) {
+      return false
+    }
     if (type && route.children) {
       route.children = filterChildren(route.children)
     }

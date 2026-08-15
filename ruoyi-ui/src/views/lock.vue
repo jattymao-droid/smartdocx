@@ -27,7 +27,7 @@
       <div v-if="errorMsg" class="error-msg">{{ errorMsg }}</div>
 
       <div class="lock-footer">
-        <a href="/login" @click.prevent="goLogin">退出重新登录</a>
+        <a href="/admin/login" @click.prevent="goLogin">退出重新登录</a>
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@ export default {
     goLogin() {
       this.$store.dispatch('lock/unlockScreen')
       this.$store.dispatch('LogOut').then(() => {
-        this.$router.push('/login')
+        this.$router.push('/admin/login')
       })
     },
     // 粒子背景

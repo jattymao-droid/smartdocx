@@ -53,6 +53,13 @@
             <artifactId>minio</artifactId>
             <version>${minio.version}</version>
         </dependency>
+
+        <!-- Tencent Cloud COS -->
+        <dependency>
+            <groupId>com.qcloud</groupId>
+            <artifactId>cos_api</artifactId>
+            <version>${tencent.cos.version}</version>
+        </dependency>
         
         <!-- RuoYi Api System -->
         <dependency>

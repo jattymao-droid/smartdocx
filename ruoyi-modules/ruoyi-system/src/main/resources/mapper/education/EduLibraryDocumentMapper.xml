@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduLibraryDocumentMapper">
+
+    <resultMap id="EduLibraryDocumentResult" type="EduLibraryDocument">
+        <result property="documentId" column="document_id"/>
+        <result property="documentCode" column="document_code"/>
+        <result property="title" column="title"/>
+        <result property="summary" column="summary"/>
+        <result property="fileName" column="file_name"/>
+        <result property="fileExt" column="file_ext"/>
+        <result property="fileSize" column="file_size"/>
+        <result property="fileUrl" column="file_url"/>
+        <result property="fileStorage" column="file_storage"/>
+        <result property="coverUrl" column="cover_url"/>
+        <result property="pageCount" column="page_count"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="subjectName" column="subject_name"/>
+        <result property="schoolStage" column="school_stage"/>
+        <result property="versionId" column="version_id"/>
+        <result property="versionName" column="version_name"/>
+        <result property="textbookId" column="textbook_id"/>
+        <result property="textbookName" column="textbook_name"/>
+        <result property="chapterId" column="chapter_id"/>
+        <result property="chapterText" column="chapter_text"/>
+        <result property="categoryId" column="category_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="tagNames" column="tag_names"/>
+        <result property="visibility" column="visibility"/>
+        <result property="allowDownload" column="allow_download"/>
+        <result property="downloadPrice" column="download_price"/>
+        <result property="downloadCount" column="download_count"/>
+        <result property="viewCount" column="view_count"/>
+        <result property="favoriteCount" column="favorite_count"/>
+        <result property="convertStatus" column="convert_status"/>
+        <result property="previewType" column="preview_type"/>
+        <result property="previewUrl" column="preview_url"/>
+        <result property="previewError" column="preview_error"/>
+        <result property="auditStatus" column="audit_status"/>
+        <result property="auditBy" column="audit_by"/>
+        <result property="auditTime" column="audit_time"/>
+        <result property="auditRemark" column="audit_remark"/>
+        <result property="recommendFlag" column="recommend_flag"/>
+        <result property="recommendOrder" column="recommend_order"/>
+        <result property="status" column="status"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+        <result property="favorited" column="favorited"/>
+        <result property="readProgress" column="read_progress"/>
+        <result property="topicId" column="topic_id"/>
+    </resultMap>
+
+    <sql id="topicLinkSelect">
+        (select bt.topic_id
+           from edu_library_topic bt
+          where bt.bundle_document_id = d.document_id
+            and bt.del_flag = '0'
+            and bt.status = '0'
+          order by bt.topic_id
+          limit 1) as topic_id
+    </sql>
+
+    <sql id="selectDocumentVo">
+        select d.document_id, d.document_code, d.title, d.summary, d.file_name, d.file_ext, d.file_size,
+               d.file_url, d.file_storage, d.cover_url, d.page_count, d.subject_id, s.subject_name,
+               d.school_stage, d.version_id, v.version_name, d.textbook_id, tb.textbook_name,
+               d.chapter_id, d.chapter_text, d.category_id, c.category_name, d.tag_names, d.visibility, d.allow_download,
+               d.download_price, d.download_count, d.view_count, d.favorite_count, d.convert_status, d.preview_type,
+               d.preview_url, d.preview_error, d.audit_status, d.audit_by, d.audit_time, d.audit_remark,
+               d.recommend_flag, d.recommend_order, d.status, d.del_flag, d.create_by, d.create_time,
+               d.update_by, d.update_time, d.remark,
+               <include refid="topicLinkSelect"/>
+        from edu_library_document d
+        left join edu_subject s on s.subject_id = d.subject_id
+        left join edu_qb_textbook_version v on v.version_id = d.version_id
+        left join edu_qb_textbook tb on tb.textbook_id = d.textbook_id
+        left join edu_library_category c on c.category_id = d.category_id
+    </sql>
+
+    <select id="selectEduLibraryDocumentById" resultMap="EduLibraryDocumentResult">
+        <include refid="selectDocumentVo"/>
+        where d.document_id = #{documentId} and d.del_flag = '0'
+    </select>
+
+    <select id="selectEduLibraryDocumentList" parameterType="EduLibraryDocument" resultMap="EduLibraryDocumentResult">
+        select d.document_id, d.document_code, d.title, d.summary, d.file_name, d.file_ext, d.file_size,
+               d.file_url, d.file_storage, d.cover_url, d.page_count, d.subject_id, s.subject_name,
+               d.school_stage, d.version_id, v.version_name, d.textbook_id, tb.textbook_name,
+               d.chapter_id, d.chapter_text, d.category_id, c.category_name, d.tag_names, d.visibility, d.allow_download,
+               d.download_price, d.download_count, d.view_count, d.favorite_count, d.convert_status, d.preview_type,
+               d.preview_url, d.preview_error, d.audit_status, d.audit_by, d.audit_time, d.audit_remark,
+               d.recommend_flag, d.recommend_order, d.status, d.del_flag, d.create_by, d.create_time,
+               d.update_by, d.update_time, d.remark,
+               <include refid="topicLinkSelect"/>,
+               <choose>
+                   <when test="params.currentUser != null and params.currentUser != ''">
+                       case when fav.favorite_id is not null then true else false end as favorited
+                   </when>
+                   <otherwise>false as favorited</otherwise>
+               </choose>
+        from edu_library_document d
+        left join edu_subject s on s.subject_id = d.subject_id
+        left join edu_qb_textbook_version v on v.version_id = d.version_id
+        left join edu_qb_textbook tb on tb.textbook_id = d.textbook_id
+        left join edu_library_category c on c.category_id = d.category_id
+        <if test="params.currentUser != null and params.currentUser != ''">
+            left join edu_library_favorite fav on fav.document_id = d.document_id and fav.user_name = #{params.currentUser}
+        </if>
+        <where>
+            d.del_flag = '0'
+            <if test="title != null and title != ''">and d.title like ('%' || #{title} || '%')</if>
+            <if test="keyword != null and keyword != ''">
+                and (
+                    d.title ilike ('%' || #{keyword} || '%')
+                    or d.summary ilike ('%' || #{keyword} || '%')
+                    or d.tag_names ilike ('%' || #{keyword} || '%')
+                    or d.file_name ilike ('%' || #{keyword} || '%')
+                )
+            </if>
+            <if test="subjectId != null">and d.subject_id = #{subjectId}</if>
+            <if test="schoolStage != null and schoolStage != ''">and d.school_stage = #{schoolStage}</if>
+            <if test="versionId != null">and d.version_id = #{versionId}</if>
+            <if test="textbookId != null">and d.textbook_id = #{textbookId}</if>
+            <if test="chapterId != null">and d.chapter_id = #{chapterId}</if>
+            <if test="categoryId != null">and d.category_id = #{categoryId}</if>
+            <if test="fileExtFilter != null and fileExtFilter != ''">and d.file_ext = #{fileExtFilter}</if>
+            <if test="visibility != null and visibility != ''">and d.visibility = #{visibility}</if>
+            <if test="auditStatus != null and auditStatus != ''">and d.audit_status = #{auditStatus}</if>
+            <if test="status != null and status != ''">and d.status = #{status}</if>
+            <if test="recommendFlag != null and recommendFlag != ''">and d.recommend_flag = #{recommendFlag}</if>
+            <if test="createBy != null and createBy != ''">and d.create_by = #{createBy}</if>
+            <if test="convertStatus != null and convertStatus != ''">and d.convert_status = #{convertStatus}</if>
+            <if test="params.portalMode != null and params.portalMode == 'true'">
+                and d.status = '0' and d.audit_status = '1'
+                and (
+                    d.visibility = 'public'
+                    <if test="params.loggedIn != null and params.loggedIn == 'true'">
+                        or d.visibility = 'school'
+                        or (d.visibility = 'private' and d.create_by = #{params.currentUser})
+                    </if>
+                )
+            </if>
+            <if test="params.mineOnly != null and params.mineOnly == 'true'">
+                and d.create_by = #{params.currentUser}
+            </if>
+        </where>
+        order by
+        <choose>
+            <when test="params.orderBy == 'view'">d.view_count desc, d.document_id desc</when>
+            <when test="params.orderBy == 'download'">d.download_count desc, d.view_count desc, d.document_id desc</when>
+            <when test="params.orderBy == 'recommend'">d.recommend_order desc, d.create_time desc</when>
+            <otherwise>d.create_time desc, d.document_id desc</otherwise>
+        </choose>
+    </select>
+
+    <insert id="insertEduLibraryDocument" parameterType="EduLibraryDocument" useGeneratedKeys="true" keyProperty="documentId">
+        insert into edu_library_document (
+            document_code, title, summary, file_name, file_ext, file_size, file_url, file_storage,
+            cover_url, page_count, subject_id, school_stage, version_id, textbook_id, chapter_id, chapter_text,
+            category_id, tag_names, visibility, allow_download, download_price,
+            convert_status, preview_type, preview_url, preview_error, audit_status, recommend_flag,
+            recommend_order, status, del_flag, create_by, create_time, remark
+        ) values (
+            #{documentCode}, #{title}, #{summary}, #{fileName}, #{fileExt}, #{fileSize}, #{fileUrl}, #{fileStorage},
+            #{coverUrl}, #{pageCount}, #{subjectId}, #{schoolStage}, #{versionId}, #{textbookId}, #{chapterId}, #{chapterText},
+            #{categoryId}, #{tagNames}, #{visibility}, #{allowDownload}, #{downloadPrice},
+            #{convertStatus}, #{previewType}, #{previewUrl}, #{previewError}, #{auditStatus}, #{recommendFlag},
+            #{recommendOrder}, #{status}, '0', #{createBy}, CURRENT_TIMESTAMP, #{remark}
+        )
+    </insert>
+
+    <update id="updateEduLibraryDocument" parameterType="EduLibraryDocument">
+        update edu_library_document
+        <set>
+            <if test="title != null">title = #{title},</if>
+            <if test="summary != null">summary = #{summary},</if>
+            <if test="subjectId != null">subject_id = #{subjectId},</if>
+            <if test="schoolStage != null">school_stage = #{schoolStage},</if>
+            <if test="versionId != null">version_id = #{versionId},</if>
+            <if test="textbookId != null">textbook_id = #{textbookId},</if>
+            <if test="chapterId != null">chapter_id = #{chapterId},</if>
+            <if test="chapterText != null">chapter_text = #{chapterText},</if>
+            <if test="categoryId != null">category_id = #{categoryId},</if>
+            <if test="tagNames != null">tag_names = #{tagNames},</if>
+            <if test="visibility != null">visibility = #{visibility},</if>
+            <if test="allowDownload != null">allow_download = #{allowDownload},</if>
+            <if test="downloadPrice != null">download_price = #{downloadPrice},</if>
+            <if test="coverUrl != null">cover_url = #{coverUrl},</if>
+            <if test="pageCount != null">page_count = #{pageCount},</if>
+            <if test="auditStatus != null">audit_status = #{auditStatus},</if>
+            <if test="auditBy != null">audit_by = #{auditBy},</if>
+            <if test="auditTime != null">audit_time = #{auditTime},</if>
+            <if test="auditRemark != null">audit_remark = #{auditRemark},</if>
+            <if test="recommendFlag != null">recommend_flag = #{recommendFlag},</if>
+            <if test="recommendOrder != null">recommend_order = #{recommendOrder},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="convertStatus != null">convert_status = #{convertStatus},</if>
+            <if test="previewType != null">preview_type = #{previewType},</if>
+            <if test="previewUrl != null">preview_url = #{previewUrl},</if>
+            <if test="previewError != null">preview_error = #{previewError},</if>
+            update_by = #{updateBy},
+            update_time = CURRENT_TIMESTAMP,
+            <if test="remark != null">remark = #{remark},</if>
+        </set>
+        where document_id = #{documentId} and del_flag = '0'
+    </update>
+
+    <update id="deleteEduLibraryDocumentByIds">
+        update edu_library_document set del_flag = '2', update_time = CURRENT_TIMESTAMP
+        where document_id in
+        <foreach collection="documentIds" item="documentId" open="(" separator="," close=")">
+            #{documentId}
+        </foreach>
+    </update>
+
+    <update id="incrementViewCount">
+        update edu_library_document set view_count = coalesce(view_count, 0) + 1 where document_id = #{documentId}
+    </update>
+
+    <update id="incrementDownloadCount">
+        update edu_library_document set download_count = coalesce(download_count, 0) + 1 where document_id = #{documentId}
+    </update>
+
+    <update id="updateFavoriteCount">
+        update edu_library_document
+        set favorite_count = greatest(coalesce(favorite_count, 0) + #{delta}, 0)
+        where document_id = #{documentId}
+    </update>
+
+    <select id="selectMaxDocumentCodeByPrefix" resultType="String">
+        select document_code from edu_library_document
+        where document_code like (#{prefix} || '%')
+        order by document_code desc limit 1
+    </select>
+
+    <insert id="insertFavorite">
+        insert into edu_library_favorite (document_id, user_name, create_time)
+        values (#{documentId}, #{userName}, CURRENT_TIMESTAMP)
+        on conflict (document_id, user_name) do nothing
+    </insert>
+
+    <delete id="deleteFavorite">
+        delete from edu_library_favorite where document_id = #{documentId} and user_name = #{userName}
+    </delete>
+
+    <select id="countFavorite" resultType="int">
+        select count(1) from edu_library_favorite
+        where document_id = #{documentId} and user_name = #{userName}
+    </select>
+
+    <select id="selectFavoriteList" resultMap="EduLibraryDocumentResult">
+        <include refid="selectDocumentVo"/>
+        inner join edu_library_favorite fav on fav.document_id = d.document_id and fav.user_name = #{userName}
+        where d.del_flag = '0' and d.status = '0' and d.audit_status = '1'
+        order by fav.create_time desc
+    </select>
+
+    <sql id="portalVisibilityFilter">
+        and d.status = '0' and d.audit_status = '1'
+        and (
+            d.visibility = 'public'
+            <if test="loggedIn">
+                or d.visibility = 'school'
+                <if test="currentUser != null and currentUser != ''">
+                    or (d.visibility = 'private' and d.create_by = #{currentUser})
+                </if>
+            </if>
+        )
+    </sql>
+
+    <select id="selectRelatedDocuments" resultMap="EduLibraryDocumentResult">
+        <include refid="selectDocumentVo"/>
+        where d.del_flag = '0'
+          and d.document_id != #{documentId}
+          <include refid="portalVisibilityFilter"/>
+          <choose>
+            <when test="subjectId != null and categoryId != null">
+              and (d.subject_id = #{subjectId} or d.category_id = #{categoryId})
+            </when>
+            <when test="subjectId != null">
+              and d.subject_id = #{subjectId}
+            </when>
+            <when test="categoryId != null">
+              and d.category_id = #{categoryId}
+            </when>
+          </choose>
+        order by d.view_count desc, d.create_time desc
+        limit #{limit}
+    </select>
+
+    <select id="selectContinueReadingList" resultMap="EduLibraryDocumentResult">
+        select d.document_id, d.document_code, d.title, d.summary, d.file_name, d.file_ext, d.file_size,
+               d.file_url, d.cover_url, d.page_count, d.subject_id, s.subject_name,
+               d.school_stage, d.version_id, v.version_name, d.textbook_id, tb.textbook_name,
+               d.chapter_id, d.chapter_text, d.category_id, c.category_name, d.tag_names, d.visibility, d.allow_download,
+               d.view_count, d.favorite_count, d.preview_type, d.audit_status, d.recommend_flag,
+               d.create_by, d.create_time, rl.read_progress
+        from edu_library_read_log rl
+        inner join edu_library_document d on d.document_id = rl.document_id and d.del_flag = '0' and d.status = '0'
+        left join edu_subject s on s.subject_id = d.subject_id
+        left join edu_qb_textbook_version v on v.version_id = d.version_id
+        left join edu_qb_textbook tb on tb.textbook_id = d.textbook_id
+        left join edu_library_category c on c.category_id = d.category_id
+        where rl.user_name = #{userName}
+        order by rl.update_time desc
+        limit #{limit}
+    </select>
+
+    <insert id="upsertReadLog">
+        insert into edu_library_read_log (document_id, user_name, read_progress, update_time)
+        values (#{documentId}, #{userName}, coalesce(#{readProgress}, 0), CURRENT_TIMESTAMP)
+        on conflict (document_id, user_name)
+        do update set
+            read_progress = coalesce(#{readProgress}, edu_library_read_log.read_progress),
+            update_time = CURRENT_TIMESTAMP
+    </insert>
+
+    <select id="selectLibraryAdminStats" resultType="map">
+        select
+            (select count(1) from edu_library_document where del_flag = '0') as totalDocs,
+            (select count(1) from edu_library_document where del_flag = '0' and audit_status = '0') as pendingAudit,
+            (select count(1) from edu_library_document where del_flag = '0' and status = '1') as shelvedDocs,
+            (select count(1) from edu_library_document where del_flag = '0' and convert_status = 'failed') as convertFailed,
+            (select count(1) from edu_library_document where del_flag = '0' and convert_status = 'pending') as convertPending,
+            (select count(1) from edu_library_category) as categoryCount
+    </select>
+</mapper>

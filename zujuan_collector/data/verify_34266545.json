@@ -1,0 +1,8 @@
+{
+  "list_options": "[\"A.位置\", \"B.速度\", \"C.受力\", \"D.质量\"]",
+  "list_content_has_table": true,
+  "list_content_has_option_text": true,
+  "detail_options": "[\"A.位置\", \"B.速度\", \"C.受力\", \"D.质量\"]",
+  "detail_content_has_table": true,
+  "detail_content_has_option_text": true
+}

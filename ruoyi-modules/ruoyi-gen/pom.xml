@@ -47,10 +47,10 @@
             <artifactId>velocity-engine-core</artifactId>
         </dependency>
         
-        <!-- Mysql Connector -->
+        <!-- PostgreSQL Connector -->
         <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
         
         <!-- RuoYi Common Log -->

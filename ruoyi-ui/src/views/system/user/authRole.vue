@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <h4 class="form-header h4">基本信息</h4>
     <el-form ref="form" :model="form" label-width="80px">
@@ -115,7 +115,7 @@ export default {
     },
     /** 关闭按钮 */
     close() {
-      const obj = { path: "/system/user" }
+      const obj = { path: "/admin/system/user" }
       this.$tab.closeOpenPage(obj)
     }
   }

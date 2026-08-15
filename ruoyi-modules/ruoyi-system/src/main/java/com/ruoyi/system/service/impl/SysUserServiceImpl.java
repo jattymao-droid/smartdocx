@@ -276,9 +276,32 @@ public class SysUserServiceImpl implements ISysUserService
      * @return 结果
      */
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean registerUser(SysUser user)
     {
-        return userMapper.insertUser(user) > 0;
+        int rows = userMapper.insertUser(user);
+        if (rows > 0)
+        {
+            assignDefaultPortalRole(user.getUserId());
+        }
+        return rows > 0;
+    }
+
+    /**
+     * Portal self-registration: grant edu_teacher so browse/import/paper APIs work.
+     */
+    private void assignDefaultPortalRole(Long userId)
+    {
+        if (userId == null)
+        {
+            return;
+        }
+        SysRole role = roleMapper.checkRoleKeyUnique("edu_teacher");
+        if (role == null || role.getRoleId() == null)
+        {
+            return;
+        }
+        insertUserRole(userId, new Long[] { role.getRoleId() });
     }
 
     /**

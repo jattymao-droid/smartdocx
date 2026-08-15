@@ -3,8 +3,7 @@
 </template>
 
 <script>
-import * as echarts from 'echarts'
-require('echarts/theme/macarons') // echarts theme
+import echarts from '@/utils/echartsCore'
 import resize from './mixins/resize'
 
 export default {

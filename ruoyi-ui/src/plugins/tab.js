@@ -1,12 +1,13 @@
 import store from '@/store'
 import router from '@/router'
+import { ADMIN_HOME, ADMIN_REDIRECT } from '@/constants/routes'
 
 export default {
   // 刷新当前tab页签
   refreshPage(obj) {
     const { path, query, matched } = router.currentRoute
     // 防止在重定向过程中重复刷新
-    if (path.startsWith('/redirect/')) {
+    if (path.startsWith(ADMIN_REDIRECT + '/')) {
       return Promise.resolve()
     }
     if (obj === undefined) {
@@ -21,7 +22,7 @@ export default {
     return store.dispatch('tagsView/delCachedView', obj).then(() => {
       const { path, query } = obj
       router.replace({
-        path: '/redirect' + path,
+        path: ADMIN_REDIRECT + path,
         query: query
       })
     })
@@ -41,7 +42,7 @@ export default {
         if (latestView) {
           return router.push(latestView.fullPath)
         }
-        return router.push('/')
+        return router.push(ADMIN_HOME)
       })
     }
     return store.dispatch('tagsView/delView', obj)

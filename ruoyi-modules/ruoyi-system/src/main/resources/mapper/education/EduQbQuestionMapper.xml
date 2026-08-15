@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbQuestionMapper">
+
+    <resultMap id="EduQbQuestionResult" type="EduQbQuestion">
+        <result property="questionId" column="question_id"/>
+        <result property="questionCode" column="question_code"/>
+        <result property="content" column="content"/>
+        <result property="options" column="options"/>
+        <result property="correctAnswer" column="correct_answer"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="subjectName" column="subject_name"/>
+        <result property="chapterId" column="chapter_id"/>
+        <result property="textbookId" column="textbook_id"/>
+        <result property="chapterText" column="chapter_text"/>
+        <result property="knowledgePoints" column="knowledge_points"/>
+        <result property="difficulty" column="difficulty"/>
+        <result property="questionType" column="question_type"/>
+        <result property="sourceType" column="source_type"/>
+        <result property="status" column="status"/>
+        <result property="images" column="images"/>
+        <result property="analysis" column="analysis"/>
+        <result property="contentHash" column="content_hash"/>
+        <result property="importTaskId" column="import_task_id"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectEduQbQuestionVo">
+        select q.question_id, q.question_code, q.content, q.options::text as options,
+               q.correct_answer::text as correct_answer, q.subject_id, s.subject_name,
+               q.chapter_id, q.textbook_id, q.chapter_text, q.knowledge_points::text as knowledge_points,
+               q.difficulty, q.question_type, q.source_type, q.status,
+               q.images::text as images, q.analysis, q.content_hash, q.import_task_id,
+               q.del_flag, q.create_by, q.create_time, q.update_by, q.update_time, q.remark
+        from edu_qb_question q
+        left join edu_subject s on s.subject_id = q.subject_id
+    </sql>
+
+    <!-- Legacy chapter_text fallback: match segment boundaries (see EduQbChapterTextMatchSupport). -->
+    <sql id="chapterTextSegmentMatch">
+        (
+            q.chapter_text = #{segmentName}
+            or q.chapter_text ilike (#{segmentName} || ' > %')
+            or q.chapter_text ilike ('% > ' || #{segmentName})
+            or q.chapter_text ilike ('% > ' || #{segmentName} || ' > %')
+        )
+    </sql>
+
+    <select id="selectEduQbQuestionById" parameterType="Long" resultMap="EduQbQuestionResult">
+        <include refid="selectEduQbQuestionVo"/>
+        where q.question_id = #{questionId} and q.del_flag = '0'
+    </select>
+
+    <select id="selectEduQbQuestionByIds" resultMap="EduQbQuestionResult">
+        <include refid="selectEduQbQuestionVo"/>
+        where q.del_flag = '0' and q.question_id in
+        <foreach collection="array" item="questionId" open="(" separator="," close=")">
+            #{questionId}
+        </foreach>
+    </select>
+
+    <select id="selectEduQbQuestionList" parameterType="EduQbQuestion" resultMap="EduQbQuestionResult">
+        <include refid="selectEduQbQuestionVo"/>
+        <where>
+            q.del_flag = '0'
+            <if test="subjectId != null">and q.subject_id = #{subjectId}</if>
+            <if test="textbookId != null">and q.textbook_id = #{textbookId}</if>
+            <if test="params.chapterIds != null and params.chapterIds.size() &gt; 0">
+                and (
+                    q.chapter_id in
+                    <foreach collection="params.chapterIds" item="cid" open="(" separator="," close=")">
+                        #{cid}
+                    </foreach>
+                    <if test="params.chapterNames != null and params.chapterNames.size() &gt; 0">
+                        or
+                        <foreach collection="params.chapterNames" item="cname" open="(" separator=" or " close=")">
+                            (
+                                q.chapter_text = #{cname}
+                                or q.chapter_text ilike (#{cname} || ' > %')
+                                or q.chapter_text ilike ('% > ' || #{cname})
+                                or q.chapter_text ilike ('% > ' || #{cname} || ' > %')
+                            )
+                        </foreach>
+                    </if>
+                )
+            </if>
+            <if test="(params.chapterIds == null or params.chapterIds.size() == 0) and chapterId != null">
+                and q.chapter_id = #{chapterId}
+            </if>
+            <if test="(params.chapterIds == null or params.chapterIds.size() == 0) and chapterText != null and chapterText != ''">
+                and (
+                    q.chapter_text = #{chapterText}
+                    or q.chapter_text ilike (#{chapterText} || ' > %')
+                    or q.chapter_text ilike ('% > ' || #{chapterText})
+                    or q.chapter_text ilike ('% > ' || #{chapterText} || ' > %')
+                )
+            </if>
+            <if test="knowledgePoint != null and knowledgePoint != ''">
+                and q.knowledge_points::text ilike ('%' || #{knowledgePoint} || '%')
+            </if>
+            <if test="difficultyMin != null">and q.difficulty &gt;= #{difficultyMin}</if>
+            <if test="difficultyMax != null">and q.difficulty &lt;= #{difficultyMax}</if>
+            <if test="questionType != null and questionType != ''">and q.question_type = #{questionType}</if>
+            <if test="sourceType != null and sourceType != ''">and q.source_type = #{sourceType}</if>
+            <if test="status != null and status != ''">and q.status = #{status}</if>
+            <if test="keyword != null and keyword != ''">
+                and q.content ilike ('%' || #{keyword} || '%')
+            </if>
+            <if test="params.beginTime != null and params.beginTime != ''">
+                and q.create_time &gt;= to_timestamp(#{params.beginTime}, 'YYYY-MM-DD HH24:MI:SS')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''">
+                and q.create_time &lt;= to_timestamp(#{params.endTime}, 'YYYY-MM-DD HH24:MI:SS')
+            </if>
+        </where>
+        <choose>
+            <when test="params.orderBy != null and params.orderBy == 'latest'">
+                order by q.create_time desc, q.question_id desc
+            </when>
+            <otherwise>
+                order by q.create_time desc, q.question_id desc
+            </otherwise>
+        </choose>
+    </select>
+
+    <insert id="insertEduQbQuestion" parameterType="EduQbQuestion" useGeneratedKeys="true" keyProperty="questionId">
+        insert into edu_qb_question (
+            question_code, content, options, correct_answer, subject_id, chapter_id, textbook_id, chapter_text,
+            knowledge_points, difficulty, question_type, source_type, status, images, analysis,
+            content_hash, import_task_id, del_flag, remark, create_by, create_time
+        ) values (
+            #{questionCode}, #{content},
+            <choose>
+                <when test="options != null and options != ''">#{options}::jsonb</when>
+                <otherwise>null</otherwise>
+            </choose>,
+            #{correctAnswer}::jsonb,
+            #{subjectId}, #{chapterId}, #{textbookId}, #{chapterText},
+            #{knowledgePoints}::jsonb,
+            #{difficulty}, #{questionType}, #{sourceType}, #{status},
+            <choose>
+                <when test="images != null and images != ''">#{images}::jsonb</when>
+                <otherwise>null</otherwise>
+            </choose>,
+            #{analysis}, #{contentHash}, #{importTaskId}, '0', #{remark}, #{createBy}, CURRENT_TIMESTAMP
+        )
+    </insert>
+
+    <update id="updateEduQbQuestion" parameterType="EduQbQuestion">
+        update edu_qb_question
+        <set>
+            content = #{content},
+            options =
+            <choose>
+                <when test="options != null and options != ''">#{options}::jsonb</when>
+                <otherwise>null</otherwise>
+            </choose>,
+            correct_answer = #{correctAnswer}::jsonb,
+            subject_id = #{subjectId},
+            chapter_id = #{chapterId},
+            textbook_id = #{textbookId},
+            chapter_text = #{chapterText},
+            knowledge_points = #{knowledgePoints}::jsonb,
+            difficulty = #{difficulty},
+            question_type = #{questionType},
+            source_type = #{sourceType},
+            status = #{status},
+            images =
+            <choose>
+                <when test="images != null and images != ''">#{images}::jsonb</when>
+                <otherwise>null</otherwise>
+            </choose>,
+            analysis = #{analysis},
+            content_hash = #{contentHash},
+            remark = #{remark},
+            update_by = #{updateBy},
+            update_time = CURRENT_TIMESTAMP
+        </set>
+        where question_id = #{questionId} and del_flag = '0'
+    </update>
+
+    <update id="deleteEduQbQuestionByIds" parameterType="Long">
+        update edu_qb_question set del_flag = '2', update_time = CURRENT_TIMESTAMP
+        where question_id in
+        <foreach collection="array" item="questionId" open="(" separator="," close=")">
+            #{questionId}
+        </foreach>
+    </update>
+
+    <select id="selectMaxQuestionCodeByPrefix" parameterType="String" resultType="String">
+        select question_code
+        from edu_qb_question
+        where question_code like (#{prefix} || '%')
+        order by question_code desc
+        limit 1
+    </select>
+
+    <select id="selectKnowledgeTags" resultType="EduQbKnowledgeTag">
+        select tag_id as tagId, subject_id as subjectId, tag_name as tagName,
+               use_count as useCount, create_time as createTime
+        from edu_qb_knowledge_tag
+        <where>
+            <if test="subjectId != null">and subject_id = #{subjectId}</if>
+            <if test="keyword != null and keyword != ''">
+                and tag_name like ('%' || #{keyword} || '%')
+            </if>
+        </where>
+        order by use_count desc, tag_name
+        limit 50
+    </select>
+
+    <select id="selectChapterKnowledgeTagStats" resultType="java.util.HashMap">
+        select q.chapter_id as "chapterId", elem as "tagName", count(*)::int as "useCount"
+        from edu_qb_question q
+        cross join lateral jsonb_array_elements_text(
+            case when q.knowledge_points is null then '[]'::jsonb else q.knowledge_points end
+        ) as elem
+        where q.del_flag = '0' and q.status = '0'
+          and q.chapter_id is not null
+          and trim(elem) != ''
+        <if test="subjectId != null">and q.subject_id = #{subjectId}</if>
+        <if test="textbookId != null">and q.textbook_id = #{textbookId}</if>
+        <if test="keyword != null and keyword != ''">
+            and elem ilike ('%' || #{keyword} || '%')
+        </if>
+        group by q.chapter_id, elem
+        order by elem
+    </select>
+
+    <select id="selectChapterTextStats" resultType="java.util.HashMap">
+        select chapter_text as "chapterText", count(distinct question_id)::int as "questionCount"
+        from edu_qb_question
+        where del_flag = '0' and status = '0'
+          and chapter_text is not null
+          and trim(chapter_text) != ''
+        <if test="subjectId != null">and subject_id = #{subjectId}</if>
+        group by chapter_text
+        order by chapter_text
+    </select>
+
+    <insert id="upsertKnowledgeTag">
+        insert into edu_qb_knowledge_tag (subject_id, tag_name, use_count, create_time)
+        values (#{subjectId}, #{tagName}, 1, CURRENT_TIMESTAMP)
+        on conflict (subject_id, tag_name)
+        do update set use_count = edu_qb_knowledge_tag.use_count + 1
+    </insert>
+
+    <update id="decrementKnowledgeTag">
+        update edu_qb_knowledge_tag
+        set use_count = greatest(use_count - 1, 0)
+        where subject_id = #{subjectId} and tag_name = #{tagName}
+    </update>
+
+    <update id="updateQuestionAuditStatus">
+        update edu_qb_question
+        set status = #{status},
+            remark = #{remark},
+            update_by = #{updateBy},
+            update_time = CURRENT_TIMESTAMP
+        where del_flag = '0' and status = '1' and question_id in
+        <foreach collection="questionIds" item="questionId" open="(" separator="," close=")">
+            #{questionId}
+        </foreach>
+    </update>
+
+    <select id="countQuestionsByStatus" resultType="int">
+        select count(*)
+        from edu_qb_question
+        where del_flag = '0' and status = #{status}
+    </select>
+
+    <select id="selectByContentHash" resultMap="EduQbQuestionResult">
+        <include refid="selectEduQbQuestionVo"/>
+        where q.del_flag = '0' and q.status = '0'
+          and q.subject_id = #{subjectId}
+          and q.content_hash = #{contentHash}
+        <if test="excludeQuestionId != null">
+          and q.question_id != #{excludeQuestionId}
+        </if>
+        order by q.create_time desc
+        limit 20
+    </select>
+
+    <select id="selectDedupCandidates" resultMap="EduQbQuestionResult">
+        <include refid="selectEduQbQuestionVo"/>
+        where q.del_flag = '0' and q.status = '0'
+          and q.subject_id = #{subjectId}
+        <if test="excludeQuestionId != null">
+          and q.question_id != #{excludeQuestionId}
+        </if>
+        order by q.create_time desc
+        limit #{limit}
+    </select>
+
+    <insert id="insertEduQbQuestionFeedback">
+        insert into edu_qb_question_feedback (question_id, feedback_type, content, paper_title, create_by, create_time)
+        values (#{body.questionId}, #{body.feedbackType}, #{body.content}, #{body.paperTitle}, #{createBy}, now())
+    </insert>
+</mapper>

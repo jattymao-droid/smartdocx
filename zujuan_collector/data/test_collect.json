@@ -1,0 +1,326 @@
+[
+  {
+    "zujuan_id": "34216116",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34216116.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.45,
+    "knowledge_points": [
+      "利用平衡推论求力大小或方向",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—江苏镇江—期末",
+    "content_html": "一根重心在<i style=\"font-family: Times New Roman;\">P</i>处的木棒，在其两端<i style=\"font-family: Times New Roman;\">A</i>、<i style=\"font-family: Times New Roman;\">B</i>处系上轻质细绳，使棒在三个力的作用下能保持图示状态静止，<i style=\"font-family: Times New Roman;\">B</i>处细绳拉力<i style=\"font-family: Times New Roman;\">F</i><sub i=\"true\" word-font=\"Times New Roman\">B</sub>的精确方向如图所示，关于<i style=\"font-family: Times New Roman;\">A</i>处所受绳拉力的方向，下列说法正确的是（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<p style=\"text-align:justify;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/1/c49a36c8-c89f-4166-9d9e-7799d3eb055e.png?resizew=206\" style=\"vertical-align:middle;\"/></p><table cols=\"2\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．只能沿<i style=\"font-family: Times New Roman;\">Aa</i>方向</td><td>B．只能沿<i style=\"font-family: Times New Roman;\">Ab</i>方向</td></tr><tr><td>C．只能沿<i style=\"font-family: Times New Roman;\">Ac</i>方向</td><td>D．只要力的大小合适，以上三个方向均可</td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "只能沿<i style=\"font-family: Times New Roman;\">Aa</i>方向"
+      },
+      {
+        "label": "B",
+        "text": "只能沿<i style=\"font-family: Times New Roman;\">Ab</i>方向"
+      },
+      {
+        "label": "C",
+        "text": "只能沿<i style=\"font-family: Times New Roman;\">Ac</i>方向"
+      },
+      {
+        "label": "D",
+        "text": "只要力的大小合适，以上三个方向均可"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34239910",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34239910.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.68,
+    "knowledge_points": [
+      "v-t图像反映的物理量",
+      "利用v-t图像求加速度",
+      "利用v-t图像求位移",
+      "模型构建能力",
+      "推理论证能力"
+    ],
+    "category_name": "匀变速直线运动",
+    "source_label": "25-26高二下—河南郑州—期末",
+    "content_html": "在一场人形机器人半程马拉松比赛中，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/7aeb9a94e392f6759b18abed89aacc5e.png\" style=\"vertical-align:middle;\"/>时刻，<i style=\"font-family: Times New Roman;\">a</i>、<i style=\"font-family: Times New Roman;\">b</i>两个机器人并排在同一起跑线上，之后它们沿直道运动的<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/d1552707683293dcf684d101dd09b5c9.png\" style=\"vertical-align:middle;\"/>图像如图所示，下列说法正确的是（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<p style=\"text-align:left;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/a6f57fa5-21ff-4182-bcb9-ad06418e627f.png?resizew=171\" style=\"vertical-align:middle;\"/></p><table cols=\"1\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．第1s内<i style=\"font-family: Times New Roman;\">a</i>的平均速度大小为0.5m/s</td></tr><tr><td>B．前4s内<i style=\"font-family: Times New Roman;\">b</i>的加速度大小为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/0cadd6c2617a6d86b221cc67ff76d748.png\" style=\"vertical-align:middle;\"/></td></tr><tr><td>C．第2s末两机器人相距最近</td></tr><tr><td>D．第1s末和第3s末两机器人之间的距离相同</td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "第1s内<i style=\"font-family: Times New Roman;\">a</i>的平均速度大小为0.5m/s"
+      },
+      {
+        "label": "B",
+        "text": "前4s内<i style=\"font-family: Times New Roman;\">b</i>的加速度大小为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/0cadd6c2617a6d86b221cc67ff76d748.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "C",
+        "text": "第2s末两机器人相距最近"
+      },
+      {
+        "label": "D",
+        "text": "第1s末和第3s末两机器人之间的距离相同"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34242602",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34242602.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.6,
+    "knowledge_points": [
+      "物块在水平传送带上运动分析",
+      "推理论证能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content_html": "如图所示，长为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/43a2701bc2b64385c02b643d7ed1bb04.png\" style=\"vertical-align:middle;\"/>的水平传送带以<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/af3fd9869fab0a35575a6742f0643574.png\" style=\"vertical-align:middle;\"/>的速度逆时针转动，一个质量为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/6967ec3aaf9e7e6a9d90533b8ff61d10.png\" style=\"vertical-align:middle;\"/>的小木块以一定的初速度从传送带左侧水平向右滑上传送带。已知小木块与传送带之间的动摩擦因数<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/ced8cbb708a1c7b367d9a14c8eaa691b.png\" style=\"vertical-align:middle;\"/>，重力加速度<i style=\"font-family: Times New Roman;\">g</i>取<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/9c4ee1b7d06ac4c703e4c086b425c9c5.png\" style=\"vertical-align:middle;\"/>，不计传送带转动轮大小。<p style=\"text-align:left;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/7f214450-f329-408a-b108-8e33cfcabd22.png?resizew=150\" style=\"vertical-align:middle;\"/></p>(1)若小木块初速度<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/748953949a81399518ccc9960cb05963.png\" style=\"vertical-align:middle;\"/>，求小木块经多长时间离开传送带；<br/>(2)若小木块初速度<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f8f700f083c49d6515ebc063767aa1aa.png\" style=\"vertical-align:middle;\"/>，求小木块离开传送带时的速度。",
+    "options": [],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34241955",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34241955.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.83,
+    "knowledge_points": [
+      "用打点计时器测物体的速度",
+      "打点计时器的原理及使用",
+      "测量做直线运动物体的瞬时速度",
+      "理解能力",
+      "推理论证能力",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content_html": "(1)根据打点计时器打出的纸带，我们可以从纸带上直接得到的物理量是（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<table cols=\"4\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．时间间隔</td><td>B．位移</td><td>C．平均速度</td><td>D．瞬时速度</td></tr></tbody></table>(2)在“练习使用打点计时器”的实验中，某同学选出了一条清晰的纸带，如图所示<i style=\"font-family: Times New Roman;\">A</i>、<i style=\"font-family: Times New Roman;\">B</i>、<i style=\"font-family: Times New Roman;\">C</i>、<i style=\"font-family: Times New Roman;\">D</i>、<i style=\"font-family: Times New Roman;\">E</i>、<i style=\"font-family: Times New Roman;\">F</i>、<i style=\"font-family: Times New Roman;\">G</i>是在纸带上所选的计数点，相邻计数点间的时间间隔为0.1s。则<i style=\"font-family: Times New Roman;\">BD</i>段的平均速度<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/2cb91f4e67d9b7e90f4bd5faf06d8d5a.png\" style=\"vertical-align:middle;\"/><bk index=\"1\" size=\"11\" type=\"underline\">___________</bk>m/s。（结果保留2位有效数字）<br/><p style=\"text-align:justify;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/8ecc75b0-b95a-4794-a898-54d1dc142e4f.png?resizew=470\" style=\"vertical-align:middle;\"/></p>",
+    "options": [
+      {
+        "label": "A",
+        "text": "时间间隔"
+      },
+      {
+        "label": "B",
+        "text": "位移"
+      },
+      {
+        "label": "C",
+        "text": "平均速度"
+      },
+      {
+        "label": "D",
+        "text": "瞬时速度"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34238329",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34238329.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.72,
+    "knowledge_points": [
+      "三维空间的共点力平衡问题",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "24-25高二下—湖南长沙—阶段检测",
+    "content_html": "如图所示，某工地上起重机将重为<i style=\"font-family: Times New Roman;\">G</i>的正方形工件缓缓吊起，四根质量不计等长的钢绳，一端分别固定在正方形工件的四个角上，另一端汇聚于一处挂在挂钩上，每根绳与竖直方向的夹角为37°，则每根钢绳的受力大小为（　　）<p style=\"text-align:justify;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/6e4a332a-a2f8-4f26-955b-4c8bfa59eeae.png?resizew=344\" style=\"vertical-align:middle;\"/></p><table cols=\"4\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/b7ce937fa52db445fc0c0430b30a1996.png\" style=\"vertical-align:middle;\"/></td><td>B．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/19d9775673924c7cca0fef1d7a966232.png\" style=\"vertical-align:middle;\"/></td><td>C．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/44ab0cd9800ea34dff8f27e8214c6092.png\" style=\"vertical-align:middle;\"/></td><td>D．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/208ba31756112578b1435864cf0b3dfa.png\" style=\"vertical-align:middle;\"/></td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/b7ce937fa52db445fc0c0430b30a1996.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "B",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/19d9775673924c7cca0fef1d7a966232.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "C",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/44ab0cd9800ea34dff8f27e8214c6092.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "D",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/208ba31756112578b1435864cf0b3dfa.png\" style=\"vertical-align:middle;\"/>"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34241183",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34241183.html",
+    "question_type": "multi",
+    "type_label": "多选题-1个小题",
+    "difficulty": 0.65,
+    "knowledge_points": [
+      "中间时刻的瞬时速度",
+      "匀变速直线运动的位移差Δx=aT²",
+      "推理论证能力"
+    ],
+    "category_name": "匀变速直线运动",
+    "source_label": "25-26高一上—甘肃天水—期中",
+    "content_html": "一质点从<i style=\"font-family: Times New Roman;\">A</i>点开始做匀加速直线运动，随后依次经过<i style=\"font-family: Times New Roman;\">B</i>、<i style=\"font-family: Times New Roman;\">C</i>、<i style=\"font-family: Times New Roman;\">D</i>三点。已知<i style=\"font-family: Times New Roman;\">AB</i>段、<i style=\"font-family: Times New Roman;\">CD</i>段的距离分别为5m、15m，质点经过<i style=\"font-family: Times New Roman;\">AB</i>段、<i style=\"font-family: Times New Roman;\">BC</i>段、<i style=\"font-family: Times New Roman;\">CD</i>段的时间相等，且均为1s，则（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<table cols=\"2\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．质点的加速度大小为4m/s<sup>2</sup></td><td>B．质点的加速度大小为5m/s<sup>2</sup></td></tr><tr><td>C．质点在<i style=\"font-family: Times New Roman;\">C</i>点的速度大小为12m/s</td><td>D．质点在<i style=\"font-family: Times New Roman;\">B</i>点的速度大小为7.5m/s</td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "质点的加速度大小为4m/s<sup>2</sup>"
+      },
+      {
+        "label": "B",
+        "text": "质点的加速度大小为5m/s<sup>2</sup>"
+      },
+      {
+        "label": "C",
+        "text": "质点在<i style=\"font-family: Times New Roman;\">C</i>点的速度大小为12m/s"
+      },
+      {
+        "label": "D",
+        "text": "质点在<i style=\"font-family: Times New Roman;\">B</i>点的速度大小为7.5m/s"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34239915",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34239915.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.66,
+    "knowledge_points": [
+      "正交分解法解共点力平衡问题",
+      "恰好发生相对滑动的临界问题",
+      "理解能力",
+      "模型构建能力",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—河南郑州—期末",
+    "content_html": "如图，在倾角为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/5fda5655ef480683a2d3b74f0b523439.png\" style=\"vertical-align:middle;\"/>的固定斜面上，物体A、B由绕过光滑定滑轮的轻绳连接，两物体均保持静止，已知物体A的质量<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/095540b0cc833f3023637f8b8a7afc0b.png\" style=\"vertical-align:middle;\"/>，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/46a6a294d3d7206bcdde5b943dbe94f0.png\" style=\"vertical-align:middle;\"/>。<p style=\"text-align:left;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/2/4a6476a2-0db4-4b8d-843c-a2f94a3bc1f3.png?resizew=158\" style=\"vertical-align:middle;\"/></p>(1)若斜面光滑，求物体B的质量<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/77ab1256702aef4e9f1a5eb6c12ecc96.png\" style=\"vertical-align:middle;\"/>。<br/>(2)若斜面由特殊材料制成，物体A向上运动时动摩擦因数<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/3639b9b596019a23574b1dc4bf3e0ade.png\" style=\"vertical-align:middle;\"/>，向下运动时动摩擦因数<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/4ca88bfff5fb6646b794fd356729cc9d.png\" style=\"vertical-align:middle;\"/>，且最大静摩擦力等于滑动摩擦力，若使物体A、B仍然保持静止，求物体B质量<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/1fbd67f60f04c278bdd867fdb3979dfb.png\" style=\"vertical-align:middle;\"/>的范围。",
+    "options": [],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34239913",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34239913.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.72,
+    "knowledge_points": [
+      "验证力的平行四边形定则",
+      "探究两个互成角度的力的合成规律",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "25-26高二下—河南郑州—期末",
+    "content_html": "在“探究两个互成角度的力的合成规律”实验中，桌上放一块方木板，用图钉把一张白纸钉在方木板上，再用图钉把橡皮条一端固定在板上的<i style=\"font-family: Times New Roman;\">A</i>点。如图甲所示，在橡皮条另一端拴上两条细绳形成结点，细绳的另一端系着绳套。先用两个弹簧测力计分别钩住绳套，互成角度地拉橡皮条，结点受到力<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>、<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>的共同作用；再用一个弹簧测力计通过绳套拉橡皮条，结点只受力<i style=\"font-family: Times New Roman;\">F</i>的作用。<p style=\"text-align:left;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/2/f8006217-54dc-41ec-9831-79868a679c6f.png?resizew=344\" style=\"vertical-align:middle;\"/></p>(1)判断力<i style=\"font-family: Times New Roman;\">F</i>单独作用与力<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>、<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>共同作用效果相同的依据是________。<table cols=\"1\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．<i style=\"font-family: Times New Roman;\">F</i>的大小等于<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>与<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>的大小之和</td></tr><tr><td>B．使橡皮条伸长相同的长度</td></tr><tr><td>C．使橡皮条上的结点到达同一位置</td></tr></tbody></table>(2)下列信息中，实验时需要标记或者记录的信息有________。<table cols=\"2\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．橡皮条的原长</td><td>B．橡皮条原长时结点的位置</td></tr><tr><td>C．力<i style=\"font-family: Times New Roman;\">F</i>的大小和方向</td><td>D．力<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>、<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>的大小和方向</td></tr></tbody></table>(3)如图乙所示，先用两个互成一定角度的弹簧测力计拉橡皮条，使橡皮条的结点伸长到<i style=\"font-family: Times New Roman;\">O</i>点，保持橡皮条的结点在<i style=\"font-family: Times New Roman;\">O</i>点不动，弹簧测力计的拉力<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>的方向不变，将另一个弹簧测力计<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>的方向由水平方向顺时针转过<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/c02b54dc6b3e1bb6544f47d4c8743fcf.png\" style=\"vertical-align:middle;\"/>，该过程中________。<table cols=\"2\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>逐渐增大，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>先减小后增大</td><td>B．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>逐渐减小，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>先减小后增大</td></tr><tr><td>C．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>逐渐增大，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>先增大后减小</td><td>D．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>逐渐减小，<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>先增大后减小</td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "<i style=\"font-family: Times New Roman;\">F</i>的大小等于<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/f5076289823db419f94e9c0c8f4aafd9.png\" style=\"vertical-align:middle;\"/>与<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a3fb78c5f885034612c0e030b920143d.png\" style=\"vertical-align:middle;\"/>的大小之和"
+      },
+      {
+        "label": "B",
+        "text": "使橡皮条伸长相同的长度"
+      },
+      {
+        "label": "C",
+        "text": "使橡皮条上的结点到达同一位置"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34239907",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34239907.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.4,
+    "knowledge_points": [
+      "整体法与隔离法解决共点力平衡问题",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—河南郑州—期末",
+    "content_html": "现有一条粗细与质量分布均匀、柔软且不能伸长的链条，悬挂在<i style=\"font-family: Times New Roman;\">A</i>、<i style=\"font-family: Times New Roman;\">B</i>两点之间，链条质量为<i style=\"font-family: Times New Roman;\">m</i>，悬点<i style=\"font-family: Times New Roman;\">A</i>、<i style=\"font-family: Times New Roman;\">B</i>处切线与竖直方向夹角分别为30°和60°，两切线的交点为<i style=\"font-family: Times New Roman;\">C</i>，<i style=\"font-family: Times New Roman;\">F</i>为链条的最低点，重力加速度为<i style=\"font-family: Times New Roman;\">g</i>，则最低点<i style=\"font-family: Times New Roman;\">F</i>处链条张力为（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<p style=\"text-align:left;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/2/aaf37f9a-9a56-4db6-b597-1582a09bfe8b.png?resizew=152\" style=\"vertical-align:middle;\"/></p><table cols=\"4\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a0c27535aed0e4a37003370f207a7a73.png\" style=\"vertical-align:middle;\"/></td><td>B．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/779806f3c91c66fc3d9dd09e435e7124.png\" style=\"vertical-align:middle;\"/></td><td>C．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/381a6397c08fb494da3601d44ee08613.png\" style=\"vertical-align:middle;\"/></td><td>D．<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/cd3acac350c5cd6ea17323aee0c1aae0.png\" style=\"vertical-align:middle;\"/></td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/a0c27535aed0e4a37003370f207a7a73.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "B",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/779806f3c91c66fc3d9dd09e435e7124.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "C",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/381a6397c08fb494da3601d44ee08613.png\" style=\"vertical-align:middle;\"/>"
+      },
+      {
+        "label": "D",
+        "text": "<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/cd3acac350c5cd6ea17323aee0c1aae0.png\" style=\"vertical-align:middle;\"/>"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  },
+  {
+    "zujuan_id": "34237086",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34237086.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.62,
+    "knowledge_points": [
+      "用解析法解决平衡问题",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—湖北武汉—期末",
+    "content_html": "如图所示是《天工开物》中古人挖煤时的场景和其简化示意图，初始时牵引绳和水平地面间夹角为<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/2fb94bd9eb80fb9f5f02f518bb8f2211.png\" style=\"vertical-align:middle;\"/>，簸箕与地面间的动摩擦因数为0.75，最大静摩擦力等于滑动摩擦力，重力加速度<i style=\"font-family: Times New Roman;\">g</i>取<img src=\"https://staticzujuan.xkw.com/quesimg/Upload/formula/496915b6402f6daae7a2a0438b0cc8dd.png\" style=\"vertical-align:middle;\"/>，簸箕与井壁无接触，忽略绳子和滑轮之间的阻力。在簸箕被缓慢拉到滑轮的正下方的过程中，牵引绳的拉力（<span qml-space-size=\"5\" style=\"font-family:'Times New Roman'\">        </span>）<p style=\"text-align:justify;\"><img alt=\"\" src=\"https://img.xkw.com/dksih/QBM/editorImg/2026/7/2/9856e62d-8ded-402e-b631-71e20360a69b.png?resizew=246\" style=\"vertical-align:middle;\"/></p><table cols=\"4\" name=\"optionsTable\" style=\"width:100%;table-layout:fixed;\"><tbody><tr><td>A．一直增大</td><td>B．一直减小</td><td>C．先增大后减小</td><td>D．先减小后增大</td></tr></tbody></table>",
+    "options": [
+      {
+        "label": "A",
+        "text": "一直增大"
+      },
+      {
+        "label": "B",
+        "text": "一直减小"
+      },
+      {
+        "label": "C",
+        "text": "先增大后减小"
+      },
+      {
+        "label": "D",
+        "text": "先减小后增大"
+      }
+    ],
+    "answer": "",
+    "analysis": ""
+  }
+]

@@ -4,7 +4,18 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 /* Layout */
-import Layout from '@/layout'
+const Layout = () => import('@/layout')
+const PortalLayout = () => import('@/layout-portal')
+import {
+  ADMIN_PREFIX,
+  ADMIN_INDEX,
+  ADMIN_LOGIN,
+  ADMIN_REGISTER,
+  ADMIN_LOCK,
+  ADMIN_REDIRECT,
+  PORTAL_LOGIN,
+  prefixAdminPath
+} from '@/constants/routes'
 
 /**
  * Note: 路由配置项
@@ -30,24 +41,28 @@ import Layout from '@/layout'
 
 // 公共路由
 export const constantRoutes = [
+  { path: '/portal', redirect: '/' },
+  { path: '/portal/home', redirect: '/' },
+  { path: '/portal/:path(.*)', redirect: to => (to.params.path === 'home' ? '/' : '/' + to.params.path) },
+  { path: '/index', redirect: ADMIN_INDEX },
   {
-    path: '/redirect',
+    path: ADMIN_REDIRECT,
     component: Layout,
     hidden: true,
     children: [
       {
-        path: '/redirect/:path(.*)',
+        path: ADMIN_REDIRECT + '/:path(.*)',
         component: () => import('@/views/redirect')
       }
     ]
   },
   {
-    path: '/login',
+    path: ADMIN_LOGIN,
     component: () => import('@/views/login'),
     hidden: true
   },
   {
-    path: '/register',
+    path: ADMIN_REGISTER,
     component: () => import('@/views/register'),
     hidden: true
   },
@@ -62,9 +77,122 @@ export const constantRoutes = [
     hidden: true
   },
   {
-    path: '',
+    path: PORTAL_LOGIN,
+    component: () => import('@/views/portal/Login'),
+    hidden: true,
+    meta: { title: '用户登录' }
+  },
+  {
+    path: '/',
+    component: PortalLayout,
+    hidden: true,
+    children: [
+      {
+        path: '',
+        component: () => import('@/views/portal/Home'),
+        name: 'PortalHome',
+        meta: { title: '门户首页' }
+      },
+      {
+        path: 'chapter',
+        component: () => import('@/views/portal/PortalBrowse'),
+        name: 'PortalChapter',
+        meta: { title: '章节选题' },
+        props: { mode: 'chapter' }
+      },
+      {
+        path: 'knowledge',
+        component: () => import('@/views/portal/PortalBrowse'),
+        name: 'PortalKnowledge',
+        meta: { title: '知识点选题' },
+        props: { mode: 'knowledge' }
+      },
+      {
+        path: 'exam',
+        component: () => import('@/views/portal/PortalBrowse'),
+        name: 'PortalExam',
+        meta: { title: '试卷选题' },
+        props: { mode: 'exam' }
+      },
+      {
+        path: 'paper',
+        component: () => import('@/views/portal/Paper'),
+        name: 'PortalPaper',
+        meta: { title: '智能组卷' }
+      },
+      {
+        path: 'paper/preview',
+        component: () => import('@/views/education/question-bank/paper/preview'),
+        name: 'PortalPaperPreview',
+        meta: { title: '组卷预览' },
+        props: { portalMode: true }
+      },
+      {
+        path: 'question/:questionId',
+        component: () => import('@/views/portal/QuestionDetail'),
+        name: 'PortalQuestionDetail',
+        meta: { title: '试题详情' }
+      },
+      {
+        path: 'profile',
+        component: () => import('@/views/portal/Profile'),
+        name: 'PortalProfile',
+        meta: { title: '个人中心' }
+      },
+      {
+        path: 'my-papers',
+        component: () => import('@/views/portal/MyPapers'),
+        name: 'PortalMyPapers',
+        meta: { title: '我的试卷' }
+      },
+      {
+        path: 'my-purchases',
+        component: () => import('@/views/portal/MyPurchases'),
+        name: 'PortalMyPurchases',
+        meta: { title: '我的购买记录' }
+      },
+      {
+        path: 'library/upload',
+        component: () => import('@/views/portal/library/Upload'),
+        name: 'PortalLibraryUpload',
+        meta: { title: '上传文档' }
+      },
+      {
+        path: 'library/vip',
+        component: () => import('@/views/portal/library/Vip'),
+        name: 'PortalLibraryVip',
+        meta: { title: 'VIP会员' }
+      },
+      {
+        path: 'library/topics',
+        component: () => import('@/views/portal/library/TopicList'),
+        name: 'PortalLibraryTopics',
+        meta: { title: '热门专题' }
+      },
+      {
+        path: 'library/topic/:topicId(\\d+)',
+        component: () => import('@/views/portal/library/TopicDetail'),
+        name: 'PortalLibraryTopic',
+        meta: { title: '热门专题' }
+      },
+      {
+        path: 'library',
+        component: () => import('@/views/portal/library/index'),
+        name: 'PortalLibrary',
+        meta: { title: '文库' }
+      },
+      {
+        path: 'library/:documentId(\\d+)',
+        component: () => import('@/views/portal/library/Detail'),
+        name: 'PortalLibraryDetail',
+        meta: { title: '文档详情' }
+      }
+    ]
+  },
+  {
+    path: ADMIN_PREFIX,
     component: Layout,
-    redirect: 'index',
+    redirect: ADMIN_INDEX,
     children: [
       {
         path: 'index',
@@ -75,13 +203,13 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/lock',
+    path: ADMIN_LOCK,
     component: () => import('@/views/lock'),
     hidden: true,
     meta: { title: '锁定屏幕' }
   },
   {
-    path: '/user',
+    path: ADMIN_PREFIX + '/user',
     component: Layout,
     hidden: true,
     redirect: 'noredirect',
@@ -99,7 +227,7 @@ export const constantRoutes = [
 // 动态路由，基于用户权限动态去加载
 export const dynamicRoutes = [
   {
-    path: '/system/user-auth',
+    path: prefixAdminPath('/system/user-auth'),
     component: Layout,
     hidden: true,
     permissions: ['system:user:edit'],
@@ -108,12 +236,12 @@ export const dynamicRoutes = [
         path: 'role/:userId(\\d+)',
         component: () => import('@/views/system/user/authRole'),
         name: 'AuthRole',
-        meta: { title: '分配角色', activeMenu: '/system/user' }
+        meta: { title: '分配角色', activeMenu: prefixAdminPath('/system/user') }
       }
     ]
   },
   {
-    path: '/system/role-auth',
+    path: prefixAdminPath('/system/role-auth'),
     component: Layout,
     hidden: true,
     permissions: ['system:role:edit'],
@@ -122,12 +250,12 @@ export const dynamicRoutes = [
         path: 'user/:roleId(\\d+)',
         component: () => import('@/views/system/role/authUser'),
         name: 'AuthUser',
-        meta: { title: '分配用户', activeMenu: '/system/role' }
+        meta: { title: '分配用户', activeMenu: prefixAdminPath('/system/role') }
       }
     ]
   },
   {
-    path: '/system/dict-data',
+    path: prefixAdminPath('/system/dict-data'),
     component: Layout,
     hidden: true,
     permissions: ['system:dict:list'],
@@ -136,12 +264,12 @@ export const dynamicRoutes = [
         path: 'index/:dictId(\\d+)',
         component: () => import('@/views/system/dict/data'),
         name: 'Data',
-        meta: { title: '字典数据', activeMenu: '/system/dict' }
+        meta: { title: '字典数据', activeMenu: prefixAdminPath('/system/dict') }
       }
     ]
   },
   {
-    path: '/monitor/job-log',
+    path: prefixAdminPath('/monitor/job-log'),
     component: Layout,
     hidden: true,
     permissions: ['monitor:job:list'],
@@ -150,12 +278,12 @@ export const dynamicRoutes = [
         path: 'index/:jobId(\\d+)',
         component: () => import('@/views/monitor/job/log'),
         name: 'JobLog',
-        meta: { title: '调度日志', activeMenu: '/monitor/job' }
+        meta: { title: '调度日志', activeMenu: prefixAdminPath('/monitor/job') }
       }
     ]
   },
   {
-    path: '/tool/gen-edit',
+    path: prefixAdminPath('/tool/gen-edit'),
     component: Layout,
     hidden: true,
     permissions: ['tool:gen:edit'],
@@ -164,7 +292,79 @@ export const dynamicRoutes = [
         path: 'index/:tableId(\\d+)',
         component: () => import('@/views/tool/gen/editTable'),
         name: 'GenEdit',
-        meta: { title: '修改生成配置', activeMenu: '/tool/gen' }
+        meta: { title: '修改生成配置', activeMenu: prefixAdminPath('/tool/gen') }
+      }
+    ]
+  },
+  {
+    path: prefixAdminPath('/question-bank-center'),
+    component: Layout,
+    hidden: true,
+    permissions: ['education:question:list', 'education:question:add', 'education:question:import', 'education:question:audit'],
+    children: [
+      {
+        path: 'question-create/docx',
+        component: () => import('@/views/education/question-bank/import/DocxImport'),
+        name: 'QuestionCreateDocxImport',
+        meta: { title: 'DOCX导入', activeMenu: prefixAdminPath('/question-bank/question-create') }
+      },
+      {
+        path: 'question-create/ocr',
+        component: () => import('@/views/education/question-bank/import/OcrImport'),
+        name: 'QuestionCreateOcrImport',
+        meta: { title: 'OCR导入', activeMenu: prefixAdminPath('/question-bank/question-create') }
+      },
+      {
+        path: 'question-create/history',
+        component: () => import('@/views/education/question-bank/import/ImportHistory'),
+        name: 'QuestionImportHistory',
+        meta: { title: '导入记录', activeMenu: prefixAdminPath('/question-bank/question-create') }
+      },
+      {
+        path: 'question-create/audit',
+        component: () => import('@/views/education/question-bank/audit/QuestionAudit'),
+        name: 'QuestionAudit',
+        meta: { title: '题库审核', activeMenu: prefixAdminPath('/question-bank/question-create') }
+      }
+    ]
+  },
+  {
+    path: prefixAdminPath('/question-bank-center'),
+    component: Layout,
+    hidden: true,
+    permissions: ['education:paper:preview', 'education:question:list', 'education:question:add'],
+    children: [
+      {
+        path: 'question-bank/paper/preview',
+        component: () => import('@/views/education/question-bank/paper/preview'),
+        name: 'PaperPreview',
+        meta: { title: '组卷预览', activeMenu: prefixAdminPath('/question-bank') }
+      },
+      {
+        path: 'question-bank/paper/practice',
+        component: () => import('@/views/education/question-bank/paper/PaperPractice'),
+        name: 'PaperPractice',
+        meta: { title: '在线练习', activeMenu: prefixAdminPath('/question-bank') }
+      }
+    ]
+  },
+  {
+    path: prefixAdminPath('/question-bank-center'),
+    component: Layout,
+    hidden: true,
+    permissions: ['education:exam-paper:list', 'education:exam-paper:add', 'education:exam-paper:query'],
+    children: [
+      {
+        path: 'exam-paper',
+        component: () => import('@/views/education/exam-paper/index'),
+        name: 'ExamPaperManage',
+        meta: { title: '试卷选题管理', activeMenu: prefixAdminPath('/question-bank-center/exam-paper') }
+      },
+      {
+        path: 'exam-paper/mark',
+        component: () => import('@/views/education/exam-paper/mark'),
+        name: 'ExamPaperMark',
+        meta: { title: '智能标记题目', activeMenu: prefixAdminPath('/question-bank-center/exam-paper') }
       }
     ]
   }

@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="任务名称" prop="jobName">
@@ -211,7 +211,7 @@ export default {
     },
     // 返回按钮
     handleClose() {
-      const obj = { path: "/monitor/job" }
+      const obj = { path: "/admin/monitor/job" }
       this.$tab.closeOpenPage(obj)
     },
     /** 搜索按钮操作 */

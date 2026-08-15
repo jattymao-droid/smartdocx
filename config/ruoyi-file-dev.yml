@@ -1,0 +1,35 @@
+# 文件存储：local | minio | cos
+file:
+  storage-type: local
+  domain: http://127.0.0.1:9300
+  path: D:/ruoyi/uploadPath
+  prefix: /statics
+
+# FastDFS配置
+fdfs:
+  domain: http://127.0.0.1
+  soTimeout: 3000
+  connectTimeout: 2000
+  trackerList: 127.0.0.1:22122
+
+# Minio配置（storage-type=minio 时生效）
+minio:
+  url: http://127.0.0.1:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: test
+
+# 腾讯云 COS（storage-type=cos 时生效）
+cos:
+  secret-id: your-secret-id
+  secret-key: your-secret-key
+  region: ap-guangzhou
+  bucket-name: your-bucket-1250000000
+  # 可选：CDN/自定义加速域名，不含末尾 /
+  domain: https://your-cdn.example.com
+  prefix: library
+
+# 防盗链配置
+referer:
+  enabled: false
+  allowed-domains: localhost,127.0.0.1,ruoyi.vip,www.ruoyi.vip

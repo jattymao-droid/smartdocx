@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbPaperMapper">
+
+    <resultMap id="EduQbPaperResult" type="EduQbPaper">
+        <result property="paperId" column="paper_id"/>
+        <result property="paperTitle" column="paper_title"/>
+        <result property="templateCode" column="template_code"/>
+        <result property="totalScore" column="total_score"/>
+        <result property="sortRule" column="sort_rule"/>
+        <result property="exportConfig" column="export_config"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="remark" column="remark"/>
+        <result property="itemCount" column="item_count"/>
+        <result property="paperType" column="paper_type"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="examCategory" column="exam_category"/>
+        <result property="examYear" column="exam_year"/>
+        <result property="region" column="region"/>
+        <result property="grade" column="grade"/>
+        <result property="publishStatus" column="publish_status"/>
+        <result property="sourceFile" column="source_file"/>
+    </resultMap>
+
+    <resultMap id="EduQbPaperItemResult" type="EduQbPaperItem">
+        <result property="itemId" column="item_id"/>
+        <result property="paperId" column="paper_id"/>
+        <result property="questionId" column="question_id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="scoreValue" column="score_value"/>
+        <result property="sectionName" column="section_name"/>
+    </resultMap>
+
+    <resultMap id="EduQbExamPaperQuestionViewResult" type="EduQbExamPaperQuestionView">
+        <result property="itemId" column="item_id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="scoreValue" column="score_value"/>
+        <result property="sectionName" column="section_name"/>
+        <result property="questionId" column="question_id"/>
+        <result property="questionCode" column="question_code"/>
+        <result property="content" column="content"/>
+        <result property="options" column="options"/>
+        <result property="correctAnswer" column="correct_answer"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="chapterId" column="chapter_id"/>
+        <result property="chapterText" column="chapter_text"/>
+        <result property="knowledgePoints" column="knowledge_points"/>
+        <result property="difficulty" column="difficulty"/>
+        <result property="questionType" column="question_type"/>
+        <result property="sourceType" column="source_type"/>
+        <result property="status" column="status"/>
+        <result property="images" column="images"/>
+        <result property="analysis" column="analysis"/>
+        <result property="contentHash" column="content_hash"/>
+        <result property="importTaskId" column="import_task_id"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="remark" column="remark"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectEduQbPaperVo">
+        select p.paper_id, p.paper_title, p.template_code, p.total_score, p.sort_rule,
+               p.export_config::text as export_config, p.create_by, p.create_time, p.remark,
+               p.paper_type, p.subject_id, p.exam_category, p.exam_year, p.region, p.grade,
+               p.publish_status, p.source_file,
+               (select count(1) from edu_qb_paper_item i where i.paper_id = p.paper_id) as item_count
+        from edu_qb_paper p
+    </sql>
+
+    <select id="selectEduQbPaperList" parameterType="EduQbPaper" resultMap="EduQbPaperResult">
+        <include refid="selectEduQbPaperVo"/>
+        <where>
+            <if test="createBy != null and createBy != ''">and p.create_by = #{createBy}</if>
+            <if test="paperTitle != null and paperTitle != ''">and p.paper_title ilike ('%' || #{paperTitle} || '%')</if>
+            <if test="paperType != null and paperType != ''">and p.paper_type = #{paperType}</if>
+            <if test="subjectId != null">and p.subject_id = #{subjectId}</if>
+            <if test="examCategory != null and examCategory != ''">and p.exam_category = #{examCategory}</if>
+            <if test="publishStatus != null and publishStatus != ''">and p.publish_status = #{publishStatus}</if>
+        </where>
+        order by p.create_time desc
+    </select>
+
+    <select id="selectEduQbPaperById" resultMap="EduQbPaperResult">
+        <include refid="selectEduQbPaperVo"/>
+        where p.paper_id = #{paperId}
+    </select>
+
+    <select id="selectEduQbPaperItemsByPaperId" resultMap="EduQbPaperItemResult">
+        select item_id, paper_id, question_id, order_num, score_value, section_name
+        from edu_qb_paper_item
+        where paper_id = #{paperId}
+        order by order_num asc
+    </select>
+
+    <select id="selectExamPaperQuestions" resultMap="EduQbExamPaperQuestionViewResult">
+        select i.item_id, i.order_num, i.score_value, i.section_name,
+               q.question_id, q.question_code, q.content, q.options::text as options,
+               q.correct_answer::text as correct_answer, q.subject_id, q.chapter_id,
+               q.chapter_text, q.knowledge_points::text as knowledge_points,
+               q.difficulty, q.question_type, q.source_type, q.status,
+               q.images::text as images, q.analysis, q.content_hash, q.import_task_id,
+               q.del_flag, q.remark, q.create_by, q.create_time, q.update_by, q.update_time
+        from edu_qb_paper_item i
+        join edu_qb_question q on q.question_id = i.question_id and q.del_flag = '0'
+        where i.paper_id = #{paperId}
+        order by i.order_num asc
+    </select>
+
+    <insert id="insertEduQbPaper" parameterType="EduQbPaper" useGeneratedKeys="true" keyProperty="paperId" keyColumn="paper_id">
+        insert into edu_qb_paper (
+            paper_title, template_code, total_score, sort_rule, export_config,
+            paper_type, subject_id, exam_category, exam_year, region, grade,
+            publish_status, source_file, create_by, create_time, remark
+        ) values (
+            #{paperTitle}, #{templateCode}, #{totalScore}, #{sortRule},
+            <choose>
+                <when test="exportConfig != null and exportConfig != ''">#{exportConfig}::jsonb</when>
+                <otherwise>'{}'::jsonb</otherwise>
+            </choose>,
+            <choose>
+                <when test="paperType != null and paperType != ''">#{paperType}</when>
+                <otherwise>'user'</otherwise>
+            </choose>, #{subjectId}, #{examCategory}, #{examYear}, #{region}, #{grade},
+            <choose>
+                <when test="publishStatus != null and publishStatus != ''">#{publishStatus}</when>
+                <otherwise>'0'</otherwise>
+            </choose>,
+            #{sourceFile}, #{createBy}, CURRENT_TIMESTAMP, #{remark}
+        )
+    </insert>
+
+    <update id="updateEduQbPaper" parameterType="EduQbPaper">
+        update edu_qb_paper
+        <set>
+            <if test="paperTitle != null">paper_title = #{paperTitle},</if>
+            <if test="templateCode != null">template_code = #{templateCode},</if>
+            <if test="totalScore != null">total_score = #{totalScore},</if>
+            <if test="sortRule != null">sort_rule = #{sortRule},</if>
+            <if test="exportConfig != null">export_config = #{exportConfig}::jsonb,</if>
+            <if test="paperType != null">paper_type = #{paperType},</if>
+            <if test="subjectId != null">subject_id = #{subjectId},</if>
+            <if test="examCategory != null">exam_category = #{examCategory},</if>
+            <if test="examYear != null">exam_year = #{examYear},</if>
+            <if test="region != null">region = #{region},</if>
+            <if test="grade != null">grade = #{grade},</if>
+            <if test="publishStatus != null">publish_status = #{publishStatus},</if>
+            <if test="sourceFile != null">source_file = #{sourceFile},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            create_time = CURRENT_TIMESTAMP
+        </set>
+        where paper_id = #{paperId}
+    </update>
+
+    <delete id="deleteEduQbPaperById">
+        delete from edu_qb_paper where paper_id = #{paperId}
+    </delete>
+
+    <delete id="deleteEduQbPaperItemsByPaperId">
+        delete from edu_qb_paper_item where paper_id = #{paperId}
+    </delete>
+
+    <insert id="batchInsertEduQbPaperItems">
+        insert into edu_qb_paper_item (paper_id, question_id, order_num, score_value, section_name)
+        values
+        <foreach collection="items" item="item" separator=",">
+            (#{item.paperId}, #{item.questionId}, #{item.orderNum}, #{item.scoreValue}, #{item.sectionName})
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,42 @@
+[
+  {
+    "zujuan_id": "34216116",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34216116.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.45,
+    "knowledge_points": [
+      "利用平衡推论求力大小或方向",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—江苏镇江—期末",
+    "content": "一根重心在P处的木棒，在其两端A、B处系上轻质细绳，使棒在三个力的作用下能保持图示状态静止，B处细绳拉力F_{B}的精确方向如图所示，关于A处所受绳拉力的方向，下列说法正确的是（    ）",
+    "content_html": "一根重心在P处的木棒，在其两端A、B处系上轻质细绳，使棒在三个力的作用下能保持图示状态静止，B处细绳拉力F_{B}的精确方向如图所示，关于A处所受绳拉力的方向，下列说法正确的是（    ）",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/1/c49a36c8-c89f-4166-9d9e-7799d3eb055e.png?resizew=206"
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "只能沿Aa方向"
+      },
+      {
+        "label": "B",
+        "text": "只能沿Ab方向"
+      },
+      {
+        "label": "C",
+        "text": "只能沿Ac方向"
+      },
+      {
+        "label": "D",
+        "text": "只要力的大小合适，以上三个方向均可"
+      }
+    ],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  }
+]

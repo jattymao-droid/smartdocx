@@ -1,0 +1,59 @@
+{
+  "list_found": true,
+  "list_options": [
+    {
+      "label": "A",
+      "text": "位置"
+    },
+    {
+      "label": "B",
+      "text": "速度"
+    },
+    {
+      "label": "C",
+      "text": "受力"
+    },
+    {
+      "label": "D",
+      "text": "质量"
+    }
+  ],
+  "list_content_has_table": false,
+  "early_has_quest_cnt": true,
+  "early_options": [
+    {
+      "label": "A",
+      "text": "位置"
+    },
+    {
+      "label": "B",
+      "text": "速度"
+    },
+    {
+      "label": "C",
+      "text": "受力"
+    },
+    {
+      "label": "D",
+      "text": "质量"
+    }
+  ],
+  "late_options": [
+    {
+      "label": "A",
+      "text": "位置"
+    },
+    {
+      "label": "B",
+      "text": "速度"
+    },
+    {
+      "label": "C",
+      "text": "受力"
+    },
+    {
+      "label": "D",
+      "text": "质量"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "zujuan_id": "34245257",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245257.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.81,
+    "knowledge_points": [
+      "牛顿运动定律与图像结合",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "如图甲所示为一位滑雪爱好者，人与装置的总质量为 ，在倾角为 的雪坡上，以 的初速度沿斜坡匀加速直线滑下。他运动的 图像如图乙所示。g取 ， ， 。求：(1)滑雪者受到雪面的支持力大小； (2)滑雪者受到的阻力大小。",
+    "content_html": "如图甲所示为一位滑雪爱好者，人与装置的总质量为 ，在倾角为 的雪坡上，以 的初速度沿斜坡匀加速直线滑下。他运动的 图像如图乙所示。g取 ， ， 。求：(1)滑雪者受到雪面的支持力大小； (2)滑雪者受到的阻力大小。",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/59f0e84413d0eb3bc124f95b7b371ce3.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/5da080fd41cf18224a1b4433e5d3a2b4.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/8db9fda15d29c00cd463bad2cf1eb5e0.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/d1552707683293dcf684d101dd09b5c9.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/9c4ee1b7d06ac4c703e4c086b425c9c5.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/a2276325f18cd54f592406e0326219d5.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/ca4893ed984d30e85197e74c028a16df.png",
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/52c15da4-c72f-44a8-bf3f-21b35c6b2f9b.png?resizew=351"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "牛顿运动定律"
+  },
+  {
+    "zujuan_id": "34245256",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245256.html",
+    "question_type": "judge",
+    "type_label": "判断题",
+    "difficulty": 0.89,
+    "knowledge_points": [
+      "牛顿第二定律的初步应用",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "思维辨析 (1)根据物体加速度的方向可以判断物体所受合外力的方向。（    ） (2)根据物体加速度的方向可以判断物体受到的每个力的方向。（    ） (3)加速度是联系运动和力的桥梁。（    ） (4)物体运动状态的变化情况是由它的受力决定的。（    ） (5)物体运动状态的变化情况是由它对其他物体的施力情况决定的。（    ）",
+    "content_html": "思维辨析 (1)根据物体加速度的方向可以判断物体所受合外力的方向。（    ） (2)根据物体加速度的方向可以判断物体受到的每个力的方向。（    ） (3)加速度是联系运动和力的桥梁。（    ） (4)物体运动状态的变化情况是由它的受力决定的。（    ） (5)物体运动状态的变化情况是由它对其他物体的施力情况决定的。（    ）",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "牛顿运动定律"
+  },
+  {
+    "zujuan_id": "34245255",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245255.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.92,
+    "knowledge_points": [
+      "已知受力求运动",
+      "已知运动求受力",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "动力学的两类基本问题 动力学有两类问题：一是已知物体的受力情况分析________情况；二是已知运动情况分析________情况，程序如下图所示。其中，________是基础，牛顿第二定律和________公式是工具，________是桥梁。",
+    "content_html": "动力学的两类基本问题 动力学有两类问题：一是已知物体的受力情况分析________情况；二是已知运动情况分析________情况，程序如下图所示。其中，________是基础，牛顿第二定律和________公式是工具，________是桥梁。",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/ccd29daf-474c-410e-be8a-27f3dd90e3b9.png?resizew=290"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "牛顿运动定律"
+  },
+  {
+    "zujuan_id": "34245254",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245254.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.95,
+    "knowledge_points": [
+      "已知运动求受力",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "从运动情况确定受力情况 若已经知道物体的运动情况，根据运动学公式求出物体的________，于是就可以由牛顿第二定律确定物体所受的________，这是力学所要解决的又一方面的问题。",
+    "content_html": "从运动情况确定受力情况 若已经知道物体的运动情况，根据运动学公式求出物体的________，于是就可以由牛顿第二定律确定物体所受的________，这是力学所要解决的又一方面的问题。",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "牛顿运动定律"
+  },
+  {
+    "zujuan_id": "34245253",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245253.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.93,
+    "knowledge_points": [
+      "已知受力求运动",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "从受力情况确定运动情况 (1)牛顿第二定律确定了________和________的关系，使我们能够把物体的运动情况和________联系起来。 (2)如果已知物体的受力情况，可由牛顿第二定律求出物体的________，再通过运动学的规律就可以确定物体的________。",
+    "content_html": "从受力情况确定运动情况 (1)牛顿第二定律确定了________和________的关系，使我们能够把物体的运动情况和________联系起来。 (2)如果已知物体的受力情况，可由牛顿第二定律求出物体的________，再通过运动学的规律就可以确定物体的________。",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "牛顿运动定律"
+  },
+  {
+    "zujuan_id": "34244953",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34244953.html",
+    "question_type": "multi",
+    "type_label": "多选题-1个小题",
+    "difficulty": 0.57,
+    "knowledge_points": [
+      "正交分解法解共点力平衡问题",
+      "分析物体受力个数",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "如图所示，A、B两球质量均为m，固定在轻弹簧的两端，分别用细绳悬于O点，其中球A处在光滑竖直墙面和光滑水平墙面的交界处，已知两球均处于平衡状态，OAB恰好构成一个正三角形，则下列说法正确的是（重力加速度为g）",
+    "content_html": "如图所示，A、B两球质量均为m，固定在轻弹簧的两端，分别用细绳悬于O点，其中球A处在光滑竖直墙面和光滑水平墙面的交界处，已知两球均处于平衡状态，OAB恰好构成一个正三角形，则下列说法正确的是（重力加速度为g）",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/f22af29c-0d50-4b5a-943b-e0a351474ed6.png?resizew=158"
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "球A可能受到四个力的作用"
+      },
+      {
+        "label": "B",
+        "text": "弹簧对球A的弹力大于对球B的弹力"
+      },
+      {
+        "label": "C",
+        "text": "绳OB对球B的拉力大小一定等于mg"
+      },
+      {
+        "label": "D",
+        "text": "绳OA对球A的拉力大小等于或小于1.5mg"
+      }
+    ],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  },
+  {
+    "zujuan_id": "34244951",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34244951.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.85,
+    "knowledge_points": [
+      "平衡状态的定义及条件",
+      "理解能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "如图所示，甲图中的石头受到几个力的作用而处于静止状态；乙图中的飞机做水平方向的匀速直线运动。试结合上述现象讨论：处于平衡状态的物体有什么特点？物体若受多个共点力保持平衡，应满足什么条件？",
+    "content_html": "如图所示，甲图中的石头受到几个力的作用而处于静止状态；乙图中的飞机做水平方向的匀速直线运动。试结合上述现象讨论：处于平衡状态的物体有什么特点？物体若受多个共点力保持平衡，应满足什么条件？",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/2/de8d33cc-36d7-4660-9d03-282dcb01d509.png?resizew=341"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  },
+  {
+    "zujuan_id": "34244950",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34244950.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.82,
+    "knowledge_points": [
+      "平衡状态的定义及条件",
+      "利用平衡推论求力大小或方向",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "孔明灯相传是由三国时的诸葛孔明发明的。如图所示，有一盏质量为m的孔明灯升空后向着东北偏上方向沿直线匀速上升，则此时孔明灯处于平衡状态吗？你能求出此时孔明灯所受空气作用力的大小和方向吗？",
+    "content_html": "孔明灯相传是由三国时的诸葛孔明发明的。如图所示，有一盏质量为m的孔明灯升空后向着东北偏上方向沿直线匀速上升，则此时孔明灯处于平衡状态吗？你能求出此时孔明灯所受空气作用力的大小和方向吗？",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/a7cc9451-dbd8-43c2-a09f-3dec0c9d5281.png?resizew=113"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  },
+  {
+    "zujuan_id": "34244949",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34244949.html",
+    "question_type": "judge",
+    "type_label": "判断题",
+    "difficulty": 0.85,
+    "knowledge_points": [
+      "平衡状态的定义及条件",
+      "理解能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "思维辨析 (1)处于平衡状态的物体一定处于静止状态。______ (2)运动的物体合力不会为0。______ (3)物体受两个力作用处于平衡状态，这两个力的合力一定为0。______ (4)速度为0的物体一定处于平衡状态。______ (5)“复兴”号列车在平直铁路上以350km/h高速行驶时处于平衡状态。______ (6)合力保持恒定的物体处于平衡状态。______",
+    "content_html": "思维辨析 (1)处于平衡状态的物体一定处于静止状态。______ (2)运动的物体合力不会为0。______ (3)物体受两个力作用处于平衡状态，这两个力的合力一定为0。______ (4)速度为0的物体一定处于平衡状态。______ (5)“复兴”号列车在平直铁路上以350km/h高速行驶时处于平衡状态。______ (6)合力保持恒定的物体处于平衡状态。______",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  },
+  {
+    "zujuan_id": "34216116",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34216116.html",
+    "question_type": "single",
+    "type_label": "单选题-单题",
+    "difficulty": 0.45,
+    "knowledge_points": [
+      "利用平衡推论求力大小或方向",
+      "推理论证能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "25-26高二下—江苏镇江—期末",
+    "content": "一根重心在P处的木棒，在其两端A、B处系上轻质细绳，使棒在三个力的作用下能保持图示状态静止，B处细绳拉力F_{B}的精确方向如图所示，关于A处所受绳拉力的方向，下列说法正确的是（    ）",
+    "content_html": "一根重心在P处的木棒，在其两端A、B处系上轻质细绳，使棒在三个力的作用下能保持图示状态静止，B处细绳拉力F_{B}的精确方向如图所示，关于A处所受绳拉力的方向，下列说法正确的是（    ）",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/1/c49a36c8-c89f-4166-9d9e-7799d3eb055e.png?resizew=206"
+    ],
+    "options": [
+      {
+        "label": "A",
+        "text": "只能沿Aa方向"
+      },
+      {
+        "label": "B",
+        "text": "只能沿Ab方向"
+      },
+      {
+        "label": "C",
+        "text": "只能沿Ac方向"
+      },
+      {
+        "label": "D",
+        "text": "只要力的大小合适，以上三个方向均可"
+      }
+    ],
+    "answer": "",
+    "analysis": "",
+    "chapter_text": "相互作用"
+  }
+]

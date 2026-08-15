@@ -59,6 +59,12 @@ public interface SysConfigMapper
     public int updateConfig(SysConfig config);
 
     /**
+     * 按主键更新参数值（允许空字符串，用于清空 Banner 视频/图片等）
+     */
+    public int updateConfigValueById(@org.apache.ibatis.annotations.Param("configId") Long configId,
+        @org.apache.ibatis.annotations.Param("configValue") String configValue);
+
+    /**
      * 删除参数配置
      * 
      * @param configId 参数ID

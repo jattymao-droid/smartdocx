@@ -18,6 +18,12 @@ const getters = {
   permission_routes: state => state.permission.routes,
   topbarRouters: state => state.permission.topbarRouters,
   defaultRoutes: state => state.permission.defaultRoutes,
-  sidebarRouters: state => state.permission.sidebarRouters
+  sidebarRouters: state => state.permission.sidebarRouters,
+  questionBasketCount: state => state.questionBasket.items.length,
+  questionBasketItems: state => state.questionBasket.items,
+  questionBasketTotalScore: state => state.questionBasket.items.reduce(
+    (sum, i) => sum + (Number(i.scoreValue) || 0),
+    0
+  )
 }
 export default getters

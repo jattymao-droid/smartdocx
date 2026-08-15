@@ -14,7 +14,7 @@ port(){
 	firewall-cmd --add-port=9848/tcp --permanent
 	firewall-cmd --add-port=9849/tcp --permanent
 	firewall-cmd --add-port=6379/tcp --permanent
-	firewall-cmd --add-port=3306/tcp --permanent
+	firewall-cmd --add-port=5433/tcp --permanent
 	firewall-cmd --add-port=9100/tcp --permanent
 	firewall-cmd --add-port=9200/tcp --permanent
 	firewall-cmd --add-port=9201/tcp --permanent
@@ -26,7 +26,7 @@ port(){
 
 # 启动基础环境（必须）
 base(){
-	docker-compose up -d ruoyi-mysql ruoyi-redis ruoyi-nacos
+	docker-compose up -d ruoyi-postgres ruoyi-redis ruoyi-nacos
 }
 
 # 启动程序模块（必须）

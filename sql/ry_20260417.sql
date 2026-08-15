@@ -553,6 +553,11 @@ insert into sys_config values(5, '用户登录-黑名单列表',           'sys.
 insert into sys_config values(6, '用户管理-初始密码修改策略',     'sys.account.initPasswordModify',   '1',             'Y', 'admin', sysdate(), '', null, '0：初始密码修改策略关闭，没有任何提示，1：提醒用户，如果未修改初始密码，则在登录时就会提醒修改密码对话框');
 insert into sys_config values(7, '用户管理-账号密码更新周期',     'sys.account.passwordValidateDays', '0',             'Y', 'admin', sysdate(), '', null, '密码更新周期（填写数字，数据初始化值为0不限制，若修改必须为大于0小于365的正整数），如果超过这个周期登录系统时，则在登录时就会提醒修改密码对话框');
 insert into sys_config values(8, '用户管理-密码字符范围',         'sys.account.chrtype',              '0',             'Y', 'admin', sysdate(), '', null, '默认任意字符范围，0任意（密码可以输入任意字符），1数字（密码只能为0-9数字），2英文字母（密码只能为a-z和A-Z字母），3字母和数字（密码必须包含字母，数字）,4字母数字和特殊字符（目前支持的特殊字符包括：~!@#$%^&*()-=_+）');
+insert into sys_config values(9,  '门户首页-Banner模式',           'portal.home.banner.mode',          'none',          'Y', 'admin', sysdate(), '', null, 'none=默认渐变, image=背景图, video=背景视频');
+insert into sys_config values(10, '门户首页-Banner图片',           'portal.home.banner.imageUrl',      '',              'Y', 'admin', sysdate(), '', null, '图片URL，如 /profile/upload/... 或完整 http 地址');
+insert into sys_config values(11, '门户首页-Banner视频',           'portal.home.banner.videoUrl',      '',              'Y', 'admin', sysdate(), '', null, 'mp4/webm 视频地址');
+insert into sys_config values(12, '门户首页-Banner视频封面',       'portal.home.banner.videoPoster',   '',              'Y', 'admin', sysdate(), '', null, '视频加载前封面图');
+insert into sys_config values(13, '门户首页-Banner遮罩',           'portal.home.banner.overlay',       '0.42',          'Y', 'admin', sysdate(), '', null, '0-1，越大文字对比越强，建议 0.3-0.55');
 
 
 -- ----------------------------

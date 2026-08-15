@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbPracticeMapper">
+
+    <resultMap id="EduQbPracticeSessionResult" type="EduQbPracticeSession">
+        <id property="sessionId" column="session_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="paperTitle" column="paper_title"/>
+        <result property="shareId" column="share_id"/>
+        <result property="totalCount" column="total_count"/>
+        <result property="correctCount" column="correct_count"/>
+        <result property="choiceCount" column="choice_count"/>
+        <result property="subjectiveCount" column="subjective_count"/>
+        <result property="durationSec" column="duration_sec"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <resultMap id="EduQbPracticeRecordResult" type="EduQbPracticeRecord">
+        <id property="recordId" column="record_id"/>
+        <result property="sessionId" column="session_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="questionId" column="question_id"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="chapterId" column="chapter_id"/>
+        <result property="chapterText" column="chapter_text"/>
+        <result property="questionType" column="question_type"/>
+        <result property="pickedAnswer" column="picked_answer"/>
+        <result property="correctFlag" column="correct_flag"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <resultMap id="EduQbWeakPointStatResult" type="EduQbWeakPointStat">
+        <result property="chapterId" column="chapter_id"/>
+        <result property="chapterText" column="chapter_text"/>
+        <result property="wrongCount" column="wrong_count"/>
+        <result property="practiceCount" column="practice_count"/>
+        <result property="wrongRate" column="wrong_rate"/>
+    </resultMap>
+
+    <insert id="insertPracticeSession" parameterType="EduQbPracticeSession" useGeneratedKeys="true" keyProperty="sessionId">
+        insert into edu_qb_practice_session (
+            user_name, subject_id, paper_title, share_id,
+            total_count, correct_count, choice_count, subjective_count, duration_sec, create_time
+        ) values (
+            #{userName}, #{subjectId}, #{paperTitle}, #{shareId},
+            #{totalCount}, #{correctCount}, #{choiceCount}, #{subjectiveCount}, #{durationSec}, now()
+        )
+    </insert>
+
+    <insert id="insertPracticeRecord" parameterType="EduQbPracticeRecord" useGeneratedKeys="true" keyProperty="recordId">
+        insert into edu_qb_practice_record (
+            session_id, user_name, question_id, subject_id, chapter_id, chapter_text,
+            question_type, picked_answer, correct_flag, create_time
+        ) values (
+            #{sessionId}, #{userName}, #{questionId}, #{subjectId}, #{chapterId}, #{chapterText},
+            #{questionType}, #{pickedAnswer}, #{correctFlag}, now()
+        )
+    </insert>
+
+    <select id="selectPracticeSessionList" parameterType="EduQbPracticeSession" resultMap="EduQbPracticeSessionResult">
+        select session_id, user_name, subject_id, paper_title, share_id,
+               total_count, correct_count, choice_count, subjective_count, duration_sec, create_time
+        from edu_qb_practice_session
+        <where>
+            user_name = #{userName}
+            <if test="subjectId != null">and subject_id = #{subjectId}</if>
+            <if test="paperTitle != null and paperTitle != ''">
+                and paper_title ilike ('%' || #{paperTitle} || '%')
+            </if>
+        </where>
+        order by create_time desc, session_id desc
+    </select>
+
+    <select id="selectPracticeSessionById" resultMap="EduQbPracticeSessionResult">
+        select session_id, user_name, subject_id, paper_title, share_id,
+               total_count, correct_count, choice_count, subjective_count, duration_sec, create_time
+        from edu_qb_practice_session
+        where session_id = #{sessionId} and user_name = #{userName}
+    </select>
+
+    <select id="selectPracticeRecordBySessionId" resultMap="EduQbPracticeRecordResult">
+        select record_id, session_id, user_name, question_id, subject_id, chapter_id, chapter_text,
+               question_type, picked_answer, correct_flag, create_time
+        from edu_qb_practice_record
+        where session_id = #{sessionId}
+        order by record_id asc
+    </select>
+
+    <select id="selectWeakPointStats" resultMap="EduQbWeakPointStatResult">
+        select
+            coalesce(chapter_id, 0) as chapter_id,
+            coalesce(nullif(trim(chapter_text), ''), '\u672a\u5206\u7c7b\u7ae0\u8282') as chapter_text,
+            sum(case when correct_flag = '0' then 1 else 0 end)::int as wrong_count,
+            count(*)::int as practice_count,
+            round(
+                sum(case when correct_flag = '0' then 1 else 0 end)::numeric
+                / nullif(count(*), 0),
+                4
+            ) as wrong_rate
+        from edu_qb_practice_record
+        where user_name = #{userName}
+          and correct_flag in ('0', '1')
+          <if test="subjectId != null">and subject_id = #{subjectId}</if>
+        group by coalesce(chapter_id, 0), coalesce(nullif(trim(chapter_text), ''), '\u672a\u5206\u7c7b\u7ae0\u8282')
+        having sum(case when correct_flag = '0' then 1 else 0 end) &gt; 0
+        order by wrong_count desc, wrong_rate desc, practice_count desc
+        limit #{limit}
+    </select>
+
+    <resultMap id="EduQbPracticeStatsResult" type="EduQbPracticeStats">
+        <result property="sessionCount" column="session_count"/>
+        <result property="totalQuestions" column="total_questions"/>
+        <result property="totalCorrect" column="total_correct"/>
+        <result property="totalChoice" column="total_choice"/>
+    </resultMap>
+
+    <select id="selectPracticeStats" resultMap="EduQbPracticeStatsResult">
+        select
+            count(*)::int as session_count,
+            coalesce(sum(total_count), 0)::int as total_questions,
+            coalesce(sum(correct_count), 0)::int as total_correct,
+            coalesce(sum(choice_count), 0)::int as total_choice
+        from edu_qb_practice_session
+        where user_name = #{userName}
+        <if test="subjectId != null">and subject_id = #{subjectId}</if>
+    </select>
+</mapper>

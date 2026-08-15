@@ -1,0 +1,55 @@
+{
+  "zujuan_id": "34293914",
+  "bank_id": "10",
+  "detail_url": "https://zujuan.xkw.com/10q34293914.html",
+  "question_type": "short",
+  "type_label": "古代诗歌阅读-课内鉴赏/2-题",
+  "difficulty": 0.65,
+  "knowledge_points": [
+    "叙事类",
+    "诗经",
+    "文学鉴赏与评价能力",
+    "古代诗歌阅读"
+  ],
+  "category_name": "古代诗歌阅读",
+  "source_label": "2026高二下—广西—学业考试",
+  "content": "<p style=\"margin:6px 0;text-align:justify\">阅读下面的诗歌，完成下面小题。</p><p style=\"margin:6px 0;text-align:center\"><b>芣苢</b></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言采之。采采芣苢，薄言有之。</span></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言掇之。采采芣苢，薄言捋之。</span></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言袺之。采采芣苢，薄言襭之。</span></p>1．下面对诗歌的理解与分析，不正确的一项是（<span>     </span>）2．这首诗生动地表现了采集野菜的劳作过程，在诗中是怎样具体表现出来的？",
+  "content_html": "<p style=\"margin:6px 0;text-align:justify\">阅读下面的诗歌，完成下面小题。</p><p style=\"margin:6px 0;text-align:center\"><b>芣苢</b></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言采之。采采芣苢，薄言有之。</span></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言掇之。采采芣苢，薄言捋之。</span></p><p style=\"margin:6px 0;text-align:center\"><span>采采芣苢，薄言袺之。采采芣苢，薄言襭之。</span></p>1．下面对诗歌的理解与分析，不正确的一项是（<span>     </span>）2．这首诗生动地表现了采集野菜的劳作过程，在诗中是怎样具体表现出来的？",
+  "image_urls": [],
+  "options": [
+    {
+      "label": "A",
+      "text": "这是一曲劳动的欢歌，表现了当时人们采芣苢时虽然劳苦但又充满乐趣的场面。"
+    },
+    {
+      "label": "B",
+      "text": "全诗三章，每章四句，全是重章叠句，仅仅变换了少数几个动词。"
+    },
+    {
+      "label": "C",
+      "text": "这种重章叠句的形式，看似很单调的重叠，却在不断重叠中，产生了简单明快、往复回环的音乐感。"
+    },
+    {
+      "label": "D",
+      "text": "诗歌反复地表达劳动的过程，充满了劳动的欢欣，洋溢着劳动的热情。"
+    }
+  ],
+  "answer": "A",
+  "analysis": "【小题1】A.“虽然劳苦”错误。诗中表现的尽是欢乐，没有劳苦。\n故选A。\n【小题2】①定位题型：本题属于诗歌手法赏析简答题，题干关键词“怎样具体表现劳作过程”，核心答题抓手是诗歌变换的字词。\n②锁定文本差异：先通读全诗，对比三章语句，发现全诗仅仅“薄言”后的动词发生变化，其余文字完全重复，变化字均为动词。\n③梳理动词顺序：按诗歌原文先后顺序提取动词：采、有、掇、捋、祜、，逐个翻译对应劳动动作，区分动作先后逻辑。\n④梳理动作逻辑层次：前两个动词是开始采摘、初步获取；中间两个是精细捡拾、批量捋取；最后两个是收纳存放，动词有清晰先后\n递进关系。\n⑤整合逻辑作答：点明以动词变化为核心手法，按顺序梳理六组动作，说明动词递进完整展现从采摘到收纳的整套劳作流程。",
+  "chapter_text": "古代诗歌阅读",
+  "page_ctx": {
+    "subject_code": "gzyw",
+    "subject_label": "高中语文",
+    "school_stage": "高中"
+  },
+  "subject_code": "gzyw",
+  "subject_label": "高中语文",
+  "school_stage": "高中",
+  "detail_chapter_text": "高中语文综合库 > 阅读与鉴赏 > 古代诗歌阅读 > 诗词曲常见题材 > 叙事类",
+  "knowledge_leaf": "叙事类",
+  "answer_available": true,
+  "answer_note": "",
+  "answer_image_urls": [
+    "https://imzujuan.xkw.com/getAnswerAndParse/34293914/10/901812ddfde7e422df9258c1bbeaec11f231783465901436?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJ0SnZjRzg2ZCJ9&width=884"
+  ]
+}

@@ -18,29 +18,21 @@ services:
       - "9848:9848"
       - "9849:9849"
     depends_on:
-      - ruoyi-mysql
-  ruoyi-mysql:
-    container_name: ruoyi-mysql
-    image: mysql:5.7
+      - ruoyi-postgres
+  ruoyi-postgres:
+    container_name: ruoyi-postgres
+    image: postgres:16
     build:
-      context: ./mysql
+      context: ./postgres
     ports:
-      - "3306:3306"
+      - "5433:5432"
     volumes:
-      - ./mysql/conf:/etc/mysql/conf.d
-      - ./mysql/logs:/logs
-      - ./mysql/data:/var/lib/mysql
-    command: [
-          'mysqld',
-          '--innodb-buffer-pool-size=80M',
-          '--character-set-server=utf8mb4',
-          '--collation-server=utf8mb4_unicode_ci',
-          '--default-time-zone=+8:00',
-          '--lower-case-table-names=1'
-        ]
+      - ./postgres/data:/var/lib/postgresql/data
     environment:
-      MYSQL_DATABASE: 'ry-cloud'
-      MYSQL_ROOT_PASSWORD: password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: postgres
+      TZ: Asia/Shanghai
   ruoyi-redis:
     container_name: ruoyi-redis
     image: redis
@@ -99,10 +91,10 @@ services:
       - "9201:9201"
     depends_on:
       - ruoyi-redis
-      - ruoyi-mysql
+      - ruoyi-postgres
     links:
       - ruoyi-redis
-      - ruoyi-mysql
+      - ruoyi-postgres
   ruoyi-modules-gen:
     container_name: ruoyi-modules-gen
     build:
@@ -111,9 +103,9 @@ services:
     ports:
       - "9202:9202"
     depends_on:
-      - ruoyi-mysql
+      - ruoyi-postgres
     links:
-      - ruoyi-mysql
+      - ruoyi-postgres
   ruoyi-modules-job:
     container_name: ruoyi-modules-job
     build:
@@ -122,9 +114,9 @@ services:
     ports:
       - "9203:9203"
     depends_on:
-      - ruoyi-mysql
+      - ruoyi-postgres
     links:
-      - ruoyi-mysql
+      - ruoyi-postgres
   ruoyi-modules-file:
     container_name: ruoyi-modules-file
     build:

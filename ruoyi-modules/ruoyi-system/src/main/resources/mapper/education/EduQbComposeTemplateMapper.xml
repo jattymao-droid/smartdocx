@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbComposeTemplateMapper">
+
+    <resultMap id="EduQbComposeTemplateResult" type="EduQbComposeTemplate">
+        <id property="templateId" column="template_id"/>
+        <result property="templateName" column="template_name"/>
+        <result property="templateCode" column="template_code"/>
+        <result property="scope" column="scope"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="paperTitle" column="paper_title"/>
+        <result property="difficultyMin" column="difficulty_min"/>
+        <result property="difficultyMax" column="difficulty_max"/>
+        <result property="easyPercent" column="easy_percent"/>
+        <result property="mediumPercent" column="medium_percent"/>
+        <result property="hardPercent" column="hard_percent"/>
+        <result property="typeRules" column="type_rules"/>
+        <result property="status" column="status"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectComposeTemplateVo">
+        select template_id, template_name, template_code, scope, subject_id, paper_title,
+               difficulty_min, difficulty_max, easy_percent, medium_percent, hard_percent,
+               type_rules, status, create_by, create_time, update_time, remark
+        from edu_qb_compose_template
+    </sql>
+
+    <select id="selectComposeTemplateList" parameterType="EduQbComposeTemplate" resultMap="EduQbComposeTemplateResult">
+        <include refid="selectComposeTemplateVo"/>
+        <where>
+            status = '0'
+            <if test="scope != null and scope != ''">and scope = #{scope}</if>
+            <if test="subjectId != null">and (subject_id is null or subject_id = #{subjectId})</if>
+            <if test="createBy != null and createBy != ''">and (scope = 'system' or create_by = #{createBy})</if>
+            <if test="templateName != null and templateName != ''">
+                and template_name ilike ('%' || #{templateName} || '%')
+            </if>
+        </where>
+        order by scope asc, template_id asc
+    </select>
+
+    <select id="selectComposeTemplateById" resultMap="EduQbComposeTemplateResult">
+        <include refid="selectComposeTemplateVo"/>
+        where template_id = #{templateId} and status = '0'
+    </select>
+
+    <select id="countSystemTemplates" resultType="int">
+        select count(*) from edu_qb_compose_template where scope = 'system' and status = '0'
+    </select>
+
+    <insert id="insertComposeTemplate" parameterType="EduQbComposeTemplate" useGeneratedKeys="true" keyProperty="templateId">
+        insert into edu_qb_compose_template (
+            template_name, template_code, scope, subject_id, paper_title,
+            difficulty_min, difficulty_max, easy_percent, medium_percent, hard_percent,
+            type_rules, status, remark, create_by, create_time
+        ) values (
+            #{templateName}, #{templateCode}, #{scope}, #{subjectId}, #{paperTitle},
+            #{difficultyMin}, #{difficultyMax}, #{easyPercent}, #{mediumPercent}, #{hardPercent},
+            #{typeRules}::jsonb, #{status}, #{remark}, #{createBy}, now()
+        )
+    </insert>
+
+    <update id="updateComposeTemplate" parameterType="EduQbComposeTemplate">
+        update edu_qb_compose_template
+        <set>
+            template_name = #{templateName},
+            template_code = #{templateCode},
+            subject_id = #{subjectId},
+            paper_title = #{paperTitle},
+            difficulty_min = #{difficultyMin},
+            difficulty_max = #{difficultyMax},
+            easy_percent = #{easyPercent},
+            medium_percent = #{mediumPercent},
+            hard_percent = #{hardPercent},
+            type_rules = #{typeRules}::jsonb,
+            remark = #{remark},
+            update_time = now()
+        </set>
+        where template_id = #{templateId}
+          and scope = 'user'
+          and create_by = #{createBy}
+    </update>
+
+    <update id="deleteComposeTemplateById">
+        update edu_qb_compose_template
+        set status = '1', update_time = now()
+        where template_id = #{templateId}
+          and scope = 'user'
+          and create_by = #{createBy}
+    </update>
+</mapper>

@@ -1,0 +1,32 @@
+# spring配置
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ry_cloud
+    username: postgres
+    password: your_password
+
+# mybatis配置
+mybatis:
+    # 搜索指定包别�?    typeAliasesPackage: com.ruoyi.job.domain
+    # 配置mapper的扫描，找到所有的mapper.xml映射文件
+    mapperLocations: classpath:mapper/**/*.xml
+
+# springdoc配置
+springdoc:
+  gatewayUrl: http://localhost:8080/${spring.application.name}
+  api-docs:
+    # 是否开启接口文�?    enabled: true
+  info:
+    # 标题
+    title: '定时任务接口文档'
+    # 描述
+    description: '定时任务接口描述'
+    # 作者信�?    contact:
+      name: RuoYi
+      url: https://ruoyi.vip

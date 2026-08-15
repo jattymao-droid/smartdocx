@@ -24,17 +24,17 @@ public class MimeTypeUtils
     public static final String[] MEDIA_EXTENSION = { "swf", "flv", "mp3", "wav", "wma", "wmv", "mid", "avi", "mpg",
             "asf", "rm", "rmvb" };
 
-    public static final String[] VIDEO_EXTENSION = { "mp4", "avi", "rmvb" };
+    public static final String[] VIDEO_EXTENSION = { "mp4", "avi", "rmvb", "webm" };
 
     public static final String[] DEFAULT_ALLOWED_EXTENSION = {
             // 图片
-            "bmp", "gif", "jpg", "jpeg", "png",
+            "bmp", "gif", "jpg", "jpeg", "png", "webp",
             // word excel powerpoint
             "doc", "docx", "xls", "xlsx", "ppt", "pptx", "txt",
             // 压缩文件
-            "rar", "zip", "gz", "bz2",
+            "rar", "zip", "7z", "gz", "bz2",
             // 视频格式
-            "mp4", "avi", "rmvb",
+            "mp4", "avi", "rmvb", "webm", "mov",
             // pdf
             "pdf" };
 

@@ -22,5 +22,7 @@ spring:
     # 配置文件格式
     file-extension: yml
     import:
-      - nacos:application-${spring.profiles.active}.${spring.config.file-extension}
-      - nacos:${spring.application.name}-${spring.profiles.active}.${spring.config.file-extension}
+      - optional:file:./config/application-${spring.profiles.active}.${spring.config.file-extension}
+      - optional:file:./config/${spring.application.name}-${spring.profiles.active}.${spring.config.file-extension}
+      - optional:nacos:application-${spring.profiles.active}.${spring.config.file-extension}
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.${spring.config.file-extension}

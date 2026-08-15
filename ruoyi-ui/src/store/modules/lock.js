@@ -1,3 +1,5 @@
+import { ADMIN_INDEX } from '@/constants/routes'
+
 const LOCK_KEY = 'screen-lock'
 const LOCK_PATH_KEY = 'screen-lock-path'
 
@@ -5,7 +7,7 @@ const lock = {
   namespaced: true,
   state: {
     isLock: JSON.parse(localStorage.getItem(LOCK_KEY) || 'false'),
-    lockPath: localStorage.getItem(LOCK_PATH_KEY) || '/index'
+    lockPath: localStorage.getItem(LOCK_PATH_KEY) || ADMIN_INDEX
   },
   mutations: {
     SET_LOCK(state, status) {
@@ -20,13 +22,13 @@ const lock = {
   actions: {
     // 锁定屏幕，同时记录当前路径
     lockScreen({ commit }, currentPath) {
-      commit('SET_LOCK_PATH', currentPath || '/index')
+      commit('SET_LOCK_PATH', currentPath || ADMIN_INDEX)
       commit('SET_LOCK', true)
     },
     // 解锁屏幕，清除路径
     unlockScreen({ commit }) {
       commit('SET_LOCK', false)
-      commit('SET_LOCK_PATH', '/index')
+      commit('SET_LOCK_PATH', ADMIN_INDEX)
     }
   }
 }

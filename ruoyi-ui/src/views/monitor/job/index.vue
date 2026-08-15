@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="任务名称" prop="jobName">
@@ -412,7 +412,7 @@ export default {
     /** 任务日志列表查询 */
     handleJobLog(row) {
       const jobId = row.jobId || 0
-      this.$router.push('/monitor/job-log/index/' + jobId)
+      this.$router.push('/admin/monitor/job-log/index/' + jobId)
     },
     /** 新增按钮操作 */
     handleAdd() {

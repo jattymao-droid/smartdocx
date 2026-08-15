@@ -1,0 +1,322 @@
+[
+  {
+    "zujuan_id": "34244952",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34244952.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.85,
+    "knowledge_points": [
+      "平衡状态的定义及条件",
+      "理解能力"
+    ],
+    "category_name": "相互作用",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "如图所示，人通过跨过定滑轮的轻绳牵引一物体，人向右缓慢移动时，思考：(1)如何理解题干中“缓慢”的意思？\n(2)人所受力的合力如何变化？",
+    "content_html": "如图所示，人通过跨过定滑轮的轻绳牵引一物体，人向右缓慢移动时，思考：(1)如何理解题干中“缓慢”的意思？\n(2)人所受力的合力如何变化？",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/d1ba0428-b50d-4fb4-819e-d6127e2a1b13.png?resizew=203"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)整个运动过程中，人和物体在任意时刻都处于平衡状态，加速度为零，所受合力始终为零，属于动态平衡过程。\n(2)人始终保持缓慢运动，全程都处于平衡状态，根据平衡条件，平衡状态下物体的合力恒为零，因此人所受合力大小始终为零，不\nzujudnk\n发生变化。",
+    "chapter_text": "相互作用",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 相互作用 > 共点力的平衡 > 共点力的平衡条件 > 平衡状态的定义及条件",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34244952/13/69115c0c1e9f7c46f341e8e4f76a1ec1e021783051082849?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34246040",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34246040.html",
+    "question_type": "judge",
+    "type_label": "判断题",
+    "difficulty": 0.82,
+    "knowledge_points": [
+      "加速度的定义",
+      "利用v-t图像求加速度",
+      "理解能力"
+    ],
+    "category_name": "运动的描述",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "(1)加速度是表示物体运动快慢的物理量。（    ）\n(2)加速度是表示物体速度变化大小的物理量。（    ）\n(3)加速度是表示物体速度变化快慢的物理量。（    ）\n(4)物体的加速度为正值时，物体一定做加速运动。（    ）\n(5)物体A的加速度为\n，B的加速度为\n，则A的加速度大于B的加速度。（    ）\n(6)物体A的加速度为\n，则物体一定做加速运动。（    ）\n(7)在同一v-t图像中，图线与t轴正向夹角越大，对应图像的物体的加速度就越大。（    ）",
+    "content_html": "(1)加速度是表示物体运动快慢的物理量。（    ）\n(2)加速度是表示物体速度变化大小的物理量。（    ）\n(3)加速度是表示物体速度变化快慢的物理量。（    ）\n(4)物体的加速度为正值时，物体一定做加速运动。（    ）\n(5)物体A的加速度为\n，B的加速度为\n，则A的加速度大于B的加速度。（    ）\n(6)物体A的加速度为\n，则物体一定做加速运动。（    ）\n(7)在同一v-t图像中，图线与t轴正向夹角越大，对应图像的物体的加速度就越大。（    ）",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/f848a8a85ec7f8987a073698f2c25fc8.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/676074be1d8c21fafa405a7c77238b1e.png"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)加速度是表示物体速度变化快慢的物理量。(错误)\n(2)加速度是表示物体速度变化快慢的物理量。(错误)\nkw.com\n(3)加速度是表示物体速度变化快慢的物理量。(正确)\n(4)物体的加速度为正值时，若速度为负，则物体做减速运动。(错误)\n(5)加速度是矢量，符号只代表方向，则物体A的加速度为2m/s²，B的加速度为—3m/s²，则A的加速度小于B的加速度。(错误)\n(6)物体A的加速度为2m/s2，若速度为负值，则物体做减速运动。(错误)\n(7)v-t图像的斜率等于加速度，则在同一v-t图像中，图线与轴正向夹角越大，图像的斜率越大，对应图像的物体的加速度就越大。(正确)",
+    "chapter_text": "运动的描述",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 运动的描述 > 加速度 > 加速度的定义",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34246040/13/77a3489e146c08b11f7681bec9e136146161783051101403?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34246038",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34246038.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.93,
+    "knowledge_points": [
+      "加速度的方向与速度变化的关系",
+      "理解能力"
+    ],
+    "category_name": "运动的描述",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "加速度的方向\n(1)加速度的方向：加速度方向与________的方向相同。\n(2) 在直线运动中，加速时，加速度与速度方向______；减速时，加速度与速度方向________",
+    "content_html": "加速度的方向\n(1)加速度的方向：加速度方向与________的方向相同。\n(2) 在直线运动中，加速时，加速度与速度方向______；减速时，加速度与速度方向________",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)加速度的方向：加速度方向与速度变化的方向相同。\n(2)[1][2]在直线运动中，加速时，加速度与速度方向相同；减速时，加速度与速度方向相反。",
+    "chapter_text": "运动的描述",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 运动的描述 > 加速度 > 加速度的方向与速度变化的关系",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34246038/13/6eca844a600362b6dde18020f4909d1ef191783051128770?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34246037",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34246037.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.92,
+    "knowledge_points": [
+      "加速度的定义",
+      "理解能力"
+    ],
+    "category_name": "运动的描述",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "加速度\n（1）物理意义：描述物体的速度随时间变化________的物理量。\n（2）定义：速度的________与发生这一变化所用________的比值，通常用a表示。\n（3）表达式：\n（\n为初速度，v为末速度）。\n（4）单位：在国际单位制中，加速度的单位是________________；符号是________或\n。\n（5）矢量性：加速度是________量，既有大小，也有方向。",
+    "content_html": "加速度\n（1）物理意义：描述物体的速度随时间变化________的物理量。\n（2）定义：速度的________与发生这一变化所用________的比值，通常用a表示。\n（3）表达式：\n（\n为初速度，v为末速度）。\n（4）单位：在国际单位制中，加速度的单位是________________；符号是________或\n。\n（5）矢量性：加速度是________量，既有大小，也有方向。",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/e183e5e4791c1b30b3941425a1e99a18.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/6f58888df91890a19a1aa7511d19703f.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/6cd06da2f67be5f41d8c34d2e25c72f2.png"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)[1]物理意义：描述物体的速度随时间变化快慢的物理量。\n(2)[2][3]定义：速度的变化量与发生这一变化所用时间的比值，通常用a表示。\n(4)[4][5]单位：在国际单位制中，加速度的单位是米每二次方秒；符号是m/s2或m·s-2。\n(5)[6]矢量性：加速度是矢量，既有大小，也有方向。",
+    "chapter_text": "运动的描述",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 运动的描述 > 加速度 > 加速度的定义",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34246037/13/031e5ab1698b0485a64af9b3e0376f8bd071783051143864?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245961",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245961.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.74,
+    "knowledge_points": [
+      "验证加速度与力成正比的实验",
+      "探究加速度与物体受力、物体质量的关系",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "在做“探究加速度与力、质量的关系”的实验时，计算出各纸带的加速度后，将测得的反映加速度a和F关系的有关资料记录在表一中。将测得的反映加速度a和质量M关系的有关资料记录在表二中。\n表一1.98 | 4.06 | 5.95 | 8.12\n1.00 | 2.00 | 3.00 | 4.00\n表二2.04 | 2.66 | 3.23 | 3.98\n0.50 | 0.67 | 0.80 | 1.00\n(1)请根据表中所列数据，分别画出\n图像和\n图像。\n(2)由图像可以判定：当M一定时，a与F的关系为________；当F一定时，a与M的关系为________。\n(3)由\n图像可知\n________。\n(4)由\n图像可知，\n________。（保留一位有效数字）。",
+    "content_html": "在做“探究加速度与力、质量的关系”的实验时，计算出各纸带的加速度后，将测得的反映加速度a和F关系的有关资料记录在表一中。将测得的反映加速度a和质量M关系的有关资料记录在表二中。\n表一1.98 | 4.06 | 5.95 | 8.12\n1.00 | 2.00 | 3.00 | 4.00\n表二2.04 | 2.66 | 3.23 | 3.98\n0.50 | 0.67 | 0.80 | 1.00\n(1)请根据表中所列数据，分别画出\n图像和\n图像。\n(2)由图像可以判定：当M一定时，a与F的关系为________；当F一定时，a与M的关系为________。\n(3)由\n图像可知\n________。\n(4)由\n图像可知，\n________。（保留一位有效数字）。",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/b8929de68aec2421418b6ac6b850d081.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/fbc9ee1681787ceca1f558cae5f58279.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/f460e49ad7a4a3b8eb975e4a422526fc.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/6e95169c325077d864517095badd1220.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/989ae99a306a4b3bf8f13b57bb3b3302.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/9163ebe812708ee5337d62298c2e3363.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/361d9a5cd09197796fc35ed330451a85.png"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)a-F图像和a- \\frac{1}{M}图像分别如图甲、乙所示。\n↑a/(m·s^-2) ↑a/(m·s-2)\n0 1.00 2.00 3.00 4.00 F/N 0 0.50 1.00 \\frac{1}{/kg-1}}\n(2)[1][2]由图像可以判定：当M一定时，a与F的关系为正比关系；当F一定时，a与M的关系为反比关系；\n\\frac{1}{M} \\frac{8}{=2}\n(3) 由a − F 图像可知k = 二\n解得M = 0.5kg\n(4) 由a− \\frac{1}{M}图像可知，k = F = N=4N",
+    "chapter_text": "力学实验",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 物理实验 > 力学实验 > 探究加速度与物体受力、物体质量的关系 > 验证加速度与力成正比的实验",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245961/13/7571736f0886218c7e15458c9cf18a5df031783051159356?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245959",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245959.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.76,
+    "knowledge_points": [
+      "验证加速度与质量成反比的实验",
+      "探究加速度与物体受力、物体质量的关系",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "一同学在“探究加速度与力、质量的关系”实验中保持拉力不变，得到了物体加速度与物体质量变化的一组数据，如下表所示。实验次数 | 物体质量m/kg | 质量的倒数 | 加速度\n1 | 0.20 | 5.0 | 0.29\n2 | 0.25 | 4.0 | 0.25\n3 | 0.30 | 3.3 | 0.21\n4 | 0.35 | 2.9 | 0.18\n5 | 0.40 | 2.5 | 0.16\n(1)请你在如图所示的方格纸中建立合适的坐标系，并画出能直观地反映加速度与质量关系的图像；(2)由图像可知F一定时，a与m成________关系。",
+    "content_html": "一同学在“探究加速度与力、质量的关系”实验中保持拉力不变，得到了物体加速度与物体质量变化的一组数据，如下表所示。实验次数 | 物体质量m/kg | 质量的倒数 | 加速度\n1 | 0.20 | 5.0 | 0.29\n2 | 0.25 | 4.0 | 0.25\n3 | 0.30 | 3.3 | 0.21\n4 | 0.35 | 2.9 | 0.18\n5 | 0.40 | 2.5 | 0.16\n(1)请你在如图所示的方格纸中建立合适的坐标系，并画出能直观地反映加速度与质量关系的图像；(2)由图像可知F一定时，a与m成________关系。",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/4b48bd24838ebc922556f4bc3de73978.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/f18575f46c073becfd39ee41a625ee2d.png",
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/46fa9ea9-9202-4e6d-a3b7-5b4cd71e3f06.png?resizew=142"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)由数据猜测a与1/m成正比关系，以a为纵坐标、1/m为横坐标建立坐标系，根据数据进行描点连线，如图所示。\n(2) 由上图可知a- \\frac{1}{m}图像为过原点的直线，故F一定时，a与1/m成正比，即a与m成反比关系。",
+    "chapter_text": "力学实验",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 物理实验 > 力学实验 > 探究加速度与物体受力、物体质量的关系 > 验证加速度与质量成反比的实验",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245959/13/042db9d5fc0db6e014a421a40db6f5159161783051192469?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245944",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245944.html",
+    "question_type": "experiment",
+    "type_label": "实验题",
+    "difficulty": 0.88,
+    "knowledge_points": [
+      "验证加速度与力成正比的实验",
+      "探究加速度与物体受力、物体质量的关系",
+      "实验探究能力"
+    ],
+    "category_name": "力学实验",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "探究加速度与力、质量的关系物理量的测量\n1．质量的测量：可以用________测量。\n2．加速度的测量\n方法1：由\n计算出加速度\n________。\n方法2：将打点计时器的纸带连在小车上，根据________打出的点来测量加速度。\n方法3：两个初速度为零的匀加速直线运动的物体，在相等时间内的位移之比就等于加速度之比，即________。\n3．力的测量：平衡摩擦力后，小车所受的拉力________合力，用悬挂物重力替代小车所受的拉力。（条件是槽码的质量要比小车的质量小很多）",
+    "content_html": "探究加速度与力、质量的关系物理量的测量\n1．质量的测量：可以用________测量。\n2．加速度的测量\n方法1：由\n计算出加速度\n________。\n方法2：将打点计时器的纸带连在小车上，根据________打出的点来测量加速度。\n方法3：两个初速度为零的匀加速直线运动的物体，在相等时间内的位移之比就等于加速度之比，即________。\n3．力的测量：平衡摩擦力后，小车所受的拉力________合力，用悬挂物重力替代小车所受的拉力。（条件是槽码的质量要比小车的质量小很多）",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/1361caa5ab34910b3d7139e0b4d46239.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/380bbacf854e30e2e747fc286d2b9997.png"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "【小题1】质量的测量：可以用天平测量。\n【小题2】[1]方法1：由x= at²计算出加速度a= \\frac{2x}{t2}\n[2]方法2：将打点计时器的纸带连在小车上，根据打点计时器在纸带上打出的点来测量加速度。\n\\frac{x1}{x2} \\frac{a1}{o}\n[3]方法3：两个初速度为零的匀加速直线运动的物体，根据x= at²可知，在相等时间内的位移之比就等于加速度之比，即 =\n2 a2\n【小题3】力的测量：平衡摩擦力后，小车所受的拉力近似等于合力，用悬挂物重力替代小车所受的拉力。",
+    "chapter_text": "力学实验",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 物理实验 > 力学实验 > 探究加速度与物体受力、物体质量的关系 > 验证加速度与力成正比的实验",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245944/13/32797c7a17a5bea6c62264c39871eb0cb081783051215070?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245257",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245257.html",
+    "question_type": "answer",
+    "type_label": "解答题",
+    "difficulty": 0.81,
+    "knowledge_points": [
+      "牛顿运动定律与图像结合",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "如图甲所示为一位滑雪爱好者，人与装置的总质量为\n，在倾角为\n的雪坡上，以\n的初速度沿斜坡匀加速直线滑下。他运动的\n图像如图乙所示。g取\n，\n，\n。求：(1)滑雪者受到雪面的支持力大小；\n(2)滑雪者受到的阻力大小。",
+    "content_html": "如图甲所示为一位滑雪爱好者，人与装置的总质量为\n，在倾角为\n的雪坡上，以\n的初速度沿斜坡匀加速直线滑下。他运动的\n图像如图乙所示。g取\n，\n，\n。求：(1)滑雪者受到雪面的支持力大小；\n(2)滑雪者受到的阻力大小。",
+    "image_urls": [
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/59f0e84413d0eb3bc124f95b7b371ce3.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/5da080fd41cf18224a1b4433e5d3a2b4.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/8db9fda15d29c00cd463bad2cf1eb5e0.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/d1552707683293dcf684d101dd09b5c9.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/9c4ee1b7d06ac4c703e4c086b425c9c5.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/a2276325f18cd54f592406e0326219d5.png",
+      "https://staticzujuan.xkw.com/quesimg/Upload/formula/ca4893ed984d30e85197e74c028a16df.png",
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/52c15da4-c72f-44a8-bf3f-21b35c6b2f9b.png?resizew=351"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)滑雪者在斜坡上受力如图所示：\n建立如图所示的直角坐标系，沿y轴方向有FN = mgcos37°= 400N\n(2)由v-t图像可得滑雪者的加速度大小a= \\frac{v2−V1}{t} = 4m/s2\n根据牛顿第二定律得mgsin37° − Ff = ma\n解得F f = mgsin37° − ma = 100N",
+    "chapter_text": "牛顿运动定律",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 牛顿运动定律 > 牛顿运动定律的应用 > 牛顿运动定律与图像结合",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245257/13/0e1414827d326a06291c0f62e194eec9e181783051237581?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245256",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245256.html",
+    "question_type": "judge",
+    "type_label": "判断题",
+    "difficulty": 0.89,
+    "knowledge_points": [
+      "牛顿第二定律的初步应用",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "思维辨析\n(1)根据物体加速度的方向可以判断物体所受合外力的方向。（    ）\n(2)根据物体加速度的方向可以判断物体受到的每个力的方向。（    ）\n(3)加速度是联系运动和力的桥梁。（    ）\n(4)物体运动状态的变化情况是由它的受力决定的。（    ）\n(5)物体运动状态的变化情况是由它对其他物体的施力情况决定的。（    ）",
+    "content_html": "思维辨析\n(1)根据物体加速度的方向可以判断物体所受合外力的方向。（    ）\n(2)根据物体加速度的方向可以判断物体受到的每个力的方向。（    ）\n(3)加速度是联系运动和力的桥梁。（    ）\n(4)物体运动状态的变化情况是由它的受力决定的。（    ）\n(5)物体运动状态的变化情况是由它对其他物体的施力情况决定的。（    ）",
+    "image_urls": [],
+    "options": [],
+    "answer": "",
+    "analysis": "(1)根据牛顿第二定律F=ma，物体的加速度方向与所受合外力的方向始终一致。因此，知道了加速度的方向，也就知道了合外力的方向。\n故正确。\n(2)加速度的方向反映的是物体所受合力的方向，而不是某个单独的力的方向。例如，一个物体在多个力作用下加速，其加速度方向可能与某\n些分力的方向完全不同。因此，无法由合力的方向反推出每个分力的方向。\n故错误。\n(3)在牛顿力学中，运动(如速度、位移)的变化是由加速度描述的，而加速度又由物体所受的合外力决定。因此，加速度确实是连接力(原\n因)和运动(结果)的核心物理量。\n(4)力是改变物体运动状态的原因。物体的运动状态(如速度大小和方向)是否改变，以及如何改变，完全取决于它所受到的合外力(合力大\n小、方向及作用时间）。\n(5)物体运动状态的改变取决于它受到的力(即其他物体对它的作用力)，而不是它对其他物体施加的力。例如，一个箱子是否移动，取决于\n物体推它的力（它受到的力），而不是它推物体的反作用力。",
+    "chapter_text": "牛顿运动定律",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 牛顿运动定律 > 牛顿第二定律 > 牛顿第二定律的初步应用",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245256/13/a3f8e1809f141f4f54cf63125963a14c7051783051255730?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  },
+  {
+    "zujuan_id": "34245255",
+    "bank_id": "13",
+    "detail_url": "https://zujuan.xkw.com/13q34245255.html",
+    "question_type": "knowledge_fill",
+    "type_label": "知识点填空题",
+    "difficulty": 0.92,
+    "knowledge_points": [
+      "已知受力求运动",
+      "已知运动求受力",
+      "理解能力"
+    ],
+    "category_name": "牛顿运动定律",
+    "source_label": "26-27高一上—全国—课后作业",
+    "content": "动力学的两类基本问题\n动力学有两类问题：一是已知物体的受力情况分析________情况；二是已知运动情况分析________情况，程序如下图所示。其中，________是基础，牛顿第二定律和________公式是工具，________是桥梁。",
+    "content_html": "动力学的两类基本问题\n动力学有两类问题：一是已知物体的受力情况分析________情况；二是已知运动情况分析________情况，程序如下图所示。其中，________是基础，牛顿第二定律和________公式是工具，________是桥梁。",
+    "image_urls": [
+      "https://img.xkw.com/dksih/QBM/editorImg/2026/7/3/ccd29daf-474c-410e-be8a-27f3dd90e3b9.png?resizew=290"
+    ],
+    "options": [],
+    "answer": "",
+    "analysis": "略。",
+    "chapter_text": "牛顿运动定律",
+    "page_ctx": {},
+    "detail_chapter_text": "高中物理综合库 > 力学 > 牛顿运动定律 > 牛顿运动定律的应用 > 牛顿运动定律的两类基本问题 > 已知受力求运动",
+    "answer_available": true,
+    "answer_note": "",
+    "answer_image_urls": [
+      "https://imzujuan.xkw.com/getAnswerAndParse/34245255/13/e806613e62e7785fdb99c1bec6b59f762211783051287144?enVqdWFu=eyJ1c2VySWQiOiIyMzI1MTkxOSIsInVzZXJfdG9rZW4iOiJRQWo1YmhmbyJ9&width=884"
+    ]
+  }
+]

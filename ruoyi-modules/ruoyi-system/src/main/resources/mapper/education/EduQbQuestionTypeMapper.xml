@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbQuestionTypeMapper">
+
+    <resultMap id="EduQbQuestionTypeResult" type="EduQbQuestionType">
+        <result property="typeId" column="type_id"/>
+        <result property="typeCode" column="type_code"/>
+        <result property="typeName" column="type_name"/>
+        <result property="answerMode" column="answer_mode"/>
+        <result property="contentMaxLen" column="content_max_len"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="status" column="status"/>
+        <result property="builtin" column="builtin"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectEduQbQuestionTypeVo">
+        select type_id, type_code, type_name, answer_mode, content_max_len, order_num, status, builtin,
+               create_by, create_time, update_by, update_time, remark
+        from edu_qb_question_type
+    </sql>
+
+    <select id="selectEduQbQuestionTypeById" parameterType="Long" resultMap="EduQbQuestionTypeResult">
+        <include refid="selectEduQbQuestionTypeVo"/>
+        where type_id = #{typeId}
+    </select>
+
+    <select id="selectEduQbQuestionTypeByCode" resultMap="EduQbQuestionTypeResult">
+        <include refid="selectEduQbQuestionTypeVo"/>
+        where type_code = #{typeCode}
+    </select>
+
+    <select id="selectEduQbQuestionTypeList" parameterType="EduQbQuestionType" resultMap="EduQbQuestionTypeResult">
+        <include refid="selectEduQbQuestionTypeVo"/>
+        <where>
+            <if test="typeName != null and typeName != ''">
+                and type_name like ('%' || #{typeName} || '%')
+            </if>
+            <if test="typeCode != null and typeCode != ''">
+                and type_code like ('%' || #{typeCode} || '%')
+            </if>
+            <if test="status != null and status != ''">
+                and status = #{status}
+            </if>
+        </where>
+        order by order_num, type_id
+    </select>
+
+    <select id="selectEnabledQuestionTypeOptions" resultMap="EduQbQuestionTypeResult">
+        <include refid="selectEduQbQuestionTypeVo"/>
+        where status = '0'
+        order by order_num, type_id
+    </select>
+
+    <insert id="insertEduQbQuestionType" parameterType="EduQbQuestionType" useGeneratedKeys="true" keyProperty="typeId">
+        insert into edu_qb_question_type (
+            type_code, type_name, answer_mode, content_max_len, order_num, status, builtin, remark, create_by, create_time
+        ) values (
+            #{typeCode}, #{typeName}, #{answerMode}, #{contentMaxLen}, #{orderNum}, #{status}, #{builtin}, #{remark}, #{createBy}, CURRENT_TIMESTAMP
+        )
+    </insert>
+
+    <update id="updateEduQbQuestionType" parameterType="EduQbQuestionType">
+        update edu_qb_question_type
+        <set>
+            <if test="typeCode != null and typeCode != ''">type_code = #{typeCode},</if>
+            <if test="typeName != null and typeName != ''">type_name = #{typeName},</if>
+            <if test="answerMode != null and answerMode != ''">answer_mode = #{answerMode},</if>
+            content_max_len = #{contentMaxLen},
+            <if test="orderNum != null">order_num = #{orderNum},</if>
+            <if test="status != null and status != ''">status = #{status},</if>
+            remark = #{remark},
+            update_by = #{updateBy},
+            update_time = CURRENT_TIMESTAMP
+        </set>
+        where type_id = #{typeId}
+    </update>
+
+    <delete id="deleteEduQbQuestionTypeById" parameterType="Long">
+        delete from edu_qb_question_type where type_id = #{typeId}
+    </delete>
+
+    <delete id="deleteEduQbQuestionTypeByIds">
+        delete from edu_qb_question_type where type_id in
+        <foreach collection="typeIds" item="typeId" open="(" separator="," close=")">
+            #{typeId}
+        </foreach>
+    </delete>
+
+    <select id="countByTypeCode" resultType="int">
+        select count(1) from edu_qb_question_type
+        where type_code = #{typeCode}
+        <if test="excludeId != null">
+            and type_id != #{excludeId}
+        </if>
+    </select>
+
+    <select id="countQuestionsByTypeCode" resultType="int">
+        select count(1) from edu_qb_question
+        where question_type = #{typeCode} and del_flag = '0'
+    </select>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbPaperShareMapper">
+
+    <resultMap id="EduQbPaperShareResult" type="com.ruoyi.system.domain.education.EduQbPaperShare">
+        <id property="shareId" column="share_id"/>
+        <result property="snapshot" column="snapshot"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="expireTime" column="expire_time"/>
+    </resultMap>
+
+    <insert id="insertEduQbPaperShare" parameterType="com.ruoyi.system.domain.education.EduQbPaperShare">
+        insert into edu_qb_paper_share (share_id, snapshot, create_by, create_time, expire_time)
+        values (#{shareId}, #{snapshot}, #{createBy}, #{createTime}, #{expireTime})
+    </insert>
+
+    <select id="selectEduQbPaperShareById" resultMap="EduQbPaperShareResult">
+        select share_id, snapshot, create_by, create_time, expire_time
+        from edu_qb_paper_share
+        where share_id = #{shareId}
+          and (expire_time is null or expire_time &gt; current_timestamp)
+    </select>
+
+</mapper>

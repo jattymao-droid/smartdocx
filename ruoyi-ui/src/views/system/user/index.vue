@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container tree-sidebar-manage-wrap">
     <tree-panel title="组织机构" :tree-data="deptOptions" search-placeholder="请输入部门名称" storage-key="dept-sidebar-width" :defaultExpandAll="true" @node-click="handleNodeClick" @refresh="getDeptTree" ref="deptTreeRef" />
     <div class="tree-sidebar-content">
@@ -170,7 +170,7 @@
     <!-- 用户详情抽屉 -->
     <user-view-drawer ref="userViewRef" />
     <!-- 用户导入对话框 -->
-    <excel-import-dialog ref="importUserRef" title="用户导入" action="/system/user/importData" template-action="/system/user/importTemplate" template-file-name="user_template" update-support-label="是否更新已经存在的用户数据" @success="getList" />
+    <excel-import-dialog ref="importUserRef" title="用户导入" action="/admin/system/user/importData" template-action="/admin/system/user/importTemplate" template-file-name="user_template" update-support-label="是否更新已经存在的用户数据" @success="getList" />
   </div>
 </template>
 
@@ -416,7 +416,7 @@ export default {
     /** 分配角色操作 */
     handleAuthRole(row) {
       const userId = row.userId
-      this.$router.push("/system/user-auth/role/" + userId)
+      this.$router.push("/admin/system/user-auth/role/" + userId)
     },
     /** 提交按钮 */
     submitForm() {

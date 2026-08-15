@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.education.EduQbOcrDraftMapper">
+
+    <resultMap id="EduQbOcrDraftResult" type="EduQbOcrDraft">
+        <result property="draftId" column="draft_id"/>
+        <result property="imagePath" column="image_path"/>
+        <result property="figurePath" column="figure_path"/>
+        <result property="ocrText" column="ocr_text"/>
+        <result property="ocrLines" column="ocr_lines"/>
+        <result property="confidence" column="confidence"/>
+        <result property="predictedType" column="predicted_type"/>
+        <result property="predictedDifficulty" column="predicted_difficulty"/>
+        <result property="predictedOptions" column="predicted_options"/>
+        <result property="subjectId" column="subject_id"/>
+        <result property="status" column="status"/>
+        <result property="questionId" column="question_id"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+        <result property="subjectName" column="subject_name"/>
+    </resultMap>
+
+    <sql id="selectOcrDraftVo">
+        select d.draft_id, d.image_path, d.figure_path, d.ocr_text, d.confidence, d.predicted_type,
+               d.predicted_difficulty, d.subject_id, s.subject_name, d.status, d.question_id,
+               d.create_by, d.create_time, d.update_time, d.remark
+        from edu_qb_ocr_draft d
+        left join edu_subject s on s.subject_id = d.subject_id
+    </sql>
+
+    <select id="selectEduQbOcrDraftById" parameterType="Long" resultMap="EduQbOcrDraftResult">
+        select d.draft_id, d.image_path, d.figure_path, d.ocr_text, d.ocr_lines::text as ocr_lines, d.confidence,
+               d.predicted_type, d.predicted_difficulty, d.predicted_options::text as predicted_options,
+               d.subject_id, s.subject_name, d.status, d.question_id, d.create_by, d.create_time, d.update_time, d.remark
+        from edu_qb_ocr_draft d
+        left join edu_subject s on s.subject_id = d.subject_id
+        where d.draft_id = #{draftId}
+    </select>
+
+    <select id="selectEduQbOcrDraftList" parameterType="EduQbOcrDraft" resultMap="EduQbOcrDraftResult">
+        <include refid="selectOcrDraftVo"/>
+        <where>
+            <if test="status != null and status != ''">and d.status = #{status}</if>
+            <if test="createBy != null and createBy != ''">and d.create_by = #{createBy}</if>
+        </where>
+        order by d.create_time desc
+    </select>
+
+    <insert id="insertEduQbOcrDraft" parameterType="EduQbOcrDraft" useGeneratedKeys="true" keyProperty="draftId">
+        insert into edu_qb_ocr_draft (
+            image_path, ocr_text, ocr_lines, confidence, predicted_type, predicted_difficulty,
+            predicted_options, subject_id, status, question_id, create_by, create_time, remark
+        ) values (
+            #{imagePath}, #{ocrText}, #{ocrLines}::jsonb, #{confidence}, #{predictedType}, #{predictedDifficulty},
+            #{predictedOptions}::jsonb, #{subjectId}, #{status}, #{questionId}, #{createBy}, CURRENT_TIMESTAMP, #{remark}
+        )
+    </insert>
+
+    <update id="updateEduQbOcrDraft" parameterType="EduQbOcrDraft">
+        update edu_qb_ocr_draft
+        <set>
+            <if test="ocrText != null">ocr_text = #{ocrText},</if>
+            <if test="ocrLines != null">ocr_lines = #{ocrLines}::jsonb,</if>
+            <if test="confidence != null">confidence = #{confidence},</if>
+            <if test="predictedType != null">predicted_type = #{predictedType},</if>
+            <if test="predictedDifficulty != null">predicted_difficulty = #{predictedDifficulty},</if>
+            <if test="predictedOptions != null">predicted_options = #{predictedOptions}::jsonb,</if>
+            <if test="subjectId != null">subject_id = #{subjectId},</if>
+            <if test="status != null and status != ''">status = #{status},</if>
+            <if test="questionId != null">question_id = #{questionId},</if>
+            <if test="figurePath != null">figure_path = #{figurePath},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            update_time = CURRENT_TIMESTAMP
+        </set>
+        where draft_id = #{draftId}
+    </update>
+</mapper>

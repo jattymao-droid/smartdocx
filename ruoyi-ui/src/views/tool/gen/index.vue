@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="表名称" prop="tableName">
@@ -315,7 +315,7 @@ export default {
       const tableId = row.tableId || this.ids[0]
       const tableName = row.tableName || this.tableNames[0]
       const params = { pageNum: this.queryParams.pageNum }
-      this.$tab.openPage("修改[" + tableName + "]生成配置", '/tool/gen-edit/index/' + tableId, params)
+      this.$tab.openPage("修改[" + tableName + "]生成配置", '/admin/tool/gen-edit/index/' + tableId, params)
     },
     /** 删除按钮操作 */
     handleDelete(row) {

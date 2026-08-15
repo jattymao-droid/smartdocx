@@ -7,15 +7,15 @@ import './assets/styles/element-variables.scss'
 
 import '@/assets/styles/index.scss' // global css
 import '@/assets/styles/ruoyi.scss' // ruoyi css
+import '@/assets/styles/portal.scss'
 import App from './App'
 import store from './store'
 import router from './router'
+import './permission' // permission control
 import directive from './directive' // directive
 import plugins from './plugins' // plugins
 import { download } from '@/utils/request'
 
-import './assets/icons' // icon
-import './permission' // permission control
 import { getDicts } from "@/api/system/dict/data"
 import { getConfigKey } from "@/api/system/config"
 import { parseTime, resetForm, addDateRange, selectDictLabel, selectDictLabels, handleTree } from "@/utils/ruoyi"
@@ -35,6 +35,8 @@ import ImagePreview from "@/components/ImagePreview"
 import DictTag from '@/components/DictTag'
 // 字典数据组件
 import DictData from '@/components/DictData'
+// 题库公式/题干渲染
+import QbFormulaText from '@/components/QbFormulaText'
 
 // 全局方法挂载
 Vue.prototype.getDicts = getDicts
@@ -55,6 +57,7 @@ Vue.component('Editor', Editor)
 Vue.component('FileUpload', FileUpload)
 Vue.component('ImageUpload', ImageUpload)
 Vue.component('ImagePreview', ImagePreview)
+Vue.component('QbFormulaText', QbFormulaText)
 
 Vue.use(directive)
 Vue.use(plugins)

@@ -1,0 +1,109 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 
+  codec:
+    max-in-memory-size: 50MB
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              lowerCaseServiceId: true
+              enabled: true
+          routes:
+            # 认证中心
+            - id: ruoyi-auth
+              uri: lb://ruoyi-auth
+              predicates:
+                - Path=/auth/**
+              filters:
+                # 验证码处理
+                - name: CacheRequestBody
+                  args:
+                    bodyClass: java.lang.String
+                - ValidateCodeFilter
+                - StripPrefix=1
+            # 代码生成
+            - id: ruoyi-gen
+              uri: lb://ruoyi-gen
+              predicates:
+                - Path=/code/**
+              filters:
+                - StripPrefix=1
+            # 定时任务
+            - id: ruoyi-job
+              uri: lb://ruoyi-job
+              predicates:
+                - Path=/schedule/**
+              filters:
+                - StripPrefix=1
+            # 系统模块
+            - id: ruoyi-system
+              uri: lb://ruoyi-system
+              predicates:
+                - Path=/system/**
+              filters:
+                - StripPrefix=1
+            # 文件服务
+            - id: ruoyi-file
+              uri: lb://ruoyi-file
+              predicates:
+                - Path=/file/**
+              filters:
+                - StripPrefix=1
+            # 文件静态资源（上传图片/视频直链，门户 Banner 等）
+            - id: ruoyi-file-statics
+              uri: lb://ruoyi-file
+              predicates:
+                - Path=/statics/**
+
+# 安全配置
+security:
+  # 验证码
+  captcha:
+    enabled: true
+    type: math
+  # 防止XSS攻击
+  xss:
+    enabled: true
+    excludeUrls:
+      - /system/notice
+      - /system/education/**
+      - /system/portal/banner/**
+
+  # 不校验白名单
+  ignore:
+    whites:
+      - /auth/logout
+      - /auth/login
+      - /auth/register
+      - /system/portal/banner
+      - /system/portal/banner/**
+      - /statics/**
+      - /system/profile/**
+      - /profile/**
+      # 文库门户公开只读
+      - /system/education/library/document/list
+      - /system/education/library/document/*
+      - /system/education/library/document/*/preview
+      - /system/education/library/document/*/preview-content
+      - /system/education/library/document/*/view
+      - /system/education/library/document/*/related
+      - /system/education/pay/check
+      - /system/education/pay/zpay/notify
+      - /system/education/library/category/list
+      - /system/education/library/topic/list
+      - /system/education/library/topic/*
+      - /*/v2/api-docs
+      - /*/v3/api-docs
+      - /csrf
+
+# springdoc配置
+springdoc:
+  webjars:
+    # 访问前缀
+    prefix:

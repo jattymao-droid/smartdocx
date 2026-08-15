@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="字典名称" prop="dictName">
@@ -315,7 +315,7 @@ export default {
     },
     /** 字典数据列表页面 */
     handleDataList(row) {
-      this.$tab.openPage("字典数据", '/system/dict-data/index/' + row.dictId)
+      this.$tab.openPage("字典数据", '/admin/system/dict-data/index/' + row.dictId)
     },
     /** 修改按钮操作 */
     handleUpdate(row) {
